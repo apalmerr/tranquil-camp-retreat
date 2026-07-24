@@ -75,6 +75,23 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-8 mt-12 text-center text-background/50 text-xs font-light">
           <p>{t("footer.rights")}</p>
+          <ul className="mt-3 flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <li>
+              <Link to="/aviso-legal" className="hover:text-background smooth-hover">
+                Aviso Legal
+              </Link>
+            </li>
+            <li>
+              <Link to="/privacidad" className="hover:text-background smooth-hover">
+                Privacidad
+              </Link>
+            </li>
+            <li>
+              <Link to="/cookies" className="hover:text-background smooth-hover">
+                Cookies
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>;
