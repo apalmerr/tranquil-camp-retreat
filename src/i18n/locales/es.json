@@ -2,6 +2,7 @@
   "nav": {
     "services": "SERVICIOS",
     "about": "QUIENES SOMOS",
+    "blog": "BLOG",
     "contact": "CONTACTO",
     "cta": "CONTACTO",
     "brand": "PALMER"
@@ -148,6 +149,7 @@
     "home": "Inicio",
     "services": "SERVICIOS",
     "about": "QUIENES SOMOS",
+    "blog": "Blog",
     "contact": "CONTACTO",
     "ctaLink": "Contactar",
     "contactUs": "Contáctanos",
