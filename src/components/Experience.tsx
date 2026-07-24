@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Leaf, Wifi, Droplets, Sun } from "lucide-react";
+import { MapPin, ShieldCheck, Wrench, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const featureConfig = [
-  { icon: Leaf, videoUrl: "https://videos.pexels.com/video-files/4460100/4460100-hd_1920_1080_30fps.mp4" },
-  { icon: Wifi, videoUrl: "https://videos.pexels.com/video-files/4280450/4280450-hd_1920_1080_30fps.mp4" },
-  { icon: Droplets, videoUrl: "https://videos.pexels.com/video-files/5487781/5487781-hd_1920_1080_30fps.mp4" },
-  { icon: Sun, videoUrl: "https://videos.pexels.com/video-files/4460098/4460098-hd_1920_1080_30fps.mp4" },
+  { icon: MapPin, videoUrl: "https://videos.pexels.com/video-files/4280450/4280450-hd_1920_1080_30fps.mp4" },
+  { icon: Wrench, videoUrl: "https://videos.pexels.com/video-files/4460100/4460100-hd_1920_1080_30fps.mp4" },
+  { icon: ShieldCheck, videoUrl: "https://videos.pexels.com/video-files/5487781/5487781-hd_1920_1080_30fps.mp4" },
+  { icon: Sparkles, videoUrl: "https://videos.pexels.com/video-files/4460098/4460098-hd_1920_1080_30fps.mp4" },
 ];
 
 const Experience = () => {
