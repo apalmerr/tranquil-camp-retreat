@@ -1,12 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Cpu } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-palmer.jpg";
 import redesImage from "@/assets/service-redes.jpg";
 import domoticaImage from "@/assets/service-domotica.jpg";
 import fotovoltaicaImage from "@/assets/service-fotovoltaica.jpg";
+import palmerLogoAsset from "@/assets/palmer-logo.png.asset.json";
 
 const slides = [
   { image: heroImage, altKey: "hero" },
@@ -77,7 +78,11 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="mb-4"
         >
-          <Cpu className="w-6 h-6 text-white stroke-[1.5]" />
+          <img
+            src={palmerLogoAsset.url}
+            alt="PALMER"
+            className="h-8 w-auto"
+          />
         </motion.div>
 
         {/* Headline */}
