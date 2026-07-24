@@ -23,9 +23,7 @@ const Navigation = ({
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const location = useLocation();
   const navigate = useNavigate();
-  const isHomePage = location.pathname === "/";
   const handleBookNow = () => {
     navigate('/contact');
   };
