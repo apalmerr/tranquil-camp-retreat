@@ -8,40 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 0 0% 20%;
+    --brand: 20 85% 50%;
+    --brand-foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --background: 24 40% 99%;
+    --foreground: 24 10% 18%;
+
+    --card: 24 30% 99.5%;
+    --card-foreground: 24 10% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 24 10% 18%;
 
-    --primary: 150 15% 70%;
+    --primary: 20 85% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 24 25% 96%;
+    --secondary-foreground: 24 10% 20%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 24 20% 95.5%;
+    --muted-foreground: 24 8% 45%;
 
-    --accent: 150 20% 95%;
-    --accent-foreground: 0 0% 25%;
+    --accent: 22 60% 95%;
+    --accent-foreground: 20 60% 25%;
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 92%;
-    --input: 0 0% 92%;
-    --ring: 150 15% 70%;
+    --border: 24 20% 90%;
+    --input: 24 20% 90%;
+    --ring: 20 85% 50%;
 
     --radius: 0.5rem;
     
-    --hero-gradient: linear-gradient(135deg, hsl(150 10% 85% / 0.3), hsl(0 0% 95% / 0.2));
-    --overlay-gradient: linear-gradient(180deg, transparent 0%, hsl(0 0% 0% / 0.4) 100%);
-    --soft-shadow: 0 2px 8px hsl(0 0% 0% / 0.04);
-    --hover-shadow: 0 4px 16px hsl(0 0% 0% / 0.08);
+    --hero-gradient: linear-gradient(135deg, hsl(20 60% 92% / 0.35), hsl(24 40% 98% / 0.2));
+    --overlay-gradient: linear-gradient(180deg, transparent 0%, hsl(20 30% 5% / 0.4) 100%);
+    --soft-shadow: 0 2px 8px hsl(20 40% 20% / 0.05);
+    --hover-shadow: 0 4px 16px hsl(20 50% 25% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -107,6 +110,18 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(60vw 60vw at 85% 10%, hsl(var(--brand) / 0.06), transparent 60%),
+      radial-gradient(50vw 50vw at 10% 90%, hsl(var(--brand) / 0.05), transparent 65%);
   }
   
   html {
