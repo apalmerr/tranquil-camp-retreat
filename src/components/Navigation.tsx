@@ -37,11 +37,11 @@ const Navigation = ({
     }
   };
   const navItems = [{
-    label: "Locations",
+    label: "SERVICIOS",
     href: "/locations",
     isRoute: true
   }, {
-    label: "About",
+    label: "QUIENES SOMOS",
     href: "/about",
     isRoute: true
   }, {
