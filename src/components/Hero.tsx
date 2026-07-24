@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Cpu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import heroImage from "@/assets/hero-camping.jpg";
-import forestImage from "@/assets/spot-forest.jpg";
-import lakeImage from "@/assets/spot-lake.jpg";
-import meadowImage from "@/assets/spot-meadow.jpg";
+import heroImage from "@/assets/hero-palmer.jpg";
+import redesImage from "@/assets/service-redes.jpg";
+import domoticaImage from "@/assets/service-domotica.jpg";
+import fotovoltaicaImage from "@/assets/service-fotovoltaica.jpg";
 
 const slides = [
   { image: heroImage, altKey: "hero" },
-  { image: forestImage, altKey: "forest" },
-  { image: lakeImage, altKey: "lake" },
-  { image: meadowImage, altKey: "meadow" },
+  { image: redesImage, altKey: "forest" },
+  { image: domoticaImage, altKey: "lake" },
+  { image: fotovoltaicaImage, altKey: "meadow" },
 ];
 
 const SLIDE_DURATION = 5000;
