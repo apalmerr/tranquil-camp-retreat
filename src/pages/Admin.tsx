@@ -20,8 +20,10 @@ import Footer from "@/components/Footer";
 import { mockBookings, getBookingStats } from "@/data/bookings";
 import { locations, getLocationById } from "@/data/locations";
 import { useAuth } from "@/hooks/useAuth";
+import { useTranslation } from "react-i18next";
 
 const Admin = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const isDemo = searchParams.get("demo") === "true";
@@ -38,7 +40,7 @@ const Admin = () => {
   if (loading && !isDemo) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
-        <p className="text-sm text-muted-foreground font-light">Loading...</p>
+        <p className="text-sm text-muted-foreground font-light">{t("admin.loading")}</p>
       </div>
     );
   }
@@ -92,12 +94,12 @@ const Admin = () => {
                 className="text-[11px] uppercase tracking-wider font-normal"
               >
                 <ArrowLeft className="mr-2 h-3 w-3" />
-                Back to Home
+                {t("admin.backHome")}
               </Button>
               {isDemo ? (
                 <Badge variant="outline" className="gap-1 text-xs font-light border-primary/30 text-primary">
                   <Eye className="h-3 w-3" />
-                  Demo Mode
+                  {t("admin.demoMode")}
                 </Badge>
               ) : (
                 <Button
@@ -107,16 +109,16 @@ const Admin = () => {
                   className="text-[11px] uppercase tracking-wider font-normal text-destructive hover:text-destructive"
                 >
                   <LogOut className="mr-2 h-3 w-3" />
-                  Sign Out
+                  {t("admin.signOut")}
                 </Button>
               )}
             </div>
             
             <h1 className="text-3xl md:text-4xl font-light mb-3 tracking-tight">
-              Admin Dashboard
+              {t("admin.title")}
             </h1>
             <p className="text-sm text-muted-foreground font-light">
-              Manage your property bookings and monitor performance
+              {t("admin.subtitle")}
             </p>
           </motion.div>
 
@@ -134,7 +136,7 @@ const Admin = () => {
                 </div>
               </div>
               <p className="text-2xl font-light mb-1">{stats.total}</p>
-              <p className="text-xs text-muted-foreground font-light">Total Bookings</p>
+              <p className="text-xs text-muted-foreground font-light">{t("admin.total")}</p>
             </Card>
             
             <Card className="p-6 border border-border shadow-soft">
@@ -144,7 +146,7 @@ const Admin = () => {
                 </div>
               </div>
               <p className="text-2xl font-light mb-1">{stats.upcoming}</p>
-              <p className="text-xs text-muted-foreground font-light">Upcoming</p>
+              <p className="text-xs text-muted-foreground font-light">{t("admin.upcoming")}</p>
             </Card>
             
             <Card className="p-6 border border-border shadow-soft">
@@ -154,7 +156,7 @@ const Admin = () => {
                 </div>
               </div>
               <p className="text-2xl font-light mb-1">{stats.pending}</p>
-              <p className="text-xs text-muted-foreground font-light">Pending</p>
+              <p className="text-xs text-muted-foreground font-light">{t("admin.pending")}</p>
             </Card>
             
             <Card className="p-6 border border-border shadow-soft">
@@ -164,7 +166,7 @@ const Admin = () => {
                 </div>
               </div>
               <p className="text-2xl font-light mb-1">${calculateRevenue().toLocaleString()}</p>
-              <p className="text-xs text-muted-foreground font-light">Est. Revenue</p>
+              <p className="text-xs text-muted-foreground font-light">{t("admin.revenue")}</p>
             </Card>
           </motion.div>
 
@@ -180,7 +182,7 @@ const Admin = () => {
                   value="all" 
                   className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-full px-4 py-1.5 text-xs font-light border border-border"
                 >
-                  All Locations
+                  {t("admin.all")}
                 </TabsTrigger>
                 {locations.map((loc) => (
                   <TabsTrigger 
@@ -188,7 +190,7 @@ const Admin = () => {
                     value={loc.id}
                     className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-full px-4 py-1.5 text-xs font-light border border-border"
                   >
-                    {loc.name}
+                    {t(`locations.list.${loc.id}.name`)}
                   </TabsTrigger>
                 ))}
               </TabsList>
@@ -199,12 +201,12 @@ const Admin = () => {
                     <Table>
                       <TableHeader>
                         <TableRow className="border-border">
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Guest</TableHead>
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Location</TableHead>
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Dates</TableHead>
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Guests</TableHead>
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Status</TableHead>
-                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">Contact</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.guest")}</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.location")}</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.datesCol")}</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.guestsCol")}</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.statusCol")}</TableHead>
+                          <TableHead className="text-[11px] uppercase tracking-wider font-normal">{t("admin.contactCol")}</TableHead>
                         </TableRow>
                       </TableHeader>
                       <TableBody>
@@ -221,14 +223,14 @@ const Admin = () => {
                               <TableCell>
                                 <div className="flex items-center gap-2">
                                   <MapPin className="h-3 w-3 text-muted-foreground" />
-                                  <span className="text-sm font-light">{location?.name || booking.locationId}</span>
+                                  <span className="text-sm font-light">{location ? t(`locations.list.${location.id}.name`) : booking.locationId}</span>
                                 </div>
                               </TableCell>
                               <TableCell>
                                 <div className="text-sm font-light">
                                   <p>{format(booking.checkIn, "MMM d")} - {format(booking.checkOut, "MMM d, yyyy")}</p>
                                   <p className="text-xs text-muted-foreground">
-                                    {Math.ceil((booking.checkOut.getTime() - booking.checkIn.getTime()) / (1000 * 60 * 60 * 24))} nights
+                                    {t("admin.nights", { n: Math.ceil((booking.checkOut.getTime() - booking.checkIn.getTime()) / (1000 * 60 * 60 * 24)) })}
                                   </p>
                                 </div>
                               </TableCell>
@@ -273,7 +275,7 @@ const Admin = () => {
                   
                   {filteredBookings.length === 0 && (
                     <div className="text-center py-12">
-                      <p className="text-sm text-muted-foreground font-light">No bookings found for this location</p>
+                      <p className="text-sm text-muted-foreground font-light">{t("admin.empty")}</p>
                     </div>
                   )}
                 </Card>

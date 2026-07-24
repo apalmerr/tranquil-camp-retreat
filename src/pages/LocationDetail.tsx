@@ -14,8 +14,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { toast } from "sonner";
 import { getLocationById } from "@/data/locations";
+import { useTranslation } from "react-i18next";
 
 const LocationDetail = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const navigate = useNavigate();
   const location = id ? getLocationById(id) : null;
@@ -33,9 +35,9 @@ const LocationDetail = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-xl font-light mb-4">Location not found</h1>
+          <h1 className="text-xl font-light mb-4">{t("locationDetail.notFound")}</h1>
           <Button onClick={() => navigate("/")} variant="outline" size="sm" className="text-xs font-light">
-            Return Home
+            {t("locationDetail.returnHome")}
           </Button>
         </div>
       </div>
@@ -44,13 +46,19 @@ const LocationDetail = () => {
 
   // Combine main image with detail images for the gallery
   const allImages = [location.image, ...location.images];
+  const name = t(`locations.list.${location.id}.name`) as string;
+  const place = t(`locations.list.${location.id}.location`) as string;
+  const description = t(`locations.list.${location.id}.description`) as string;
+  const amenityTexts = t(`locations.list.${location.id}.amenities`, { returnObjects: true }) as { label: string; description: string }[];
+  const detailTexts = t(`locations.list.${location.id}.details`, { returnObjects: true }) as string[];
+  const amenities = amenityTexts.map((a, i) => ({ ...a, icon: location.amenityIcons[i] }));
 
   const handleBooking = () => {
     if (!dateRange?.from || !dateRange?.to || !guests) {
-      toast.error("Please select check-in, check-out dates and number of guests");
+      toast.error(t("locationDetail.toastMissing") as string);
       return;
     }
-    toast.success(`Booking request for ${location.name} submitted!`);
+    toast.success(t("locationDetail.toastSuccess", { name }) as string);
   };
 
   const nextImage = () => {
@@ -62,7 +70,7 @@ const LocationDetail = () => {
   };
 
   const formatDateRange = () => {
-    if (!dateRange?.from) return "Select dates";
+    if (!dateRange?.from) return t("locationDetail.selectDates") as string;
     if (!dateRange?.to) return format(dateRange.from, "MMM d, yyyy");
     return `${format(dateRange.from, "MMM d")} - ${format(dateRange.to, "MMM d, yyyy")}`;
   };
@@ -75,7 +83,7 @@ const LocationDetail = () => {
       <div className="relative w-full h-[50vh] overflow-hidden">
         <motion.img
           src={allImages[0]}
-          alt={location.name}
+          alt={name}
           style={{ y }}
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -94,7 +102,7 @@ const LocationDetail = () => {
             className="mb-8 text-[11px] uppercase tracking-wider font-normal"
           >
             <ArrowLeft className="mr-2 h-3 w-3" />
-            Back to locations
+            {t("locationDetail.back")}
           </Button>
 
           {/* Title, Description, Rating */}
@@ -106,17 +114,17 @@ const LocationDetail = () => {
           >
             <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
               <MapPin className="h-3 w-3" />
-              <span className="font-light">{location.location}</span>
+              <span className="font-light">{place}</span>
               <div className="flex items-center gap-1 ml-4">
                 <Star className="h-3 w-3 fill-primary text-primary" />
                 <span className="font-light text-foreground">{location.rating}</span>
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
-              {location.name}
+              {name}
             </h1>
             <p className="text-sm text-muted-foreground leading-relaxed font-light max-w-2xl">
-              {location.description}
+              {description}
             </p>
           </motion.div>
 
@@ -131,7 +139,7 @@ const LocationDetail = () => {
               <motion.img
                 key={currentImageIndex}
                 src={allImages[currentImageIndex]}
-                alt={`${location.name} ${currentImageIndex + 1}`}
+                alt={`${name} ${currentImageIndex + 1}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -182,9 +190,9 @@ const LocationDetail = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <Card className="p-8 border border-border shadow-soft">
-                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">Amenities</h2>
+                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.amenities")}</h2>
                   <div className="grid md:grid-cols-2 gap-6">
-                    {location.amenities.map((amenity: any, index: number) => {
+                    {amenities.map((amenity: any, index: number) => {
                       const Icon = amenity.icon;
                       return (
                         <div key={index} className="flex gap-4">
@@ -210,9 +218,9 @@ const LocationDetail = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
                 <Card className="p-8 border border-border shadow-soft">
-                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">What's Included</h2>
+                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.included")}</h2>
                   <ul className="grid md:grid-cols-2 gap-3">
-                    {location.details.map((detail: string, index: number) => (
+                    {detailTexts.map((detail: string, index: number) => (
                       <li key={index} className="flex items-start gap-3 text-sm text-muted-foreground font-light">
                         <span className="text-primary mt-0.5">•</span>
                         <span>{detail}</span>
@@ -229,7 +237,7 @@ const LocationDetail = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
                 <Card className="p-8 border border-border shadow-soft">
-                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">Guest Reviews</h2>
+                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.reviews")}</h2>
                   <Carousel
                     opts={{
                       align: "start",
@@ -285,7 +293,7 @@ const LocationDetail = () => {
                   <div className="mb-8">
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="text-2xl font-light">${location.price}</span>
-                      <span className="text-xs text-muted-foreground font-light">/ night</span>
+                      <span className="text-xs text-muted-foreground font-light">{t("locationDetail.perNight")}</span>
                     </div>
                     <div className="flex items-center gap-1 text-xs">
                       <Star className="h-3 w-3 fill-primary text-primary" />
@@ -296,25 +304,25 @@ const LocationDetail = () => {
                   <div className="space-y-6">
                     <div>
                       <Label htmlFor="detail-guests" className="text-[11px] uppercase tracking-wider font-normal mb-3 block">
-                        Guests
+                        {t("locationDetail.guests")}
                       </Label>
                       <Select value={guests} onValueChange={setGuests}>
                         <SelectTrigger id="detail-guests" className="rounded-md text-sm font-light">
-                          <SelectValue placeholder="Select guests" />
+                          <SelectValue placeholder={t("locationDetail.selectPlaceholder") as string} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="1">1 Guest</SelectItem>
-                          <SelectItem value="2">2 Guests</SelectItem>
-                          <SelectItem value="3">3 Guests</SelectItem>
-                          <SelectItem value="4">4 Guests</SelectItem>
-                          <SelectItem value="5">5+ Guests</SelectItem>
+                          <SelectItem value="1">{t("locationDetail.guestOption", { n: 1 })}</SelectItem>
+                          <SelectItem value="2">{t("locationDetail.guestOptionPlural", { n: 2 })}</SelectItem>
+                          <SelectItem value="3">{t("locationDetail.guestOptionPlural", { n: 3 })}</SelectItem>
+                          <SelectItem value="4">{t("locationDetail.guestOptionPlural", { n: 4 })}</SelectItem>
+                          <SelectItem value="5">{t("locationDetail.guestOption5")}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div>
                       <Label className="text-[11px] uppercase tracking-wider font-normal mb-3 block">
-                        Check-in & Check-out
+                        {t("locationDetail.dates")}
                       </Label>
                       <CalendarComponent
                         mode="range"
@@ -329,7 +337,7 @@ const LocationDetail = () => {
                           {formatDateRange()}
                           {dateRange?.to && (
                             <span className="block">
-                              {Math.ceil((dateRange.to.getTime() - dateRange.from.getTime()) / (1000 * 60 * 60 * 24))} nights
+                              {t("locationDetail.nights", { n: Math.ceil((dateRange.to.getTime() - dateRange.from.getTime()) / (1000 * 60 * 60 * 24)) })}
                             </span>
                           )}
                         </p>
@@ -342,7 +350,7 @@ const LocationDetail = () => {
                       onClick={handleBooking}
                     >
                       <Calendar className="mr-2 h-4 w-4" />
-                      Reserve Now
+                      {t("locationDetail.reserve")}
                     </Button>
                   </div>
                 </Card>
