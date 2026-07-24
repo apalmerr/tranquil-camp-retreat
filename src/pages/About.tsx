@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Leaf, Heart, Compass, Mountain, Users, TreePine } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import bannerImage from "@/assets/detail-lake-2.jpg";
+import bannerImage from "@/assets/banner-about.jpg";
 import { useTranslation } from "react-i18next";
 
 const valueIcons = [Leaf, Heart, Compass, Mountain, Users, TreePine];
