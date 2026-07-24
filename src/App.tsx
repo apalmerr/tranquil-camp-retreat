@@ -11,6 +11,8 @@ import About from "./pages/About";
 import Cookies from "./pages/Cookies";
 import Privacy from "./pages/Privacy";
 import LegalNotice from "./pages/LegalNotice";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import CookieBanner from "./components/CookieBanner";
@@ -33,6 +35,8 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/privacidad" element={<Privacy />} />
           <Route path="/aviso-legal" element={<LegalNotice />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
