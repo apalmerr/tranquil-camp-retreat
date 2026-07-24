@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Star, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { getFeaturedLocations } from "@/data/locations";
@@ -26,33 +26,26 @@ const Locations = () => {
 
   const renderCard = (location: ReturnType<typeof getFeaturedLocations>[number]) => {
     const name = t(`locations.list.${location.id}.name`) as string;
-    const place = t(`locations.list.${location.id}.location`) as string;
+    const tagline = t(`locations.list.${location.id}.location`) as string;
     const features = t(`locations.list.${location.id}.features`, { returnObjects: true }) as string[];
+    const Icon = location.icon;
     return (
     <Link to={`/location/${location.id}`} className="block">
       <div className="relative h-48 overflow-hidden">
         <img src={location.image} alt={name} className="w-full h-full object-cover" />
-        <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm px-2 py-1 rounded-md flex items-center gap-1">
-          <Star className="h-3 w-3 fill-primary text-primary" />
-          <span className="font-light text-xs">{location.rating}</span>
+        <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm p-2 rounded-md flex items-center gap-1">
+          <Icon className="h-4 w-4 text-primary" />
         </div>
       </div>
       <div className="p-6">
         <h3 className="text-base font-normal mb-1 text-card-foreground tracking-tight">{name}</h3>
-        <div className="flex items-center gap-1 text-muted-foreground mb-4 text-xs font-light">
-          <MapPin className="h-3 w-3" />
-          <span>{place}</span>
-        </div>
+        <p className="text-muted-foreground mb-4 text-xs font-light">{tagline}</p>
         <div className="flex flex-wrap gap-1.5 mb-5">
           {features.map((feature) => (
             <span key={feature} className="text-[10px] uppercase tracking-wide px-2 py-1 bg-accent text-accent-foreground rounded-sm font-light">{feature}</span>
           ))}
         </div>
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="text-xl font-light text-foreground">${location.price}</span>
-            <span className="text-muted-foreground text-xs font-light">{t("locations.perNight")}</span>
-          </div>
+        <div className="flex items-center justify-end">
           <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80 text-xs font-light">
             {t("locations.viewDetails")}
             <ArrowRight className="ml-1 h-3 w-3" />
