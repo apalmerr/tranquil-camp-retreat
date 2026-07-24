@@ -78,7 +78,11 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="mb-4"
         >
-          <Cpu className="w-6 h-6 text-white stroke-[1.5]" />
+          <img
+            src={palmerLogoAsset.url}
+            alt="PALMER"
+            className="h-8 w-auto"
+          />
         </motion.div>
 
         {/* Headline */}
