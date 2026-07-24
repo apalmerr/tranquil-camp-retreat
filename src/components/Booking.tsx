@@ -13,6 +13,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { toast } from "sonner";
 import { CalendarDays, Users, MapPin, ArrowRight, ArrowLeft, CheckCircle, User, Phone, Mail, MapPinned } from "lucide-react";
 import { locations } from "@/data/locations";
+import { useTranslation } from "react-i18next";
 
 const slideVariants = {
   enter: (direction: number) => ({
@@ -30,6 +31,7 @@ const slideVariants = {
 };
 
 const Booking = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   
@@ -95,7 +97,7 @@ const Booking = () => {
 
   const getLocationLabel = (value: string) => {
     const loc = locations.find(l => l.id === value);
-    return loc?.name || value;
+    return loc ? (t(`locations.list.${loc.id}.name`) as string) : value;
   };
 
   const formatDateRange = () => {
@@ -168,7 +170,7 @@ const Booking = () => {
                           <SelectContent>
                             {locations.map((loc) => (
                               <SelectItem key={loc.id} value={loc.id}>
-                                {loc.name}
+                                {t(`locations.list.${loc.id}.name`)}
                               </SelectItem>
                             ))}
                           </SelectContent>

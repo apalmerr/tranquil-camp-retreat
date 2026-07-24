@@ -1,21 +1,23 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, TreePine } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-camping.jpg";
 import forestImage from "@/assets/spot-forest.jpg";
 import lakeImage from "@/assets/spot-lake.jpg";
 import meadowImage from "@/assets/spot-meadow.jpg";
 
 const slides = [
-  { image: heroImage, alt: "Off-grid camping in nature" },
-  { image: forestImage, alt: "Forest camping spot" },
-  { image: lakeImage, alt: "Lakeside retreat" },
-  { image: meadowImage, alt: "Meadow camping experience" },
+  { image: heroImage, altKey: "hero" },
+  { image: forestImage, altKey: "forest" },
+  { image: lakeImage, altKey: "lake" },
+  { image: meadowImage, altKey: "meadow" },
 ];
 
 const SLIDE_DURATION = 5000;
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -57,7 +59,7 @@ const Hero = () => {
         >
           <img
             src={slides[currentSlide].image}
-            alt={slides[currentSlide].alt}
+            alt={t(`hero.alts.${slides[currentSlide].altKey}`)}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30" />
@@ -83,8 +85,8 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight max-w-md text-left flex flex-col"
         >
-          <span>Integración</span>
-          <span>Tecnológíca</span>
+          <span>{t("hero.line1")}</span>
+          <span>{t("hero.line2")}</span>
         </motion.h1>
 
         {/* CTA Button */}
@@ -92,10 +94,10 @@ const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => document.querySelector('footer')?.scrollIntoView({ behavior: 'smooth' })}
           className="mt-6 flex items-center gap-3 bg-white text-foreground px-6 py-3 rounded-full text-sm tracking-wide hover:bg-white/90 transition-colors"
         >
-          Contactar
+          {t("hero.cta")}
           <ArrowRight className="w-4 h-4" />
         </motion.button>
       </div>
@@ -107,7 +109,7 @@ const Hero = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className="flex-1 h-[2px] bg-white/30 overflow-hidden cursor-pointer"
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={t("hero.slideAria", { n: index + 1 }) as string}
           >
             <div
               className="h-full bg-white transition-all duration-100 ease-linear"

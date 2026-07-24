@@ -3,12 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Tent } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 interface NavigationProps {
   variant?: "default" | "dark";
 }
 const Navigation = ({
   variant = "default"
 }: NavigationProps) => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isDark = variant === "dark";
@@ -24,28 +27,21 @@ const Navigation = ({
   const isHomePage = location.pathname === "/";
   const handleBookNow = () => {
     if (isHomePage) {
-      document.getElementById('booking')?.scrollIntoView({
-        behavior: 'smooth'
-      });
+      navigate('/contact');
     } else {
-      navigate('/');
-      setTimeout(() => {
-        document.getElementById('booking')?.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }, 100);
+      navigate('/contact');
     }
   };
   const navItems = [{
-    label: "SERVICIOS",
+    label: t("nav.services"),
     href: "/locations",
     isRoute: true
   }, {
-    label: "QUIENES SOMOS",
+    label: t("nav.about"),
     href: "/about",
     isRoute: true
   }, {
-    label: "Contact",
+    label: t("nav.contact"),
     href: "/contact",
     isRoute: true
   }];
@@ -64,7 +60,7 @@ const Navigation = ({
           }} className="flex items-center gap-2 cursor-pointer">
               <Tent className={`h-4 w-4 ${isMobileMenuOpen || isDark || !isScrolled ? "text-white" : "text-primary"}`} />
               <span className={`text-sm font-normal tracking-wide ${isMobileMenuOpen || isDark || !isScrolled ? "text-white" : "text-foreground"}`}>
-                Wild Haven
+                {t("nav.brand")}
               </span>
             </motion.div>
           </Link>
@@ -75,8 +71,9 @@ const Navigation = ({
                 </Link> : <a key={item.label} href={item.href} className={`text-[11px] uppercase tracking-wider font-normal smooth-hover hover:opacity-60 ${isDark || !isScrolled ? "text-white" : "text-foreground"}`}>
                   {item.label}
                 </a>)}
+            <LanguageSwitcher variant={isDark || !isScrolled ? "light" : "dark"} />
             <Button variant="outline" size="sm" className={`rounded-full smooth-hover text-[11px] uppercase tracking-wider font-normal backdrop-blur-md border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)] px-5 ${isDark || !isScrolled ? "bg-white/10 text-white hover:bg-primary/80 hover:text-white hover:border-primary/80" : "bg-white/20 text-foreground hover:bg-primary/80 hover:text-white hover:border-primary/80"}`} onClick={handleBookNow}>
-              CONTACTAR
+              {t("nav.cta")}
             </Button>
           </div>
 
@@ -104,11 +101,14 @@ const Navigation = ({
                 </Link> : <a key={item.label} href={item.href} className={`block py-3 text-[11px] uppercase tracking-wider font-normal smooth-hover hover:opacity-60 ${isDark || !isScrolled ? "text-white" : "text-foreground"}`} onClick={() => setIsMobileMenuOpen(false)}>
                   {item.label}
                 </a>)}
+            <div className="py-3">
+              <LanguageSwitcher variant={isDark || !isScrolled ? "light" : "dark"} />
+            </div>
             <Button variant="outline" className={`w-full mt-4 rounded-full text-[11px] uppercase tracking-wider font-normal backdrop-blur-md border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)] px-5 ${isDark || !isScrolled ? "bg-white/10 text-white hover:bg-primary/80 hover:text-white hover:border-primary/80" : "bg-white/20 text-foreground hover:bg-primary/80 hover:text-white hover:border-primary/80"}`} onClick={() => {
           setIsMobileMenuOpen(false);
           handleBookNow();
         }}>
-              CONTACTAR
+              {t("nav.cta")}
             </Button>
           </motion.div>}
       </AnimatePresence>
