@@ -186,19 +186,6 @@
   },
   "contact": {
     "eyebrow": "Contacto",
-    "_": ""
-  },
-  "blog": {
-    "eyebrow": "BLOG",
-    "title": "Notas y proyectos",
-    "subtitle": "Ideas, casos y novedades sobre integración tecnológica en Baleares.",
-    "empty": "Aún no hay publicaciones. Vuelve pronto.",
-    "back": "Volver al blog",
-    "notFound": "Artículo no encontrado",
-    "by": "Por"
-  },
-  "_contact": {
-    "eyebrow": "Contacto",
     "title": "Hablemos de tu proyecto",
     "subtitle": "Cuéntanos qué necesitas y te propondremos la mejor solución tecnológica para tu hogar o empresa.",
     "name": "Nombre",
@@ -209,6 +196,15 @@
     "sending": "Enviando...",
     "sent": "Mensaje enviado",
     "sentDesc": "Te responderemos lo antes posible."
+  },
+  "blog": {
+    "eyebrow": "BLOG",
+    "title": "Notas y proyectos",
+    "subtitle": "Ideas, casos y novedades sobre integración tecnológica en Baleares.",
+    "empty": "Aún no hay publicaciones. Vuelve pronto.",
+    "back": "Volver al blog",
+    "notFound": "Artículo no encontrado",
+    "by": "Por"
   },
   "locationDetail": {
     "notFound": "Servicio no encontrado",
