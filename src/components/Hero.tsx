@@ -7,7 +7,7 @@ import heroImage from "@/assets/hero-palmer.jpg";
 import redesImage from "@/assets/service-redes.jpg";
 import domoticaImage from "@/assets/service-domotica.jpg";
 import fotovoltaicaImage from "@/assets/service-fotovoltaica.jpg";
-import palmerLogoAsset from "@/assets/palmer-logo.png.asset.json";
+import palmerLogoAsset from "@/assets/palmer-mark-white.png.asset.json";
 
 const slides = [
   { image: heroImage, altKey: "hero" },
@@ -81,7 +81,7 @@ const Hero = () => {
           <img
             src={palmerLogoAsset.url}
             alt="PALMER"
-            className="h-8 w-auto"
+            className="h-10 w-auto"
           />
         </motion.div>
 
