@@ -197,6 +197,15 @@
     "sent": "Message sent",
     "sentDesc": "We'll get back to you as soon as possible."
   },
+  "blog": {
+    "eyebrow": "BLOG",
+    "title": "Notes & projects",
+    "subtitle": "Ideas, cases and updates on technology integration in the Balearic Islands.",
+    "empty": "No posts yet. Check back soon.",
+    "back": "Back to blog",
+    "notFound": "Article not found",
+    "by": "By"
+  },
   "locationDetail": {
     "notFound": "Service not found",
     "returnHome": "Return home",
