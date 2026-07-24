@@ -3,41 +3,16 @@ import { Leaf, Heart, Compass, Mountain, Users, TreePine } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import bannerImage from "@/assets/detail-lake-2.jpg";
+import { useTranslation } from "react-i18next";
 
-const values = [
-  {
-    icon: Leaf,
-    title: "Sustainability",
-    description: "We tread lightly on the earth, ensuring our retreats enhance rather than harm the natural environment."
-  },
-  {
-    icon: Heart,
-    title: "Connection",
-    description: "Fostering deep bonds between people and the natural world through meaningful wilderness experiences."
-  },
-  {
-    icon: Compass,
-    title: "Simplicity",
-    description: "Stripping away modern complexity to rediscover the joy found in life's essential elements."
-  },
-  {
-    icon: Mountain,
-    title: "Authenticity",
-    description: "Providing genuine wilderness experiences untouched by the artificial and manufactured."
-  },
-  {
-    icon: Users,
-    title: "Community",
-    description: "Building connections between like-minded individuals who share a reverence for nature."
-  },
-  {
-    icon: TreePine,
-    title: "Mindfulness",
-    description: "Encouraging presence and awareness through the calming influence of natural surroundings."
-  }
-];
+const valueIcons = [Leaf, Heart, Compass, Mountain, Users, TreePine];
 
 const About = () => {
+  const { t } = useTranslation();
+  const storyParas = t("about.story", { returnObjects: true }) as string[];
+  const whyParas = t("about.why", { returnObjects: true }) as string[];
+  const valueTexts = t("about.values", { returnObjects: true }) as { title: string; description: string }[];
+  const values = valueTexts.map((v, i) => ({ ...v, icon: valueIcons[i] }));
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
@@ -69,25 +44,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">About Us</span>
-              <h1 className="text-2xl md:text-3xl font-light tracking-tight mt-2 mb-8">Our Story</h1>
+              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("about.eyebrow")}</span>
+              <h1 className="text-2xl md:text-3xl font-light tracking-tight mt-2 mb-8">{t("about.title")}</h1>
               
               <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
-                <p>
-                  Wild Haven was born from a simple observation: in our hyper-connected world, true rest has become 
-                  increasingly rare. We watched as screens replaced sunsets, notifications drowned out birdsong, 
-                  and the constant hum of digital life left people feeling more disconnected than ever.
-                </p>
-                <p>
-                  Founded in 2019, we set out to create spaces where people could step away from the noise and 
-                  rediscover what it means to be truly present. Our retreats aren't about escaping life—they're 
-                  about returning to it, in its most essential and beautiful form.
-                </p>
-                <p>
-                  Each of our locations has been carefully selected not just for its natural beauty, but for its 
-                  ability to facilitate genuine restoration. From ancient forests to pristine lakeshores, every 
-                  Wild Haven retreat offers a doorway back to the rhythms that sustained humanity for millennia.
-                </p>
+                {storyParas.map((p, i) => (<p key={i}>{p}</p>))}
               </div>
             </motion.div>
           </div>
@@ -102,31 +63,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">The Why</span>
-              <h2 className="text-2xl md:text-3xl font-light tracking-tight mt-2 mb-8">Why Off-Grid Retreats Matter</h2>
+              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("about.whyEyebrow")}</span>
+              <h2 className="text-2xl md:text-3xl font-light tracking-tight mt-2 mb-8">{t("about.whyTitle")}</h2>
               
               <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
-                <p>
-                  The average person now spends over seven hours a day looking at screens. Our nervous systems, 
-                  evolved over millions of years in natural environments, are under constant assault from 
-                  artificial stimuli. The result? Epidemic levels of anxiety, burnout, and a pervasive sense 
-                  of disconnection.
-                </p>
-                <p>
-                  Off-grid retreats offer something profound: the opportunity to reset. When we remove ourselves 
-                  from the digital matrix, remarkable things happen. Stress hormones drop. Sleep improves. 
-                  Creativity returns. We begin to hear our own thoughts again.
-                </p>
-                <p>
-                  But it's not just about what we remove—it's about what we rediscover. The crackle of a fire. 
-                  The weight of silence. The slow unfurling of time when it's no longer sliced into notifications 
-                  and deadlines. These aren't luxuries; they're necessities that modern life has convinced us 
-                  we can live without.
-                </p>
-                <p>
-                  At Wild Haven, we believe that reconnecting with nature isn't an escape from reality—it's a 
-                  return to it. And in that return, we find not just rest, but renewal.
-                </p>
+                {whyParas.map((p, i) => (<p key={i}>{p}</p>))}
               </div>
             </motion.div>
           </div>
@@ -142,8 +83,8 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">What We Stand For</span>
-              <h2 className="text-2xl md:text-3xl font-light tracking-tight mt-2">Our Values</h2>
+              <span className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("about.valuesEyebrow")}</span>
+              <h2 className="text-2xl md:text-3xl font-light tracking-tight mt-2">{t("about.valuesTitle")}</h2>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

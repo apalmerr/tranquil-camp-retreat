@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { useTranslation } from "react-i18next";
 
 const loginSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -15,6 +16,7 @@ const loginSchema = z.object({
 });
 
 const Auth = () => {
+  const { t } = useTranslation();
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -119,23 +121,21 @@ const Auth = () => {
           <div className="flex items-center justify-center gap-2 mb-6">
             <Tent className="h-5 w-5 text-primary" />
             <span className="text-sm font-normal tracking-wide text-background">
-              Wild Haven
+              {t("nav.brand")}
             </span>
           </div>
           <h1 className="text-2xl font-light text-background mb-2 tracking-tight">
-            {isLogin ? "Admin Login" : "Create Account"}
+            {isLogin ? t("auth.loginTitle") : t("auth.signupTitle")}
           </h1>
           <p className="text-xs text-background/60 font-light">
-            {isLogin
-              ? "Sign in to manage your properties"
-              : "Register for admin access"}
+            {isLogin ? t("auth.loginSub") : t("auth.signupSub")}
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="space-y-2">
             <Label htmlFor="email" className="text-[11px] uppercase tracking-wider font-normal text-background/70">
-              Email
+              {t("auth.email")}
             </Label>
             <Input
               id="email"
@@ -150,7 +150,7 @@ const Auth = () => {
 
           <div className="space-y-2">
             <Label htmlFor="password" className="text-[11px] uppercase tracking-wider font-normal text-background/70">
-              Password
+              {t("auth.password")}
             </Label>
             <Input
               id="password"
@@ -168,7 +168,7 @@ const Auth = () => {
             disabled={loading}
             className="w-full rounded-full text-[11px] uppercase tracking-wider font-normal"
           >
-            {loading ? "Please wait..." : isLogin ? "Sign In" : "Create Account"}
+            {loading ? t("auth.wait") : isLogin ? t("auth.signIn") : t("auth.createAccount")}
           </Button>
         </form>
 
@@ -177,7 +177,7 @@ const Auth = () => {
             onClick={() => setIsLogin(!isLogin)}
             className="text-xs text-background/50 hover:text-background/80 font-light transition-colors"
           >
-            {isLogin ? "Need an account? Sign up" : "Already have an account? Sign in"}
+            {isLogin ? t("auth.needAccount") : t("auth.haveAccount")}
           </button>
         </div>
 
@@ -187,14 +187,14 @@ const Auth = () => {
             onClick={() => navigate("/admin?demo=true")}
             className="w-full rounded-full text-[11px] uppercase tracking-wider font-normal"
           >
-            Try Demo Mode
+            {t("auth.demo")}
           </Button>
           <button
             onClick={() => navigate("/")}
             className="text-xs text-background/40 hover:text-background/60 font-light transition-colors flex items-center gap-1"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to site
+            {t("auth.backSite")}
           </button>
         </div>
       </motion.div>
