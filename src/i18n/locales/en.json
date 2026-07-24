@@ -4,278 +4,204 @@
     "about": "ABOUT",
     "contact": "CONTACT",
     "cta": "CONTACT",
-    "brand": "Wild Haven"
+    "brand": "PALMER"
   },
   "hero": {
     "line1": "Technology",
-    "line2": "Integration",
-    "cta": "Contact",
+    "line2": "Integration\u00a0\nBalearic Islands",
+    "cta": "Get in touch",
     "slideAria": "Go to slide {{n}}",
     "alts": {
-      "hero": "Off-grid camping in nature",
-      "forest": "Forest camping spot",
-      "lake": "Lakeside retreat",
-      "meadow": "Meadow camping experience"
+      "hero": "Technology integration in Mallorca",
+      "forest": "Network installation",
+      "lake": "Home automation",
+      "meadow": "Photovoltaic energy"
     }
   },
   "locations": {
-    "eyebrow": "Our Locations",
-    "title": "Featured Spots",
-    "subtitle": "Handpicked spots where nature's beauty meets sustainable comfort",
-    "allEyebrow": "Our Locations",
-    "allTitle": "All Spots",
-    "allSubtitle": "Explore all our handpicked camping locations",
-    "perNight": "/night",
-    "viewDetails": "View Details",
-    "sort": {
-      "placeholder": "Sort by",
-      "priceLow": "Price: Low to High",
-      "priceHigh": "Price: High to Low",
-      "rating": "Highest Rated"
-    },
+    "eyebrow": "OUR SERVICES",
+    "title": "FEATURED SERVICES",
+    "subtitle": "Advanced solutions designed to connect, automate and optimise your spaces with maximum reliability.",
+    "allEyebrow": "Our Services",
+    "allTitle": "All Services",
+    "allSubtitle": "Explore the full range of technology integration services we offer in Mallorca.",
+    "perNight": "",
+    "viewDetails": "View service",
     "list": {
-      "forest": {
-        "name": "Forest Haven",
-        "location": "Pacific Northwest",
-        "description": "Immerse yourself in the tranquility of old-growth forests. This secluded spot offers the perfect balance of privacy and natural beauty, with towering pines creating a cathedral-like canopy above your campsite.",
-        "features": ["Private campsite", "Fire pit", "Solar shower"],
+      "redes": {
+        "name": "Networks",
+        "location": "Infrastructure & connectivity",
+        "description": "We design and deploy high-performance wired and wireless networks for businesses, homes and professional spaces. Stable, secure networks ready to grow with you.",
+        "features": ["Structured cabling", "Professional WiFi", "Cybersecurity"],
         "amenities": [
-          { "label": "Fire Pit", "description": "Wood-burning fire pit with seating area" },
-          { "label": "Solar Shower", "description": "Eco-friendly outdoor shower" },
-          { "label": "No WiFi", "description": "Complete digital detox experience" },
-          { "label": "4 Guests Max", "description": "Intimate group size" }
+          { "label": "Professional WiFi", "description": "Full coverage with managed access points" },
+          { "label": "Advanced routing", "description": "Managed routers and switches with VLANs and QoS" },
+          { "label": "Perimeter security", "description": "Firewalls, VPN and network segmentation" },
+          { "label": "Servers & NAS", "description": "Centralised storage and services" }
         ],
         "details": [
-          "Tent platform with weatherproof covering",
-          "Composting toilet facilities",
-          "Fresh spring water access",
-          "Wildlife observation opportunities",
-          "Hiking trails within 5 minutes",
-          "All camping equipment provided"
+          "Needs and traffic audit",
+          "Cat 6 / 6A structured cabling",
+          "WiFi 6 access point deployment",
+          "Firewall and VPN configuration",
+          "24/7 remote monitoring",
+          "Ongoing maintenance and support"
         ]
       },
-      "lake": {
-        "name": "Lakeside Retreat",
-        "location": "Mountain Valley",
-        "description": "Wake up to pristine lake views and mountain reflections. This waterfront location is perfect for water enthusiasts, offering swimming, kayaking, and fishing in crystal-clear waters surrounded by alpine peaks.",
-        "features": ["Waterfront", "Kayak included", "Composting toilet"],
+      "domotica": {
+        "name": "Home Automation",
+        "location": "Smart homes & buildings",
+        "description": "Turn your home or business into a smart space. We control lighting, climate, blinds, irrigation, security and media from a single interface for greater comfort and energy efficiency.",
+        "features": ["Lighting", "Climate", "Voice control"],
         "amenities": [
-          { "label": "Lake Access", "description": "Private waterfront with dock" },
-          { "label": "Fire Ring", "description": "Lakeside fire pit for evening gatherings" },
-          { "label": "Off-Grid", "description": "Solar powered facilities only" },
-          { "label": "5 Guests Max", "description": "Spacious lakeside setup" }
+          { "label": "Scenes & automations", "description": "One-touch ambiences" },
+          { "label": "Central control", "description": "From app, tablet or voice" },
+          { "label": "Smart lighting", "description": "Dimming, colour and schedules" },
+          { "label": "Full integration", "description": "KNX, Loxone, Control4, Google, Alexa" }
         ],
         "details": [
-          "Waterfront tent with lake views",
-          "Complimentary kayak usage",
-          "Fishing equipment available",
-          "Outdoor kitchen setup",
-          "Swimming access year-round",
-          "Mountain biking trails nearby"
+          "Custom needs assessment",
+          "KNX, Loxone or similar deployment",
+          "Integration with HVAC, blinds and irrigation",
+          "Voice control with Google Home & Alexa",
+          "Automated schedules and presence detection",
+          "User training and support"
         ]
       },
-      "meadow": {
-        "name": "Meadow Vista",
-        "location": "Alpine Range",
-        "description": "Experience unobstructed 360-degree mountain views from this elevated meadow campsite. Perfect for stargazing, wildflower photography, and those seeking wide-open spaces and fresh mountain air.",
-        "features": ["Panoramic views", "Hiking trails", "Wildlife viewing"],
+      "audiovisuales": {
+        "name": "Audio & Video",
+        "location": "TV, sound and home cinema",
+        "description": "Home cinema rooms, multi-room audio systems, video walls and digital signage. We craft immersive AV experiences for homes, restaurants, hotels and businesses.",
+        "features": ["Home cinema", "Multi-room audio", "Video wall"],
         "amenities": [
-          { "label": "Fire Pit", "description": "Stone fire pit with mountain views" },
-          { "label": "Water Station", "description": "Filtered mountain spring water" },
-          { "label": "Remote", "description": "Ultimate peaceful escape" },
-          { "label": "4 Guests Max", "description": "Cozy meadow camping" }
+          { "label": "4K/8K TVs", "description": "Professional install and calibration" },
+          { "label": "In-wall speakers", "description": "High-fidelity built-in sound" },
+          { "label": "Projection & screens", "description": "Reference-grade home cinema" },
+          { "label": "Multi-room audio", "description": "Synced music across every room" }
         ],
         "details": [
-          "Elevated tent platform",
-          "Panoramic mountain views",
-          "Dark sky certified area",
-          "Wildflower meadow access",
-          "Alpine hiking trails",
-          "Wildlife spotting opportunities"
+          "Room acoustic design",
+          "Projectors and motorised screens",
+          "Sonos, Denon HEOS and similar systems",
+          "HDMI and fibre cabling",
+          "Integration with home automation",
+          "Image and sound calibration"
         ]
       },
-      "canyon": {
-        "name": "Canyon Ridge",
-        "location": "Desert Southwest",
-        "description": "Discover the dramatic beauty of red rock canyons. This unique desert oasis offers stunning sunrise views, ancient rock formations, and a tranquil setting far from the noise of city life.",
-        "features": ["Desert views", "Stargazing", "Rock formations"],
+      "gestion-documental": {
+        "name": "Document Management",
+        "location": "Intranets & workflows",
+        "description": "We digitise your company with custom intranets, document managers and automated approval workflows. All your team's information: accessible, searchable and secure.",
+        "features": ["Intranets", "Digital signature", "Automation"],
         "amenities": [
-          { "label": "Fire Circle", "description": "Traditional fire circle with seating" },
-          { "label": "Water Cache", "description": "Fresh water supply station" },
-          { "label": "Off-Grid", "description": "Complete disconnection" },
-          { "label": "4 Guests Max", "description": "Intimate desert experience" }
+          { "label": "Corporate intranet", "description": "Central hub for your team" },
+          { "label": "Document repository", "description": "Advanced search and version control" },
+          { "label": "Secure cloud", "description": "Automated backups and encryption" },
+          { "label": "User management", "description": "Permissions by department and role" }
         ],
         "details": [
-          "Shaded tent platform",
-          "Sunset viewing deck",
-          "Desert wildlife guides",
-          "Night sky telescope available",
-          "Canyon hiking trails",
-          "All camping gear included"
+          "Analysis of current processes",
+          "SharePoint, Nextcloud or other platform deployment",
+          "Migration of existing documentation",
+          "Digital signatures with legal validity",
+          "Approval workflow automation",
+          "Staff training and support"
         ]
       },
-      "river": {
-        "name": "River Bend",
-        "location": "Coastal Range",
-        "description": "Nestled along a pristine river, this coastal retreat offers the soothing sounds of flowing water and easy access to both forest and river adventures. Perfect for those seeking a balanced escape.",
-        "features": ["River access", "Fishing", "Forest trails"],
+      "fotovoltaicas": {
+        "name": "Solar PV",
+        "location": "Solar energy & self-consumption",
+        "description": "Photovoltaic installations for homes and businesses in the Balearic Islands. Cut your energy bill, gain independence and contribute to a more sustainable future.",
+        "features": ["Self-consumption", "Batteries", "Monitoring"],
         "amenities": [
-          { "label": "River Access", "description": "Private riverfront location" },
-          { "label": "Fire Pit", "description": "Riverside fire pit" },
-          { "label": "Remote", "description": "Peaceful riverside escape" },
-          { "label": "6 Guests Max", "description": "Family-friendly size" }
+          { "label": "Solar panels", "description": "High-efficiency modules with warranty" },
+          { "label": "Hybrid inverters", "description": "Battery and grid compatible" },
+          { "label": "Lithium batteries", "description": "Store your energy for later use" },
+          { "label": "Sustainability", "description": "Reduce your carbon footprint" }
         ],
         "details": [
-          "Riverside tent platform",
-          "Fishing equipment provided",
-          "Canoe rental available",
-          "Nature walks guided",
-          "Bird watching opportunities",
-          "Premium camping equipment"
-        ]
-      },
-      "summit": {
-        "name": "Summit Peak",
-        "location": "Rocky Mountains",
-        "description": "For the adventurous soul, this high-altitude retreat offers breathtaking mountain panoramas and crisp alpine air. Wake up above the clouds in one of our most exclusive and remote locations.",
-        "features": ["High altitude", "Mountain views", "Adventure trails"],
-        "amenities": [
-          { "label": "Alpine Fire Pit", "description": "Elevated fire pit with views" },
-          { "label": "Spring Water", "description": "Mountain spring access" },
-          { "label": "Remote", "description": "Ultimate mountain escape" },
-          { "label": "4 Guests Max", "description": "Exclusive experience" }
-        ],
-        "details": [
-          "Insulated tent platform",
-          "360-degree mountain views",
-          "Summit hiking trails",
-          "Wildlife photography spots",
-          "Premium gear included",
-          "Guided options available"
+          "Consumption and feasibility study",
+          "Custom installation design",
+          "Grant applications and legalisation",
+          "Installation and commissioning",
+          "Real-time production monitoring",
+          "Annual preventive maintenance"
         ]
       }
     }
   },
   "experience": {
-    "eyebrow": "The Experience",
-    "title": "Simplicity Meets Comfort",
-    "subtitle": "Embrace simplicity without sacrificing comfort",
+    "eyebrow": "WHY PALMER",
+    "title": "Technology that makes sense",
+    "subtitle": "A local partner in Mallorca to take your technology projects to the next level.",
     "features": [
-      { "title": "100% Off-Grid", "description": "Completely sustainable living with solar power and composting systems" },
-      { "title": "Digital Detox", "description": "No wifi, no signal - just pure connection with nature and yourself" },
-      { "title": "Natural Water", "description": "Fresh spring water and eco-friendly facilities for your comfort" },
-      { "title": "Scenic Views", "description": "Wake up to breathtaking sunrises in untouched wilderness" }
+      { "title": "Local in Mallorca", "description": "A local team with fast response across the whole island and Balearics" },
+      { "title": "End-to-end service", "description": "From design to install and maintenance, one single point of contact" },
+      { "title": "Guaranteed quality", "description": "Leading brands, certified installers and warranty on every job" },
+      { "title": "Constant innovation", "description": "We keep learning the most advanced technologies in the sector" }
     ]
   },
   "footer": {
-    "tagline": "Creating meaningful connections with nature through sustainable off-grid experiences.",
+    "tagline": "PALMER · Technology integration in Mallorca. We design, install and maintain the systems that make your life simpler.",
     "pages": "Pages",
     "home": "Home",
     "services": "SERVICES",
     "about": "ABOUT",
     "contact": "Contact",
     "ctaLink": "Contact",
-    "admin": "Admin Panel",
     "contactUs": "Contact Us",
-    "hours": "Mon - Fri: 9am - 5pm",
+    "hours": "Mon - Fri: 9am - 6pm",
     "follow": "Follow Us",
-    "rights": "© 2026 Wild Haven. All rights reserved."
+    "rights": "© 2026 PALMER. All rights reserved."
   },
   "about": {
-    "eyebrow": "About Us",
+    "eyebrow": "ABOUT US",
     "title": "Our Story",
     "story": [
-      "Wild Haven was born from a simple observation: in our hyper-connected world, true rest has become increasingly rare. We watched as screens replaced sunsets, notifications drowned out birdsong, and the constant hum of digital life left people feeling more disconnected than ever.",
-      "Founded in 2019, we set out to create spaces where people could step away from the noise and rediscover what it means to be truly present. Our retreats aren't about escaping life—they're about returning to it, in its most essential and beautiful form.",
-      "Each of our locations has been carefully selected not just for its natural beauty, but for its ability to facilitate genuine restoration. From ancient forests to pristine lakeshores, every Wild Haven retreat offers a doorway back to the rhythms that sustained humanity for millennia."
+      "PALMER was born in Mallorca with a clear idea: bring the most advanced technology to homes and businesses in the Balearic Islands with a close, professional, hassle-free service.",
+      "We are a local team of technicians and integrators passionate about technology. We combine networks, home automation, audiovisual, document management and photovoltaic energy to design integrated solutions tailored to each client.",
+      "We work with the best brands in the industry and care for every detail, from the first visit to ongoing maintenance. Our goal: technology at the service of people, not the other way around."
     ],
-    "whyEyebrow": "The Why",
-    "whyTitle": "Why Off-Grid Retreats Matter",
+    "whyEyebrow": "OUR APPROACH",
+    "whyTitle": "Why choose PALMER",
     "why": [
-      "The average person now spends over seven hours a day looking at screens. Our nervous systems, evolved over millions of years in natural environments, are under constant assault from artificial stimuli. The result? Epidemic levels of anxiety, burnout, and a pervasive sense of disconnection.",
-      "Off-grid retreats offer something profound: the opportunity to reset. When we remove ourselves from the digital matrix, remarkable things happen. Stress hormones drop. Sleep improves. Creativity returns. We begin to hear our own thoughts again.",
-      "But it's not just about what we remove—it's about what we rediscover. The crackle of a fire. The weight of silence. The slow unfurling of time when it's no longer sliced into notifications and deadlines. These aren't luxuries; they're necessities that modern life has convinced us we can live without.",
-      "At Wild Haven, we believe that reconnecting with nature isn't an escape from reality—it's a return to it. And in that return, we find not just rest, but renewal."
+      "Every project starts by listening. We analyse your real needs and how you live and work to propose truly tailored solutions.",
+      "We coordinate every technical discipline under a single project: networks, home automation, AV, document management and PV. One point of contact, zero friction between trades.",
+      "We use open platforms and consolidated standards (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365, Huawei, Victron…) so your installation is scalable and long-lasting.",
+      "We offer ongoing maintenance and remote monitoring, so we detect and solve incidents before you notice them."
     ],
-    "valuesEyebrow": "What We Stand For",
-    "valuesTitle": "Our Values",
+    "valuesEyebrow": "OUR VALUES",
+    "valuesTitle": "What we believe in",
     "values": [
-      { "title": "Sustainability", "description": "We tread lightly on the earth, ensuring our retreats enhance rather than harm the natural environment." },
-      { "title": "Connection", "description": "Fostering deep bonds between people and the natural world through meaningful wilderness experiences." },
-      { "title": "Simplicity", "description": "Stripping away modern complexity to rediscover the joy found in life's essential elements." },
-      { "title": "Authenticity", "description": "Providing genuine wilderness experiences untouched by the artificial and manufactured." },
-      { "title": "Community", "description": "Building connections between like-minded individuals who share a reverence for nature." },
-      { "title": "Mindfulness", "description": "Encouraging presence and awareness through the calming influence of natural surroundings." }
+      { "title": "Proximity", "description": "Your trusted tech team in Mallorca, always available when you need us." },
+      { "title": "Commitment", "description": "We treat every installation as our own: with dedication and responsibility." },
+      { "title": "Precision", "description": "Careful engineering, tidy cabling and clear documentation on every project." },
+      { "title": "Innovation", "description": "We research and adopt the best technologies to deliver up-to-date solutions." },
+      { "title": "Sustainability", "description": "We back energy efficiency and renewable energies." },
+      { "title": "Transparency", "description": "Clear quotes, realistic timelines and honest communication at all times." }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Get in Touch",
-    "subtitle": "Have a question or want to book a stay? We'd love to hear from you.",
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us what you need and we'll propose the best tech solution for your home or business.",
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
     "message": "Message",
-    "send": "Send Message",
+    "send": "Send message",
     "sending": "Sending...",
     "sent": "Message sent",
     "sentDesc": "We'll get back to you as soon as possible."
   },
   "locationDetail": {
-    "notFound": "Location not found",
-    "returnHome": "Return Home",
-    "back": "Back to locations",
-    "amenities": "Amenities",
-    "included": "What's Included",
-    "reviews": "Guest Reviews",
-    "guests": "Guests",
-    "guestOption": "{{n}} Guest",
-    "guestOptionPlural": "{{n}} Guests",
-    "guestOption5": "5+ Guests",
-    "dates": "Check-in & Check-out",
-    "reserve": "Reserve Now",
-    "selectDates": "Select dates",
-    "nights": "{{n}} nights",
-    "perNight": "/ night",
-    "selectPlaceholder": "Select guests",
-    "toastMissing": "Please select check-in, check-out dates and number of guests",
-    "toastSuccess": "Booking request for {{name}} submitted!"
-  },
-  "auth": {
-    "loginTitle": "Admin Login",
-    "signupTitle": "Create Account",
-    "loginSub": "Sign in to manage your properties",
-    "signupSub": "Register for admin access",
-    "email": "Email",
-    "password": "Password",
-    "wait": "Please wait...",
-    "signIn": "Sign In",
-    "createAccount": "Create Account",
-    "needAccount": "Need an account? Sign up",
-    "haveAccount": "Already have an account? Sign in",
-    "demo": "Try Demo Mode",
-    "backSite": "Back to site"
-  },
-  "admin": {
-    "backHome": "Back to Home",
-    "demoMode": "Demo Mode",
-    "signOut": "Sign Out",
-    "title": "Admin Dashboard",
-    "subtitle": "Manage your property bookings and monitor performance",
-    "total": "Total Bookings",
-    "upcoming": "Upcoming",
-    "pending": "Pending",
-    "revenue": "Est. Revenue",
-    "all": "All Locations",
-    "guest": "Guest",
-    "location": "Location",
-    "datesCol": "Dates",
-    "guestsCol": "Guests",
-    "statusCol": "Status",
-    "contactCol": "Contact",
-    "nights": "{{n}} nights",
-    "empty": "No bookings found for this location",
-    "loading": "Loading..."
+    "notFound": "Service not found",
+    "returnHome": "Return home",
+    "back": "Back to services",
+    "amenities": "What's included",
+    "included": "How we work",
+    "ctaCopy": "Interested in this service? Get in touch and we'll study your case with no commitment.",
+    "contactCta": "Contact us"
   },
   "notFound": {
     "title": "404",
@@ -283,7 +209,7 @@
     "link": "Return to Home"
   },
   "meta": {
-    "title": "Wild Haven - Off-Grid Camping Escapes",
-    "description": "Sustainable off-grid retreats in nature."
+    "title": "PALMER - Technology Integration in Mallorca",
+    "description": "Networks, home automation, AV, document management and solar PV in the Balearic Islands."
   }
 }

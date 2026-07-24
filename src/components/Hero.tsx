@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, TreePine } from "lucide-react";
+import { ArrowRight, Cpu } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import heroImage from "@/assets/hero-camping.jpg";
 import forestImage from "@/assets/spot-forest.jpg";
@@ -18,6 +19,7 @@ const SLIDE_DURATION = 5000;
 
 const Hero = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -75,7 +77,7 @@ const Hero = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="mb-4"
         >
-          <TreePine className="w-6 h-6 text-white stroke-[1.5]" />
+          <Cpu className="w-6 h-6 text-white stroke-[1.5]" />
         </motion.div>
 
         {/* Headline */}
@@ -94,7 +96,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          onClick={() => document.querySelector('footer')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => navigate('/contact')}
           className="mt-6 flex items-center gap-3 bg-white text-foreground px-6 py-3 rounded-full text-sm tracking-wide hover:bg-white/90 transition-colors"
         >
           {t("hero.cta")}
