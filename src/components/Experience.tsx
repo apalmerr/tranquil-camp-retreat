@@ -3,12 +3,16 @@ import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { MapPin, ShieldCheck, Wrench, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import mediaMallorca from "@/assets/service-fotovoltaica.jpg";
+import mediaServicio from "@/assets/service-redes.jpg";
+import mediaCalidad from "@/assets/service-audiovisuales.jpg";
+import mediaInnovacion from "@/assets/service-domotica.jpg";
 
 const featureConfig = [
-  { icon: MapPin, videoUrl: "https://videos.pexels.com/video-files/4280450/4280450-hd_1920_1080_30fps.mp4" },
-  { icon: Wrench, videoUrl: "https://videos.pexels.com/video-files/4460100/4460100-hd_1920_1080_30fps.mp4" },
-  { icon: ShieldCheck, videoUrl: "https://videos.pexels.com/video-files/5487781/5487781-hd_1920_1080_30fps.mp4" },
-  { icon: Sparkles, videoUrl: "https://videos.pexels.com/video-files/4460098/4460098-hd_1920_1080_30fps.mp4" },
+  { icon: MapPin, media: mediaMallorca },
+  { icon: Wrench, media: mediaServicio },
+  { icon: ShieldCheck, media: mediaCalidad },
+  { icon: Sparkles, media: mediaInnovacion },
 ];
 
 const Experience = () => {
@@ -54,14 +58,12 @@ const Experience = () => {
                 onHoverEnd={() => setHoveredIndex(null)}
                 className="relative overflow-hidden bg-white/60 backdrop-blur-md border border-white/80 rounded-lg p-6 group hover:bg-black/50 hover:shadow-xl hover:shadow-primary/5 cursor-pointer"
               >
-                {/* Video Background */}
-                <video
-                  src={feature.videoUrl}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-30 transition-opacity duration-500 z-0"
+                {/* Image Background */}
+                <img
+                  src={feature.media}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 transition-opacity duration-500 z-0"
                 />
                 
                 {/* Content */}
