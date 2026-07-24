@@ -206,6 +206,12 @@
     "notFound": "Article not found",
     "by": "By"
   },
+  "brands": {
+    "eyebrow": "WHO WE WORK WITH",
+    "title": "Our brands",
+    "subtitle": "We only integrate industry-leading brands we trust. Discover why we chose each one.",
+    "readAbout": "Read why we work with {{name}}"
+  },
   "locationDetail": {
     "notFound": "Service not found",
     "returnHome": "Return home",

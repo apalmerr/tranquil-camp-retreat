@@ -206,6 +206,12 @@
     "notFound": "Artikel nicht gefunden",
     "by": "Von"
   },
+  "brands": {
+    "eyebrow": "MIT WEM WIR ARBEITEN",
+    "title": "Unsere Marken",
+    "subtitle": "Wir integrieren nur führende Marken, denen wir vertrauen. Erfahren Sie, warum wir jede einzelne gewählt haben.",
+    "readAbout": "Warum wir mit {{name}} arbeiten"
+  },
   "locationDetail": {
     "notFound": "Leistung nicht gefunden",
     "returnHome": "Zur Startseite",
