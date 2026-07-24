@@ -83,8 +83,8 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight max-w-md text-left flex flex-col"
         >
-          <span>Disconnect</span>
-          <span>to Reconnect</span>
+          <span>Integración</span>
+          <span>Tecnológíca</span>
         </motion.h1>
 
         {/* CTA Button */}
@@ -95,7 +95,7 @@ const Hero = () => {
           onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
           className="mt-6 flex items-center gap-3 bg-white text-foreground px-6 py-3 rounded-full text-sm tracking-wide hover:bg-white/90 transition-colors"
         >
-          Book Now
+          Contactar
           <ArrowRight className="w-4 h-4" />
         </motion.button>
       </div>
