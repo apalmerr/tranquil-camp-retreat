@@ -3,25 +3,38 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
+import appleLogo from "@/assets/brands/apple.png.asset.json";
+import boseLogo from "@/assets/brands/bose.png.asset.json";
+import ciscoLogo from "@/assets/brands/cisco.png.asset.json";
+import jvcLogo from "@/assets/brands/jvc.png.asset.json";
+import knxLogo from "@/assets/brands/knx.png.asset.json";
+import linnLogo from "@/assets/brands/linn.png.asset.json";
+import microsoftLogo from "@/assets/brands/microsoft.png.asset.json";
+import samsungLogo from "@/assets/brands/samsung.png.asset.json";
+import sonosLogo from "@/assets/brands/sonos.png.asset.json";
+import ubiquitiLogo from "@/assets/brands/ubiquiti.png.asset.json";
+
 type Brand = {
   name: string;
   slug: string;
-  /** Optional custom font-family class to give each wordmark a distinctive look */
+  /** CDN URL for the brand logo image. If missing, falls back to a wordmark. */
+  logo?: string;
+  /** Optional custom font-family class used only for the wordmark fallback */
   className?: string;
 };
 
 const brands: Brand[] = [
-  { name: "LINN", slug: "linn", className: "font-serif tracking-[0.35em]" },
-  { name: "SONOS", slug: "sonos", className: "font-serif tracking-[0.3em]" },
-  { name: "CISCO", slug: "cisco", className: "font-sans tracking-[0.15em]" },
-  { name: "KNX", slug: "knx", className: "font-sans tracking-[0.2em] italic" },
-  { name: "APPLE", slug: "apple", className: "font-light tracking-[0.3em]" },
-  { name: "JVC", slug: "jvc", className: "font-black tracking-[0.1em] italic" },
-  { name: "BOSE", slug: "bose", className: "font-black tracking-[0.15em]" },
-  { name: "SAMSUNG", slug: "samsung", className: "font-semibold tracking-[0.2em]" },
+  { name: "LINN", slug: "linn", logo: linnLogo.url },
+  { name: "SONOS", slug: "sonos", logo: sonosLogo.url },
+  { name: "CISCO", slug: "cisco", logo: ciscoLogo.url },
+  { name: "KNX", slug: "knx", logo: knxLogo.url },
+  { name: "APPLE", slug: "apple", logo: appleLogo.url },
+  { name: "JVC", slug: "jvc", logo: jvcLogo.url },
+  { name: "BOSE", slug: "bose", logo: boseLogo.url },
+  { name: "SAMSUNG", slug: "samsung", logo: samsungLogo.url },
   { name: "LG", slug: "lg", className: "font-serif tracking-[0.3em]" },
-  { name: "UBIQUITI", slug: "ubiquiti", className: "font-light tracking-[0.25em]" },
-  { name: "MICROSOFT", slug: "microsoft", className: "font-sans tracking-[0.15em]" },
+  { name: "UBIQUITI", slug: "ubiquiti", logo: ubiquitiLogo.url },
+  { name: "MICROSOFT", slug: "microsoft", logo: microsoftLogo.url },
   { name: "SIGENERGY", slug: "sigenergy", className: "font-semibold tracking-[0.2em]" },
 ];
 
@@ -63,11 +76,20 @@ const Brands = () => {
                 aria-label={t("brands.readAbout", { name: brand.name }) as string}
                 className="group flex items-center justify-center h-28 lg:h-32 bg-background hover:bg-accent/40 transition-colors"
               >
-                <span
-                  className={`text-lg md:text-xl text-muted-foreground/80 group-hover:text-primary transition-colors ${brand.className ?? ""}`}
-                >
-                  {brand.name}
-                </span>
+                {brand.logo ? (
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    loading="lazy"
+                    className="max-h-10 md:max-h-12 w-auto object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  />
+                ) : (
+                  <span
+                    className={`text-lg md:text-xl text-muted-foreground/80 group-hover:text-primary transition-colors ${brand.className ?? ""}`}
+                  >
+                    {brand.name}
+                  </span>
+                )}
               </Link>
             </motion.div>
           ))}
