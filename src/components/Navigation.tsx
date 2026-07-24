@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Tent } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import palmerLogo from "@/assets/palmer-logo.png.asset.json";
 interface NavigationProps {
   variant?: "default" | "dark";
 }
@@ -58,10 +59,15 @@ const Navigation = ({
             <motion.div whileHover={{
             scale: 1.02
           }} className="flex items-center gap-2 cursor-pointer">
-              <Tent className={`h-4 w-4 ${isMobileMenuOpen || isDark || !isScrolled ? "text-white" : "text-primary"}`} />
-              <span className={`text-sm font-normal tracking-wide ${isMobileMenuOpen || isDark || !isScrolled ? "text-white" : "text-foreground"}`}>
-                {t("nav.brand")}
-              </span>
+              <img
+                src={palmerLogo.url}
+                alt={t("nav.brand") as string}
+                className={`h-6 md:h-7 w-auto object-contain transition-all duration-300 ${
+                  isMobileMenuOpen || isDark || !isScrolled
+                    ? ""
+                    : "[filter:invert(1)_brightness(0.15)]"
+                }`}
+              />
             </motion.div>
           </Link>
 
