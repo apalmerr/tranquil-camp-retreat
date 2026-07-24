@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "services": "LEISTUNGEN",
+    "about": "ÜBER UNS",
+    "contact": "KONTAKT",
+    "cta": "KONTAKT",
+    "brand": "Wild Haven"
+  },
+  "hero": {
+    "line1": "Technologische",
+    "line2": "Integration",
+    "cta": "Kontakt",
+    "slideAria": "Zu Folie {{n}}",
+    "alts": {
+      "hero": "Autarkes Camping in der Natur",
+      "forest": "Waldcampingplatz",
+      "lake": "Rückzugsort am See",
+      "meadow": "Camping-Erlebnis auf der Wiese"
+    }
+  },
+  "locations": {
+    "eyebrow": "Unsere Standorte",
+    "title": "Ausgewählte Orte",
+    "subtitle": "Handverlesene Orte, an denen Naturschönheit auf nachhaltigen Komfort trifft",
+    "allEyebrow": "Unsere Standorte",
+    "allTitle": "Alle Orte",
+    "allSubtitle": "Entdecke alle unsere ausgewählten Camping-Standorte",
+    "perNight": "/Nacht",
+    "viewDetails": "Details ansehen",
+    "sort": {
+      "placeholder": "Sortieren nach",
+      "priceLow": "Preis: aufsteigend",
+      "priceHigh": "Preis: absteigend",
+      "rating": "Beste Bewertung"
+    },
+    "list": {
+      "forest": {
+        "name": "Waldrefugium",
+        "location": "Pazifischer Nordwesten",
+        "description": "Tauche ein in die Ruhe alter Wälder. Dieser abgeschiedene Ort bietet die perfekte Balance aus Privatsphäre und Naturschönheit, mit hoch aufragenden Kiefern, die ein kathedralenartiges Dach über deinem Camp bilden.",
+        "features": ["Privater Zeltplatz", "Feuerstelle", "Solardusche"],
+        "amenities": [
+          { "label": "Feuerstelle", "description": "Holzfeuerstelle mit Sitzbereich" },
+          { "label": "Solardusche", "description": "Umweltfreundliche Außendusche" },
+          { "label": "Kein WLAN", "description": "Vollständige digitale Auszeit" },
+          { "label": "Max. 4 Gäste", "description": "Intime Gruppengröße" }
+        ],
+        "details": [
+          "Zeltplattform mit wetterfester Abdeckung",
+          "Komposttoiletten",
+          "Zugang zu frischem Quellwasser",
+          "Möglichkeiten zur Tierbeobachtung",
+          "Wanderwege in 5 Minuten",
+          "Gesamte Campingausrüstung inklusive"
+        ]
+      },
+      "lake": {
+        "name": "Seerefugium",
+        "location": "Bergtal",
+        "description": "Wache auf mit klaren Seeblicken und Bergspiegelungen. Dieser Ort am Wasser ist perfekt für Wasserfans, mit Schwimmen, Kajak und Angeln inmitten alpiner Gipfel.",
+        "features": ["Direkt am Wasser", "Kajak inklusive", "Komposttoilette"],
+        "amenities": [
+          { "label": "Seezugang", "description": "Privates Ufer mit Steg" },
+          { "label": "Feuerring", "description": "Feuerstelle am See für Abende" },
+          { "label": "Autark", "description": "Nur solarbetriebene Anlagen" },
+          { "label": "Max. 5 Gäste", "description": "Großzügiges Setup am See" }
+        ],
+        "details": [
+          "Zelt am Wasser mit Seeblick",
+          "Kostenlose Kajaknutzung",
+          "Angelausrüstung verfügbar",
+          "Außenküche",
+          "Ganzjähriger Badezugang",
+          "Mountainbike-Trails in der Nähe"
+        ]
+      },
+      "meadow": {
+        "name": "Wiesenblick",
+        "location": "Alpenkette",
+        "description": "Erlebe freie 360-Grad-Bergblicke von diesem erhöhten Wiesencamp. Perfekt für Sternenbeobachtung, Wildblumenfotografie und alle, die Weite und frische Bergluft suchen.",
+        "features": ["Panoramablick", "Wanderwege", "Tierbeobachtung"],
+        "amenities": [
+          { "label": "Feuerstelle", "description": "Steinfeuerstelle mit Bergblick" },
+          { "label": "Wasserstation", "description": "Gefiltertes Bergquellwasser" },
+          { "label": "Abgelegen", "description": "Ultimative Ruhe" },
+          { "label": "Max. 4 Gäste", "description": "Gemütliches Camping" }
+        ],
+        "details": [
+          "Erhöhte Zeltplattform",
+          "Bergpanorama",
+          "Zertifiziertes Dark-Sky-Gebiet",
+          "Wildblumenwiese",
+          "Alpine Wanderwege",
+          "Möglichkeit zur Wildbeobachtung"
+        ]
+      },
+      "canyon": {
+        "name": "Canyon-Grat",
+        "location": "Wüsten-Südwesten",
+        "description": "Entdecke die dramatische Schönheit roter Felscanyons. Diese einzigartige Wüstenoase bietet atemberaubende Sonnenaufgänge, alte Felsformationen und eine ruhige Umgebung weit weg vom Lärm der Stadt.",
+        "features": ["Wüstenblicke", "Sternenbeobachtung", "Felsformationen"],
+        "amenities": [
+          { "label": "Feuerkreis", "description": "Traditioneller Feuerkreis mit Sitzplätzen" },
+          { "label": "Wasserdepot", "description": "Frischwasserstation" },
+          { "label": "Autark", "description": "Komplette Abkopplung" },
+          { "label": "Max. 4 Gäste", "description": "Intimes Wüstenerlebnis" }
+        ],
+        "details": [
+          "Schattige Zeltplattform",
+          "Aussichtsdeck für Sonnenuntergänge",
+          "Wüsten-Wildlife-Guides",
+          "Nachtteleskop verfügbar",
+          "Canyon-Wanderwege",
+          "Gesamte Ausrüstung inklusive"
+        ]
+      },
+      "river": {
+        "name": "Flussbiegung",
+        "location": "Küstengebirge",
+        "description": "Eingebettet an einem unberührten Fluss bietet dieser Küstenrückzug beruhigende Wassergeräusche und leichten Zugang zu Wald- und Flussabenteuern. Perfekt für eine ausgewogene Auszeit.",
+        "features": ["Flusszugang", "Angeln", "Waldwege"],
+        "amenities": [
+          { "label": "Flusszugang", "description": "Private Lage am Fluss" },
+          { "label": "Feuerstelle", "description": "Feuerstelle am Fluss" },
+          { "label": "Abgelegen", "description": "Ruhige Auszeit am Fluss" },
+          { "label": "Max. 6 Gäste", "description": "Familienfreundlich" }
+        ],
+        "details": [
+          "Zeltplattform am Fluss",
+          "Angelausrüstung inklusive",
+          "Kanuverleih verfügbar",
+          "Geführte Naturwanderungen",
+          "Vogelbeobachtung",
+          "Premium-Campingausrüstung"
+        ]
+      },
+      "summit": {
+        "name": "Gipfelspitze",
+        "location": "Rocky Mountains",
+        "description": "Für Abenteurer: Dieser Rückzugsort in großer Höhe bietet atemberaubende Bergpanoramen und klare Alpenluft. Wache über den Wolken an einem unserer exklusivsten und abgelegensten Orte auf.",
+        "features": ["Hohe Lage", "Bergblicke", "Abenteuerpfade"],
+        "amenities": [
+          { "label": "Alpine Feuerstelle", "description": "Erhöhte Feuerstelle mit Aussicht" },
+          { "label": "Quellwasser", "description": "Zugang zu Bergquelle" },
+          { "label": "Abgelegen", "description": "Ultimative Bergauszeit" },
+          { "label": "Max. 4 Gäste", "description": "Exklusives Erlebnis" }
+        ],
+        "details": [
+          "Isolierte Zeltplattform",
+          "360-Grad-Bergblicke",
+          "Wanderwege zum Gipfel",
+          "Fotospots für Wildtiere",
+          "Premium-Ausrüstung inklusive",
+          "Geführte Optionen verfügbar"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Das Erlebnis",
+    "title": "Einfachheit trifft Komfort",
+    "subtitle": "Genieße Einfachheit ohne auf Komfort zu verzichten",
+    "features": [
+      { "title": "100% autark", "description": "Vollständig nachhaltiges Leben mit Solarstrom und Kompostsystemen" },
+      { "title": "Digital Detox", "description": "Kein WLAN, kein Signal - nur pure Verbindung mit Natur und dir" },
+      { "title": "Natürliches Wasser", "description": "Frisches Quellwasser und umweltfreundliche Anlagen für deinen Komfort" },
+      { "title": "Traumhafte Ausblicke", "description": "Wache mit atemberaubenden Sonnenaufgängen in unberührter Wildnis auf" }
+    ]
+  },
+  "footer": {
+    "tagline": "Wir schaffen bedeutsame Verbindungen zur Natur durch nachhaltige autarke Erlebnisse.",
+    "pages": "Seiten",
+    "home": "Startseite",
+    "services": "LEISTUNGEN",
+    "about": "ÜBER UNS",
+    "contact": "Kontakt",
+    "ctaLink": "Kontakt",
+    "admin": "Admin-Bereich",
+    "contactUs": "Kontakt",
+    "hours": "Mo - Fr: 9 - 17 Uhr",
+    "follow": "Folge uns",
+    "rights": "© 2026 Wild Haven. Alle Rechte vorbehalten."
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Unsere Geschichte",
+    "story": [
+      "Wild Haven entstand aus einer einfachen Beobachtung: In unserer hypervernetzten Welt ist echte Erholung selten geworden. Wir sahen, wie Bildschirme Sonnenuntergänge ersetzten, Benachrichtigungen den Vogelgesang übertönten und das ständige Summen des digitalen Lebens Menschen entfremdete.",
+      "2019 gegründet, wollten wir Orte schaffen, an denen Menschen dem Lärm entfliehen und wieder wirklich präsent sein können. Unsere Retreats geht es nicht ums Fliehen, sondern ums Zurückkehren – ins Wesentliche und Schöne.",
+      "Jeder Ort wurde nicht nur nach Schönheit ausgewählt, sondern nach seiner Fähigkeit, echte Erholung zu ermöglichen. Von alten Wäldern bis zu unberührten Ufern öffnet jedes Wild-Haven-Retreat eine Tür zurück zu den Rhythmen, die die Menschheit über Jahrtausende trugen."
+    ],
+    "whyEyebrow": "Das Warum",
+    "whyTitle": "Warum autarke Retreats wichtig sind",
+    "why": [
+      "Der Durchschnittsmensch verbringt heute mehr als sieben Stunden täglich vor Bildschirmen. Unser Nervensystem, über Millionen Jahre in der Natur entwickelt, steht unter ständigem Beschuss künstlicher Reize. Das Ergebnis? Epidemische Angst, Burnout und ein anhaltendes Gefühl von Entfremdung.",
+      "Autarke Retreats bieten etwas Tiefes: die Möglichkeit zum Neustart. Wenn wir uns aus der digitalen Matrix lösen, geschieht Bemerkenswertes. Stresshormone sinken. Der Schlaf verbessert sich. Die Kreativität kehrt zurück.",
+      "Aber es geht nicht nur um das Entfernen – es geht ums Wiederentdecken. Das Knistern des Feuers. Das Gewicht der Stille. Das langsame Entfalten der Zeit. Das sind keine Luxusgüter, sondern Notwendigkeiten.",
+      "Bei Wild Haven glauben wir: Sich mit der Natur zu verbinden ist keine Flucht – es ist eine Rückkehr. Und in dieser Rückkehr finden wir nicht nur Ruhe, sondern Erneuerung."
+    ],
+    "valuesEyebrow": "Wofür wir stehen",
+    "valuesTitle": "Unsere Werte",
+    "values": [
+      { "title": "Nachhaltigkeit", "description": "Wir gehen behutsam mit der Erde um und stellen sicher, dass unsere Retreats die Natur bereichern." },
+      { "title": "Verbindung", "description": "Tiefe Bande zwischen Mensch und Natur durch bedeutungsvolle Wildniserlebnisse." },
+      { "title": "Einfachheit", "description": "Wir lassen moderne Komplexität los, um Freude am Wesentlichen wiederzuentdecken." },
+      { "title": "Authentizität", "description": "Echte Wildniserlebnisse ohne künstliche Effekte." },
+      { "title": "Gemeinschaft", "description": "Verbindungen zwischen Menschen, die die Natur ehren." },
+      { "title": "Achtsamkeit", "description": "Präsenz durch die beruhigende Wirkung der Natur." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Hast du eine Frage oder möchtest buchen? Wir freuen uns von dir zu hören.",
+    "name": "Name",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "sent": "Nachricht gesendet",
+    "sentDesc": "Wir melden uns baldmöglichst."
+  },
+  "locationDetail": {
+    "notFound": "Ort nicht gefunden",
+    "returnHome": "Zur Startseite",
+    "back": "Zurück zu den Orten",
+    "amenities": "Ausstattung",
+    "included": "Inbegriffen",
+    "reviews": "Gästebewertungen",
+    "guests": "Gäste",
+    "guestOption": "{{n}} Gast",
+    "guestOptionPlural": "{{n}} Gäste",
+    "guestOption5": "5+ Gäste",
+    "dates": "Check-in & Check-out",
+    "reserve": "Jetzt reservieren",
+    "selectDates": "Daten wählen",
+    "nights": "{{n}} Nächte",
+    "perNight": "/ Nacht",
+    "selectPlaceholder": "Gäste wählen",
+    "toastMissing": "Bitte Check-in, Check-out und Gästezahl wählen",
+    "toastSuccess": "Buchungsanfrage für {{name}} gesendet!"
+  },
+  "auth": {
+    "loginTitle": "Admin-Login",
+    "signupTitle": "Konto erstellen",
+    "loginSub": "Melde dich an, um deine Objekte zu verwalten",
+    "signupSub": "Registriere dich für Admin-Zugang",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "wait": "Bitte warten...",
+    "signIn": "Anmelden",
+    "createAccount": "Konto erstellen",
+    "needAccount": "Kein Konto? Registrieren",
+    "haveAccount": "Schon ein Konto? Anmelden",
+    "demo": "Demo-Modus testen",
+    "backSite": "Zurück zur Seite"
+  },
+  "admin": {
+    "backHome": "Zur Startseite",
+    "demoMode": "Demo-Modus",
+    "signOut": "Abmelden",
+    "title": "Admin-Dashboard",
+    "subtitle": "Verwalte Buchungen und überwache die Leistung",
+    "total": "Buchungen gesamt",
+    "upcoming": "Anstehend",
+    "pending": "Ausstehend",
+    "revenue": "Gesch. Umsatz",
+    "all": "Alle Orte",
+    "guest": "Gast",
+    "location": "Ort",
+    "datesCol": "Daten",
+    "guestsCol": "Gäste",
+    "statusCol": "Status",
+    "contactCol": "Kontakt",
+    "nights": "{{n}} Nächte",
+    "empty": "Keine Buchungen für diesen Ort",
+    "loading": "Lädt..."
+  },
+  "notFound": {
+    "title": "404",
+    "sub": "Seite nicht gefunden",
+    "link": "Zurück zur Startseite"
+  },
+  "meta": {
+    "title": "Wild Haven - Autarke Camping-Auszeiten",
+    "description": "Nachhaltige autarke Retreats in der Natur."
+  }
+}

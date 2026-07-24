@@ -10,8 +10,10 @@ import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText } from "lucide-react";
 import bannerImage from "@/assets/detail-meadow-1.jpg";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -39,8 +41,8 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: "Message sent",
-      description: "We'll get back to you as soon as possible.",
+      title: t("contact.sent") as string,
+      description: t("contact.sentDesc") as string,
     });
 
     setFormData({ name: "", email: "", subject: "", message: "" });
@@ -74,13 +76,13 @@ const Contact = () => {
         >
           <div className="text-center mb-16">
             <span className="text-[11px] uppercase tracking-wider text-muted-foreground mb-4 block">
-              Contact
+              {t("contact.eyebrow")}
             </span>
             <h1 className="text-2xl md:text-3xl font-light tracking-tight text-foreground mb-4">
-              Get in Touch
+              {t("contact.title")}
             </h1>
             <p className="text-sm text-muted-foreground font-light">
-              Have a question or want to book a stay? We'd love to hear from you.
+              {t("contact.subtitle")}
             </p>
           </div>
 
@@ -89,7 +91,7 @@ const Contact = () => {
               <div>
                 <Label htmlFor="name" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <User className="h-3 w-3" />
-                  Name
+                  {t("contact.name")}
                 </Label>
                 <Input
                   id="name"
@@ -105,7 +107,7 @@ const Contact = () => {
               <div>
                 <Label htmlFor="email" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <Mail className="h-3 w-3" />
-                  Email
+                  {t("contact.email")}
                 </Label>
                 <Input
                   id="email"
@@ -122,7 +124,7 @@ const Contact = () => {
               <div>
                 <Label htmlFor="subject" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <MessageSquare className="h-3 w-3" />
-                  Subject
+                  {t("contact.subject")}
                 </Label>
                 <Input
                   id="subject"
@@ -138,7 +140,7 @@ const Contact = () => {
               <div>
                 <Label htmlFor="message" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <FileText className="h-3 w-3" />
-                  Message
+                  {t("contact.message")}
                 </Label>
                 <Textarea
                   id="message"
@@ -157,7 +159,7 @@ const Contact = () => {
                 disabled={isSubmitting}
                 className="w-full rounded-md bg-primary text-primary-foreground hover:bg-primary/90 text-[11px] uppercase tracking-wider font-normal"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? t("contact.sending") : t("contact.send")}
               </Button>
             </form>
           </Card>

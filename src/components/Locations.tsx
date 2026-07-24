@@ -7,8 +7,10 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { getFeaturedLocations } from "@/data/locations";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useTranslation } from "react-i18next";
 
 const Locations = () => {
+  const { t } = useTranslation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
   const isMobile = useIsMobile();
@@ -22,39 +24,44 @@ const Locations = () => {
     return { rotate: baseRotation[index], x: baseX[index] };
   };
 
-  const renderCard = (location: ReturnType<typeof getFeaturedLocations>[number]) => (
+  const renderCard = (location: ReturnType<typeof getFeaturedLocations>[number]) => {
+    const name = t(`locations.list.${location.id}.name`) as string;
+    const place = t(`locations.list.${location.id}.location`) as string;
+    const features = t(`locations.list.${location.id}.features`, { returnObjects: true }) as string[];
+    return (
     <Link to={`/location/${location.id}`} className="block">
       <div className="relative h-48 overflow-hidden">
-        <img src={location.image} alt={location.name} className="w-full h-full object-cover" />
+        <img src={location.image} alt={name} className="w-full h-full object-cover" />
         <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm px-2 py-1 rounded-md flex items-center gap-1">
           <Star className="h-3 w-3 fill-primary text-primary" />
           <span className="font-light text-xs">{location.rating}</span>
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-base font-normal mb-1 text-card-foreground tracking-tight">{location.name}</h3>
+        <h3 className="text-base font-normal mb-1 text-card-foreground tracking-tight">{name}</h3>
         <div className="flex items-center gap-1 text-muted-foreground mb-4 text-xs font-light">
           <MapPin className="h-3 w-3" />
-          <span>{location.location}</span>
+          <span>{place}</span>
         </div>
         <div className="flex flex-wrap gap-1.5 mb-5">
-          {location.features.map((feature) => (
+          {features.map((feature) => (
             <span key={feature} className="text-[10px] uppercase tracking-wide px-2 py-1 bg-accent text-accent-foreground rounded-sm font-light">{feature}</span>
           ))}
         </div>
         <div className="flex items-center justify-between">
           <div>
             <span className="text-xl font-light text-foreground">${location.price}</span>
-            <span className="text-muted-foreground text-xs font-light">/night</span>
+            <span className="text-muted-foreground text-xs font-light">{t("locations.perNight")}</span>
           </div>
           <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80 text-xs font-light">
-            View Details
+            {t("locations.viewDetails")}
             <ArrowRight className="ml-1 h-3 w-3" />
           </Button>
         </div>
       </div>
     </Link>
-  );
+    );
+  };
 
   return (
     <section id="locations" className="py-32 lg:py-40 bg-background" ref={ref}>
@@ -66,13 +73,13 @@ const Locations = () => {
           className="text-center mb-16"
         >
           <span className="text-[11px] uppercase tracking-wider text-muted-foreground mb-4 block">
-            Our Locations
+            {t("locations.eyebrow")}
           </span>
           <h2 className="text-2xl md:text-3xl font-light mb-4 text-foreground tracking-tight">
-            Featured Spots
+            {t("locations.title")}
           </h2>
           <p className="text-sm text-muted-foreground max-w-md mx-auto font-light">
-            Handpicked spots where nature's beauty meets sustainable comfort
+            {t("locations.subtitle")}
           </p>
         </motion.div>
 
