@@ -4,7 +4,7 @@
     "about": "QUIENES SOMOS",
     "contact": "CONTACTO",
     "cta": "CONTACTO",
-    "brand": "Wild Haven"
+    "brand": "PALMER"
   },
   "hero": {
     "line1": "Integración",
@@ -12,206 +12,179 @@
     "cta": "Contactar con nosotros",
     "slideAria": "Ir a la diapositiva {{n}}",
     "alts": {
-      "hero": "Camping fuera de la red en plena naturaleza",
-      "forest": "Zona de acampada en el bosque",
-      "lake": "Refugio junto al lago",
-      "meadow": "Experiencia de acampada en el prado"
+      "hero": "Integración tecnológica en Mallorca",
+      "forest": "Instalación de redes",
+      "lake": "Domótica y hogar conectado",
+      "meadow": "Energía fotovoltaica"
     }
   },
   "locations": {
     "eyebrow": "NUESTROS SERVICIOS",
     "title": "SERVICIOS DESTACADOS",
     "subtitle": "Soluciones avanzadas diseñadas para conectar, automatizar y optimizar tus espacios con la máxima fiabilidad.",
-    "allEyebrow": "Nuestras Ubicaciones",
-    "allTitle": "Todos los Lugares",
-    "allSubtitle": "Explora todas nuestras ubicaciones de acampada seleccionadas",
-    "perNight": "/noche",
-    "viewDetails": "Ver detalles",
-    "sort": {
-      "placeholder": "Ordenar por",
-      "priceLow": "Precio: menor a mayor",
-      "priceHigh": "Precio: mayor a menor",
-      "rating": "Mejor valorados"
-    },
+    "allEyebrow": "Nuestros Servicios",
+    "allTitle": "Todos los Servicios",
+    "allSubtitle": "Descubre toda la gama de servicios de integración tecnológica que ofrecemos en Mallorca.",
+    "perNight": "",
+    "viewDetails": "Ver servicio",
     "list": {
-      "forest": {
-        "name": "Refugio del Bosque",
-        "location": "Noroeste del Pacífico",
-        "description": "Sumérgete en la tranquilidad de bosques milenarios. Este rincón apartado ofrece el equilibrio perfecto entre privacidad y belleza natural, con altos pinos que crean un dosel catedralicio sobre tu campamento.",
-        "features": ["Campamento privado", "Fogata", "Ducha solar"],
+      "redes": {
+        "name": "Redes",
+        "location": "Infraestructura y conectividad",
+        "description": "Diseñamos e implantamos infraestructuras de red cableadas e inalámbricas de alto rendimiento para empresas, hogares y espacios profesionales. Redes estables, seguras y preparadas para crecer contigo.",
+        "features": ["Cableado estructurado", "WiFi profesional", "Ciberseguridad"],
         "amenities": [
-          { "label": "Fogata", "description": "Fogata de leña con zona de asientos" },
-          { "label": "Ducha solar", "description": "Ducha exterior ecológica" },
-          { "label": "Sin WiFi", "description": "Experiencia total de desconexión digital" },
-          { "label": "Máx. 4 personas", "description": "Tamaño de grupo íntimo" }
+          { "label": "WiFi profesional", "description": "Cobertura sin puntos ciegos con puntos de acceso gestionados" },
+          { "label": "Routing avanzado", "description": "Routers y switches gestionables con VLANs y QoS" },
+          { "label": "Seguridad perimetral", "description": "Firewalls, VPN y segmentación de red" },
+          { "label": "Servidores y NAS", "description": "Almacenamiento y servicios centralizados" }
         ],
         "details": [
-          "Plataforma para tienda con cubierta impermeable",
-          "Baños de compostaje",
-          "Acceso a agua de manantial",
-          "Oportunidades para observar fauna",
-          "Senderos a 5 minutos",
-          "Todo el equipo de acampada incluido"
+          "Auditoría previa de necesidades y consumo",
+          "Cableado estructurado categoría 6/6A",
+          "Instalación de puntos de acceso WiFi 6",
+          "Configuración de firewalls y VPN",
+          "Monitorización remota 24/7",
+          "Mantenimiento y soporte continuado"
         ]
       },
-      "lake": {
-        "name": "Retiro del Lago",
-        "location": "Valle de Montaña",
-        "description": "Despierta con vistas al lago cristalino y montañas reflejadas. Esta ubicación frente al agua es perfecta para amantes del agua, con natación, kayak y pesca rodeados de picos alpinos.",
-        "features": ["Frente al agua", "Kayak incluido", "Baño de compostaje"],
+      "domotica": {
+        "name": "Domótica",
+        "location": "Hogar y edificios inteligentes",
+        "description": "Convierte tu vivienda o negocio en un espacio inteligente. Controlamos iluminación, clima, persianas, riego, seguridad y multimedia desde una única interfaz, aumentando confort y eficiencia energética.",
+        "features": ["Iluminación", "Climatización", "Control por voz"],
         "amenities": [
-          { "label": "Acceso al lago", "description": "Frente al agua privado con embarcadero" },
-          { "label": "Fogata", "description": "Fogata junto al lago para veladas" },
-          { "label": "Fuera de red", "description": "Instalaciones solo con energía solar" },
-          { "label": "Máx. 5 personas", "description": "Espacio amplio junto al lago" }
+          { "label": "Escenas y automatismos", "description": "Programa ambientes con un solo toque" },
+          { "label": "Control centralizado", "description": "Todo desde app móvil, tablet o voz" },
+          { "label": "Iluminación inteligente", "description": "Regulación, color y horarios personalizados" },
+          { "label": "Integración total", "description": "KNX, Loxone, Control4, Google y Alexa" }
         ],
         "details": [
-          "Tienda frente al agua con vistas al lago",
-          "Uso gratuito del kayak",
-          "Equipo de pesca disponible",
-          "Cocina exterior equipada",
-          "Acceso a natación todo el año",
-          "Rutas de mountain bike cercanas"
+          "Estudio de necesidades y diseño personalizado",
+          "Instalación de sistema KNX, Loxone o similar",
+          "Integración con clima, persianas y riego",
+          "Control por voz con Google Home y Alexa",
+          "Escenas automáticas según horarios y presencia",
+          "Formación de usuario y soporte técnico"
         ]
       },
-      "meadow": {
-        "name": "Vista del Prado",
-        "location": "Cordillera Alpina",
-        "description": "Disfruta de vistas de 360 grados desde este campamento elevado en un prado. Perfecto para observar estrellas, fotografiar flores silvestres y quienes buscan espacios abiertos y aire puro.",
-        "features": ["Vistas panorámicas", "Rutas de senderismo", "Observación de fauna"],
+      "audiovisuales": {
+        "name": "Audiovisuales",
+        "location": "TV, sonido y home cinema",
+        "description": "Salas de cine en casa, sistemas de sonido multiroom, videowalls y señalización digital. Diseñamos experiencias audiovisuales inmersivas para hogares, restaurantes, hoteles y empresas.",
+        "features": ["Home cinema", "Sonido multiroom", "Videowall"],
         "amenities": [
-          { "label": "Fogata", "description": "Fogata de piedra con vistas a la montaña" },
-          { "label": "Estación de agua", "description": "Agua de manantial filtrada" },
-          { "label": "Remoto", "description": "Escape apacible definitivo" },
-          { "label": "Máx. 4 personas", "description": "Acampada acogedora en el prado" }
+          { "label": "Televisores 4K/8K", "description": "Instalación y calibración profesional" },
+          { "label": "Altavoces embutidos", "description": "Sonido de alta fidelidad integrado en obra" },
+          { "label": "Proyección y pantallas", "description": "Home cinema con imagen de referencia" },
+          { "label": "Sonido multiroom", "description": "Música sincronizada en todas las estancias" }
         ],
         "details": [
-          "Plataforma elevada para tienda",
-          "Vistas panorámicas de montaña",
-          "Zona de cielo oscuro certificada",
-          "Acceso al prado de flores silvestres",
-          "Senderos alpinos",
-          "Oportunidades de avistamiento de fauna"
+          "Diseño acústico de la sala",
+          "Instalación de proyectores y pantallas motorizadas",
+          "Sistemas Sonos, Denon HEOS o similares",
+          "Cableado HDMI y fibra por obra",
+          "Integración con domótica y mandos únicos",
+          "Calibración de imagen y sonido"
         ]
       },
-      "canyon": {
-        "name": "Cresta del Cañón",
-        "location": "Suroeste Desértico",
-        "description": "Descubre la belleza dramática de los cañones rocosos. Este oasis único ofrece amaneceres impresionantes, formaciones rocosas antiguas y un entorno tranquilo lejos del bullicio.",
-        "features": ["Vistas al desierto", "Observación de estrellas", "Formaciones rocosas"],
+      "gestion-documental": {
+        "name": "Gestión Documental",
+        "location": "Intranets y flujos de trabajo",
+        "description": "Digitalizamos tu empresa con intranets a medida, gestores documentales y flujos de aprobación automatizados. Toda la información de tu equipo, accesible, buscable y segura.",
+        "features": ["Intranets", "Firma digital", "Automatización"],
         "amenities": [
-          { "label": "Círculo de fuego", "description": "Círculo de fuego tradicional con asientos" },
-          { "label": "Depósito de agua", "description": "Estación de agua potable" },
-          { "label": "Fuera de red", "description": "Desconexión total" },
-          { "label": "Máx. 4 personas", "description": "Experiencia íntima en el desierto" }
+          { "label": "Intranet corporativa", "description": "Portal centralizado para tu equipo" },
+          { "label": "Repositorio documental", "description": "Búsqueda avanzada y control de versiones" },
+          { "label": "Cloud seguro", "description": "Backups automáticos y cifrado" },
+          { "label": "Gestión de usuarios", "description": "Permisos por departamentos y roles" }
         ],
         "details": [
-          "Plataforma para tienda con sombra",
-          "Terraza para ver el atardecer",
-          "Guías de fauna del desierto",
-          "Telescopio nocturno disponible",
-          "Senderos por el cañón",
-          "Equipo de acampada incluido"
+          "Análisis de procesos y flujos actuales",
+          "Implantación de SharePoint, Nextcloud u otras plataformas",
+          "Migración de documentación existente",
+          "Firma digital y validación legal",
+          "Automatización de aprobaciones",
+          "Formación de empleados y soporte"
         ]
       },
-      "river": {
-        "name": "Meandro del Río",
-        "location": "Cordillera Costera",
-        "description": "Ubicado junto a un río prístino, este refugio costero ofrece el sonido relajante del agua y fácil acceso a aventuras en el bosque y el río. Perfecto para un escape equilibrado.",
-        "features": ["Acceso al río", "Pesca", "Senderos por el bosque"],
+      "fotovoltaicas": {
+        "name": "Fotovoltaicas",
+        "location": "Energía solar y autoconsumo",
+        "description": "Instalaciones solares fotovoltaicas para hogares y empresas en Baleares. Reduce tu factura eléctrica, gana independencia energética y contribuye a un futuro más sostenible.",
+        "features": ["Autoconsumo", "Baterías", "Monitorización"],
         "amenities": [
-          { "label": "Acceso al río", "description": "Ubicación privada frente al río" },
-          { "label": "Fogata", "description": "Fogata junto al río" },
-          { "label": "Remoto", "description": "Escape apacible junto al río" },
-          { "label": "Máx. 6 personas", "description": "Tamaño familiar" }
+          { "label": "Paneles solares", "description": "Módulos de alta eficiencia y garantía" },
+          { "label": "Inversores híbridos", "description": "Compatibles con baterías y red" },
+          { "label": "Baterías de litio", "description": "Almacena tu energía para usarla cuando la necesites" },
+          { "label": "Sostenibilidad", "description": "Reduce tu huella de carbono" }
         ],
         "details": [
-          "Plataforma para tienda junto al río",
-          "Equipo de pesca incluido",
-          "Alquiler de canoa disponible",
-          "Paseos guiados por la naturaleza",
-          "Oportunidades para observar aves",
-          "Equipo de acampada premium"
-        ]
-      },
-      "summit": {
-        "name": "Pico de la Cumbre",
-        "location": "Montañas Rocosas",
-        "description": "Para los aventureros, este refugio de gran altura ofrece panorámicas montañosas impresionantes y aire alpino puro. Despierta sobre las nubes en una de nuestras ubicaciones más exclusivas y remotas.",
-        "features": ["Gran altitud", "Vistas a la montaña", "Rutas de aventura"],
-        "amenities": [
-          { "label": "Fogata alpina", "description": "Fogata elevada con vistas" },
-          { "label": "Agua de manantial", "description": "Acceso al manantial de montaña" },
-          { "label": "Remoto", "description": "Escape montañoso definitivo" },
-          { "label": "Máx. 4 personas", "description": "Experiencia exclusiva" }
-        ],
-        "details": [
-          "Plataforma para tienda con aislamiento",
-          "Vistas de montaña de 360 grados",
-          "Rutas de senderismo hasta la cumbre",
-          "Puntos para fotografía de fauna",
-          "Equipo premium incluido",
-          "Opciones guiadas disponibles"
+          "Estudio de consumo y viabilidad",
+          "Diseño de instalación a medida",
+          "Tramitación de subvenciones y legalización",
+          "Instalación y puesta en marcha",
+          "Monitorización de producción en tiempo real",
+          "Mantenimiento preventivo anual"
         ]
       }
     }
   },
   "experience": {
-    "eyebrow": "La Experiencia",
-    "title": "Simplicidad y Confort",
-    "subtitle": "Abraza la simplicidad sin renunciar al confort",
+    "eyebrow": "POR QUÉ PALMER",
+    "title": "Tecnología con sentido",
+    "subtitle": "Un socio local en Mallorca para llevar tus proyectos tecnológicos al siguiente nivel.",
     "features": [
-      { "title": "100% Fuera de Red", "description": "Vida completamente sostenible con energía solar y sistemas de compostaje" },
-      { "title": "Desintoxicación Digital", "description": "Sin WiFi, sin señal - solo conexión pura con la naturaleza y contigo" },
-      { "title": "Agua Natural", "description": "Agua fresca de manantial e instalaciones ecológicas para tu confort" },
-      { "title": "Vistas Escénicas", "description": "Despierta con amaneceres impresionantes en naturaleza intacta" }
+      { "title": "Cercanía en Mallorca", "description": "Equipo local con respuesta rápida en toda la isla y Baleares" },
+      { "title": "Servicio integral", "description": "Del diseño a la instalación y el mantenimiento, un único interlocutor" },
+      { "title": "Calidad garantizada", "description": "Marcas líderes, instaladores certificados y garantía en todos los trabajos" },
+      { "title": "Innovación constante", "description": "Nos formamos cada día en las tecnologías más avanzadas del sector" }
     ]
   },
   "footer": {
-    "tagline": "Creando conexiones significativas con la naturaleza a través de experiencias sostenibles fuera de la red.",
+    "tagline": "PALMER · Integración tecnológica en Mallorca. Diseñamos, instalamos y mantenemos los sistemas que hacen tu vida más simple.",
     "pages": "Páginas",
     "home": "Inicio",
     "services": "SERVICIOS",
     "about": "QUIENES SOMOS",
     "contact": "Contacto",
     "ctaLink": "Contactar",
-    "admin": "Panel de administración",
     "contactUs": "Contáctanos",
-    "hours": "Lun - Vie: 9h - 17h",
+    "hours": "Lun - Vie: 9h - 18h",
     "follow": "Síguenos",
-    "rights": "© 2026 Wild Haven. Todos los derechos reservados."
+    "rights": "© 2026 PALMER. Todos los derechos reservados."
   },
   "about": {
-    "eyebrow": "Sobre Nosotros",
+    "eyebrow": "QUIENES SOMOS",
     "title": "Nuestra Historia",
     "story": [
-      "Wild Haven nació de una simple observación: en nuestro mundo hiperconectado, el descanso verdadero es cada vez más escaso. Vimos cómo las pantallas reemplazaban los atardeceres, las notificaciones ahogaban el canto de los pájaros y el zumbido constante de la vida digital dejaba a las personas más desconectadas que nunca.",
-      "Fundada en 2019, nos propusimos crear espacios donde las personas pudieran alejarse del ruido y redescubrir lo que significa estar verdaderamente presentes. Nuestros retiros no tratan de escapar de la vida, sino de volver a ella en su forma más esencial y bella.",
-      "Cada una de nuestras ubicaciones ha sido cuidadosamente seleccionada no solo por su belleza natural, sino por su capacidad de facilitar una restauración genuina. Desde bosques milenarios hasta orillas prístinas, cada retiro de Wild Haven es una puerta de regreso a los ritmos que sostuvieron a la humanidad durante milenios."
+      "PALMER nació en Mallorca con una idea clara: acercar la tecnología más avanzada a hogares y empresas de las Islas Baleares, con un servicio cercano, profesional y sin complicaciones.",
+      "Somos un equipo local de técnicos e integradores apasionados por la tecnología. Combinamos redes, domótica, audiovisuales, gestión documental y energía fotovoltaica para diseñar soluciones integrales adaptadas a cada cliente.",
+      "Trabajamos con las mejores marcas del sector y cuidamos cada detalle, desde la primera visita hasta el mantenimiento posterior. Nuestro objetivo: que la tecnología esté al servicio de las personas y no al revés."
     ],
-    "whyEyebrow": "El Porqué",
-    "whyTitle": "Por qué importan los retiros fuera de la red",
+    "whyEyebrow": "NUESTRO ENFOQUE",
+    "whyTitle": "Por qué elegir PALMER",
     "why": [
-      "La persona promedio pasa hoy más de siete horas al día mirando pantallas. Nuestro sistema nervioso, evolucionado durante millones de años en entornos naturales, está bajo un asalto constante de estímulos artificiales. ¿El resultado? Niveles epidémicos de ansiedad, agotamiento y una sensación penetrante de desconexión.",
-      "Los retiros fuera de la red ofrecen algo profundo: la oportunidad de reiniciarse. Cuando nos alejamos de la matriz digital, ocurren cosas notables. Las hormonas del estrés bajan. Mejora el sueño. Vuelve la creatividad. Empezamos a oír nuestros propios pensamientos de nuevo.",
-      "Pero no se trata solo de lo que quitamos, sino de lo que redescubrimos. El crepitar del fuego. El peso del silencio. El desplegarse lento del tiempo cuando ya no se corta en notificaciones y plazos. No son lujos; son necesidades que la vida moderna nos ha convencido de que podemos vivir sin ellas.",
-      "En Wild Haven creemos que reconectar con la naturaleza no es un escape de la realidad, es un regreso a ella. Y en ese regreso encontramos no solo descanso, sino renovación."
+      "Cada proyecto empieza escuchando. Analizamos tus necesidades reales, tu forma de trabajar y de vivir para proponer soluciones a la medida.",
+      "Coordinamos todas las disciplinas técnicas bajo un único proyecto: redes, domótica, audiovisuales, gestión documental y fotovoltaica. Un único interlocutor, cero desajustes entre gremios.",
+      "Utilizamos plataformas abiertas y estándares consolidados (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365, Huawei, Victron…) para garantizar que tu instalación sea escalable y duradera.",
+      "Ofrecemos mantenimiento continuo y monitorización remota, así detectamos y resolvemos incidencias antes de que las notes."
     ],
-    "valuesEyebrow": "En qué creemos",
-    "valuesTitle": "Nuestros Valores",
+    "valuesEyebrow": "NUESTROS VALORES",
+    "valuesTitle": "En qué creemos",
     "values": [
-      { "title": "Sostenibilidad", "description": "Pisamos ligero la tierra, asegurándonos de que nuestros retiros mejoren en lugar de dañar el entorno natural." },
-      { "title": "Conexión", "description": "Fomentamos vínculos profundos entre las personas y el mundo natural mediante experiencias significativas en la naturaleza." },
-      { "title": "Simplicidad", "description": "Eliminamos la complejidad moderna para redescubrir la alegría de los elementos esenciales de la vida." },
-      { "title": "Autenticidad", "description": "Ofrecemos experiencias genuinas en la naturaleza, sin artificios ni imitaciones." },
-      { "title": "Comunidad", "description": "Construimos vínculos entre personas afines que comparten reverencia por la naturaleza." },
-      { "title": "Consciencia", "description": "Fomentamos la presencia y la atención plena a través de la influencia calmante del entorno natural." }
+      { "title": "Cercanía", "description": "Somos tu equipo técnico de confianza en Mallorca, siempre disponibles cuando nos necesitas." },
+      { "title": "Compromiso", "description": "Trabajamos como si cada instalación fuera nuestra: con dedicación y responsabilidad." },
+      { "title": "Precisión", "description": "Ingeniería cuidada, cableado ordenado y documentación clara en cada proyecto." },
+      { "title": "Innovación", "description": "Investigamos y adoptamos las mejores tecnologías para ofrecer soluciones actuales." },
+      { "title": "Sostenibilidad", "description": "Apostamos por la eficiencia energética y las energías renovables." },
+      { "title": "Transparencia", "description": "Presupuestos claros, plazos realistas y comunicación honesta en todo momento." }
     ]
   },
   "contact": {
     "eyebrow": "Contacto",
-    "title": "Ponte en contacto",
-    "subtitle": "¿Tienes una pregunta o quieres reservar una estancia? Nos encantaría saber de ti.",
+    "title": "Hablemos de tu proyecto",
+    "subtitle": "Cuéntanos qué necesitas y te propondremos la mejor solución tecnológica para tu hogar o empresa.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "subject": "Asunto",
@@ -222,60 +195,13 @@
     "sentDesc": "Te responderemos lo antes posible."
   },
   "locationDetail": {
-    "notFound": "Ubicación no encontrada",
+    "notFound": "Servicio no encontrado",
     "returnHome": "Volver al inicio",
-    "back": "Volver a ubicaciones",
-    "amenities": "Servicios",
-    "included": "Qué se incluye",
-    "reviews": "Reseñas de huéspedes",
-    "guests": "Huéspedes",
-    "guestOption": "{{n}} huésped",
-    "guestOptionPlural": "{{n}} huéspedes",
-    "guestOption5": "5+ huéspedes",
-    "dates": "Entrada y salida",
-    "reserve": "Reservar ahora",
-    "selectDates": "Selecciona fechas",
-    "nights": "{{n}} noches",
-    "perNight": "/ noche",
-    "selectPlaceholder": "Seleccionar huéspedes",
-    "toastMissing": "Selecciona entrada, salida y número de huéspedes",
-    "toastSuccess": "¡Solicitud de reserva para {{name}} enviada!"
-  },
-  "auth": {
-    "loginTitle": "Acceso administrador",
-    "signupTitle": "Crear cuenta",
-    "loginSub": "Inicia sesión para gestionar tus propiedades",
-    "signupSub": "Regístrate para acceso de administrador",
-    "email": "Correo electrónico",
-    "password": "Contraseña",
-    "wait": "Un momento...",
-    "signIn": "Iniciar sesión",
-    "createAccount": "Crear cuenta",
-    "needAccount": "¿No tienes cuenta? Regístrate",
-    "haveAccount": "¿Ya tienes cuenta? Inicia sesión",
-    "demo": "Probar modo demo",
-    "backSite": "Volver al sitio"
-  },
-  "admin": {
-    "backHome": "Volver al inicio",
-    "demoMode": "Modo demo",
-    "signOut": "Cerrar sesión",
-    "title": "Panel de administración",
-    "subtitle": "Gestiona las reservas y monitoriza el rendimiento",
-    "total": "Reservas totales",
-    "upcoming": "Próximas",
-    "pending": "Pendientes",
-    "revenue": "Ingresos est.",
-    "all": "Todas las ubicaciones",
-    "guest": "Huésped",
-    "location": "Ubicación",
-    "datesCol": "Fechas",
-    "guestsCol": "Huéspedes",
-    "statusCol": "Estado",
-    "contactCol": "Contacto",
-    "nights": "{{n}} noches",
-    "empty": "No hay reservas para esta ubicación",
-    "loading": "Cargando..."
+    "back": "Volver a servicios",
+    "amenities": "Qué incluye",
+    "included": "Cómo trabajamos",
+    "ctaCopy": "¿Interesado en este servicio? Escríbenos y estudiaremos tu caso sin compromiso.",
+    "contactCta": "Contactar con nosotros"
   },
   "notFound": {
     "title": "404",
@@ -283,7 +209,7 @@
     "link": "Volver al inicio"
   },
   "meta": {
-    "title": "Wild Haven - Escapadas de acampada fuera de la red",
-    "description": "Retiros sostenibles fuera de la red en la naturaleza."
+    "title": "PALMER - Integración Tecnológica en Mallorca",
+    "description": "Redes, domótica, audiovisuales, gestión documental y fotovoltaicas en Baleares."
   }
 }

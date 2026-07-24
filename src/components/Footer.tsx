@@ -1,6 +1,7 @@
-import { Tent, Instagram, Facebook, Twitter, Mail } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import palmerLogo from "@/assets/palmer-logo.png.asset.json";
 const Footer = () => {
   const { t } = useTranslation();
   return <footer className="bg-foreground text-background py-20 lg:py-24">
@@ -9,8 +10,7 @@ const Footer = () => {
           {/* Brand Row */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Tent className="h-4 w-4" />
-              <span className="text-sm font-normal tracking-wide">{t("nav.brand")}</span>
+              <img src={palmerLogo.url} alt={t("nav.brand") as string} className="h-6 w-auto object-contain" />
             </div>
             <p className="text-background/70 text-xs font-light leading-relaxed max-w-xs">
               {t("footer.tagline")}
@@ -41,11 +41,6 @@ const Footer = () => {
                   {t("footer.contact")}
                 </Link>
               </li>
-              <li>
-                <Link to="/admin" className="text-background/70 hover:text-background smooth-hover text-xs font-light">
-                  {t("footer.admin")}
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -53,13 +48,14 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-medium mb-4">{t("footer.contactUs")}</h4>
             <div className="flex flex-col gap-2 mb-8">
-              <a href="mailto:hello@wildhaven.com" className="text-background/70 hover:text-background smooth-hover text-xs font-light flex items-center gap-2">
+              <a href="mailto:info@palmer.es" className="text-background/70 hover:text-background smooth-hover text-xs font-light flex items-center gap-2">
                 <Mail className="h-3 w-3" />
-                hello@wildhaven.com
+                info@palmer.es
               </a>
               <p className="text-background/70 text-xs font-light">
                 {t("footer.hours")}
               </p>
+              <p className="text-background/70 text-xs font-light">Mallorca, Baleares</p>
             </div>
 
             <h4 className="text-sm font-medium mb-4">{t("footer.follow")}</h4>
@@ -71,7 +67,7 @@ const Footer = () => {
                 <Facebook className="h-4 w-4" />
               </a>
               <a href="#" className="text-background/70 hover:text-background smooth-hover">
-                <Twitter className="h-4 w-4" />
+                <Linkedin className="h-4 w-4" />
               </a>
             </div>
           </div>

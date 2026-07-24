@@ -1,18 +1,11 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { ArrowLeft, MapPin, Star, Calendar, ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { DateRange } from "react-day-picker";
-import { format } from "date-fns";
+import { ArrowLeft, ChevronLeft, ChevronRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-import { Calendar as CalendarComponent } from "@/components/ui/calendar";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { toast } from "sonner";
 import { getLocationById } from "@/data/locations";
 import { useTranslation } from "react-i18next";
 
@@ -20,18 +13,13 @@ const LocationDetail = () => {
   const { t } = useTranslation();
   const { id } = useParams();
   const navigate = useNavigate();
-  const location = id ? getLocationById(id) : null;
-  const [dateRange, setDateRange] = useState<DateRange | undefined>({
-    from: new Date(),
-    to: undefined
-  });
-  const [guests, setGuests] = useState("");
+  const service = id ? getLocationById(id) : null;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
-  if (!location) {
+  if (!service) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
@@ -44,42 +32,22 @@ const LocationDetail = () => {
     );
   }
 
-  // Combine main image with detail images for the gallery
-  const allImages = [location.image, ...location.images];
-  const name = t(`locations.list.${location.id}.name`) as string;
-  const place = t(`locations.list.${location.id}.location`) as string;
-  const description = t(`locations.list.${location.id}.description`) as string;
-  const amenityTexts = t(`locations.list.${location.id}.amenities`, { returnObjects: true }) as { label: string; description: string }[];
-  const detailTexts = t(`locations.list.${location.id}.details`, { returnObjects: true }) as string[];
-  const amenities = amenityTexts.map((a, i) => ({ ...a, icon: location.amenityIcons[i] }));
+  const allImages = [service.image, ...service.images];
+  const name = t(`locations.list.${service.id}.name`) as string;
+  const tagline = t(`locations.list.${service.id}.location`) as string;
+  const description = t(`locations.list.${service.id}.description`) as string;
+  const amenityTexts = t(`locations.list.${service.id}.amenities`, { returnObjects: true }) as { label: string; description: string }[];
+  const detailTexts = t(`locations.list.${service.id}.details`, { returnObjects: true }) as string[];
+  const amenities = amenityTexts.map((a, i) => ({ ...a, icon: service.amenityIcons[i] }));
+  const Icon = service.icon;
 
-  const handleBooking = () => {
-    if (!dateRange?.from || !dateRange?.to || !guests) {
-      toast.error(t("locationDetail.toastMissing") as string);
-      return;
-    }
-    toast.success(t("locationDetail.toastSuccess", { name }) as string);
-  };
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
-  };
-
-  const formatDateRange = () => {
-    if (!dateRange?.from) return t("locationDetail.selectDates") as string;
-    if (!dateRange?.to) return format(dateRange.from, "MMM d, yyyy");
-    return `${format(dateRange.from, "MMM d")} - ${format(dateRange.to, "MMM d, yyyy")}`;
-  };
+  const nextImage = () => setCurrentImageIndex((p) => (p + 1) % allImages.length);
+  const prevImage = () => setCurrentImageIndex((p) => (p - 1 + allImages.length) % allImages.length);
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
-      
-      {/* Hero Image with Parallax */}
+
       <div className="relative w-full h-[50vh] overflow-hidden">
         <motion.img
           src={allImages[0]}
@@ -92,7 +60,7 @@ const LocationDetail = () => {
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>
-      
+
       <main>
         <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-12 lg:py-16 max-w-full overflow-hidden">
           <Button
@@ -105,7 +73,6 @@ const LocationDetail = () => {
             {t("locationDetail.back")}
           </Button>
 
-          {/* Title, Description, Rating */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,22 +80,13 @@ const LocationDetail = () => {
             className="mb-10"
           >
             <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
-              <MapPin className="h-3 w-3" />
-              <span className="font-light">{place}</span>
-              <div className="flex items-center gap-1 ml-4">
-                <Star className="h-3 w-3 fill-primary text-primary" />
-                <span className="font-light text-foreground">{location.rating}</span>
-              </div>
+              <Icon className="h-4 w-4 text-primary" />
+              <span className="font-light">{tagline}</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
-              {name}
-            </h1>
-            <p className="text-sm text-muted-foreground leading-relaxed font-light max-w-2xl">
-              {description}
-            </p>
+            <h1 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">{name}</h1>
+            <p className="text-sm text-muted-foreground leading-relaxed font-light max-w-2xl">{description}</p>
           </motion.div>
 
-          {/* Full Width Image Slideshow */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -147,58 +105,35 @@ const LocationDetail = () => {
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </AnimatePresence>
-            
-            {/* Navigation Arrows */}
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-            >
+            <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors">
               <ChevronLeft className="h-6 w-6" />
             </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-            >
+            <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors">
               <ChevronRight className="h-6 w-6" />
             </button>
-
-            {/* Image Indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
               {allImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentImageIndex ? 'bg-white' : 'bg-white/40'
-                  }`}
-                />
+                <button key={index} onClick={() => setCurrentImageIndex(index)} className={`w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? 'bg-white' : 'bg-white/40'}`} />
               ))}
             </div>
-
-            {/* Image Counter */}
             <div className="absolute bottom-4 right-4 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-sm text-white text-xs font-light">
               {currentImageIndex + 1} / {allImages.length}
             </div>
           </motion.div>
 
-          {/* Content Grid */}
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
             <div className="lg:col-span-2 space-y-10">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}>
                 <Card className="p-8 border border-border shadow-soft">
                   <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.amenities")}</h2>
                   <div className="grid md:grid-cols-2 gap-6">
-                    {amenities.map((amenity: any, index: number) => {
-                      const Icon = amenity.icon;
+                    {amenities.map((amenity, index) => {
+                      const A = amenity.icon;
                       return (
                         <div key={index} className="flex gap-4">
                           <div className="flex-shrink-0">
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                              <Icon className="h-4 w-4 text-primary" />
+                              <A className="h-4 w-4 text-primary" />
                             </div>
                           </div>
                           <div>
@@ -212,15 +147,11 @@ const LocationDetail = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
                 <Card className="p-8 border border-border shadow-soft">
                   <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.included")}</h2>
                   <ul className="grid md:grid-cols-2 gap-3">
-                    {detailTexts.map((detail: string, index: number) => (
+                    {detailTexts.map((detail, index) => (
                       <li key={index} className="flex items-start gap-3 text-sm text-muted-foreground font-light">
                         <span className="text-primary mt-0.5">•</span>
                         <span>{detail}</span>
@@ -229,130 +160,27 @@ const LocationDetail = () => {
                   </ul>
                 </Card>
               </motion.div>
-
-              {/* Reviews Carousel */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-              >
-                <Card className="p-8 border border-border shadow-soft">
-                  <h2 className="text-[11px] uppercase tracking-wider font-normal mb-6">{t("locationDetail.reviews")}</h2>
-                  <Carousel
-                    opts={{
-                      align: "start",
-                      loop: true,
-                    }}
-                    className="w-full"
-                  >
-                    <CarouselContent className="-ml-4">
-                      {location.reviews.map((review, index) => (
-                        <CarouselItem key={index} className="pl-4 md:basis-1/2">
-                          <div className="h-full p-6 bg-accent/30 rounded-lg">
-                            <Quote className="h-6 w-6 text-primary/30 mb-4" />
-                            <div className="flex items-center gap-1 mb-3">
-                              {[...Array(5)].map((_, i) => (
-                                <Star
-                                  key={i}
-                                  className={`h-3 w-3 ${
-                                    i < review.rating
-                                      ? "fill-primary text-primary"
-                                      : "text-muted-foreground/30"
-                                  }`}
-                                />
-                              ))}
-                            </div>
-                            <p className="text-sm text-muted-foreground font-light mb-4 leading-relaxed">
-                              "{review.comment}"
-                            </p>
-                            <div className="flex items-center justify-between">
-                              <span className="text-sm font-normal text-foreground">{review.author}</span>
-                              <span className="text-xs text-muted-foreground font-light">{review.date}</span>
-                            </div>
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <div className="flex items-center justify-center gap-2 mt-6">
-                      <CarouselPrevious className="static translate-y-0" />
-                      <CarouselNext className="static translate-y-0" />
-                    </div>
-                  </Carousel>
-                </Card>
-              </motion.div>
             </div>
 
             <div className="lg:col-span-1">
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="sticky top-24"
-              >
+              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="sticky top-24">
                 <Card className="p-8 border border-border shadow-soft">
-                  <div className="mb-8">
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-2xl font-light">${location.price}</span>
-                      <span className="text-xs text-muted-foreground font-light">{t("locationDetail.perNight")}</span>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Icon className="h-5 w-5 text-primary" />
                     </div>
-                    <div className="flex items-center gap-1 text-xs">
-                      <Star className="h-3 w-3 fill-primary text-primary" />
-                      <span className="font-light">{location.rating}</span>
+                    <div>
+                      <p className="text-sm font-normal">{name}</p>
+                      <p className="text-xs text-muted-foreground font-light">{tagline}</p>
                     </div>
                   </div>
-
-                  <div className="space-y-6">
-                    <div>
-                      <Label htmlFor="detail-guests" className="text-[11px] uppercase tracking-wider font-normal mb-3 block">
-                        {t("locationDetail.guests")}
-                      </Label>
-                      <Select value={guests} onValueChange={setGuests}>
-                        <SelectTrigger id="detail-guests" className="rounded-md text-sm font-light">
-                          <SelectValue placeholder={t("locationDetail.selectPlaceholder") as string} />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="1">{t("locationDetail.guestOption", { n: 1 })}</SelectItem>
-                          <SelectItem value="2">{t("locationDetail.guestOptionPlural", { n: 2 })}</SelectItem>
-                          <SelectItem value="3">{t("locationDetail.guestOptionPlural", { n: 3 })}</SelectItem>
-                          <SelectItem value="4">{t("locationDetail.guestOptionPlural", { n: 4 })}</SelectItem>
-                          <SelectItem value="5">{t("locationDetail.guestOption5")}</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
-                    <div>
-                      <Label className="text-[11px] uppercase tracking-wider font-normal mb-3 block">
-                        {t("locationDetail.dates")}
-                      </Label>
-                      <CalendarComponent
-                        mode="range"
-                        selected={dateRange}
-                        onSelect={setDateRange}
-                        numberOfMonths={1}
-                        className="rounded-md border-border text-sm pointer-events-auto"
-                        disabled={(date) => date < new Date()}
-                      />
-                      {dateRange?.from && (
-                        <p className="text-xs text-muted-foreground font-light mt-2 text-center">
-                          {formatDateRange()}
-                          {dateRange?.to && (
-                            <span className="block">
-                              {t("locationDetail.nights", { n: Math.ceil((dateRange.to.getTime() - dateRange.from.getTime()) / (1000 * 60 * 60 * 24)) })}
-                            </span>
-                          )}
-                        </p>
-                      )}
-                    </div>
-
-                    <Button
-                      size="default"
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-md smooth-hover text-[11px] uppercase tracking-wider font-normal"
-                      onClick={handleBooking}
-                    >
-                      <Calendar className="mr-2 h-4 w-4" />
-                      {t("locationDetail.reserve")}
+                  <p className="text-xs text-muted-foreground font-light mb-6 leading-relaxed">{t("locationDetail.ctaCopy")}</p>
+                  <Link to="/contact">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-md smooth-hover text-[11px] uppercase tracking-wider font-normal">
+                      <Mail className="mr-2 h-4 w-4" />
+                      {t("locationDetail.contactCta")}
                     </Button>
-                  </div>
+                  </Link>
                 </Card>
               </motion.div>
             </div>
