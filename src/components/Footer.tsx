@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/#booking" className="text-background/70 hover:text-background smooth-hover text-xs font-light">
-                  Book Now
+                  Contactar
                 </a>
               </li>
               <li>
