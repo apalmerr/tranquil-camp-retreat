@@ -86,7 +86,7 @@ const Hero = () => {
           className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight max-w-md text-left flex flex-col"
         >
           <span>{t("hero.line1")}</span>
-          <span>{t("hero.line2")}</span>
+          <span className="whitespace-pre-line">{t("hero.line2")}</span>
         </motion.h1>
 
         {/* CTA Button */}
