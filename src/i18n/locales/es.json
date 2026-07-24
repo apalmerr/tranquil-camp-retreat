@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "services": "SERVICIOS",
+    "about": "QUIENES SOMOS",
+    "contact": "CONTACTO",
+    "cta": "CONTACTAR",
+    "brand": "Wild Haven"
+  },
+  "hero": {
+    "line1": "Integración",
+    "line2": "Tecnológica",
+    "cta": "Contactar",
+    "slideAria": "Ir a la diapositiva {{n}}",
+    "alts": {
+      "hero": "Camping fuera de la red en plena naturaleza",
+      "forest": "Zona de acampada en el bosque",
+      "lake": "Refugio junto al lago",
+      "meadow": "Experiencia de acampada en el prado"
+    }
+  },
+  "locations": {
+    "eyebrow": "Nuestras Ubicaciones",
+    "title": "Lugares Destacados",
+    "subtitle": "Rincones seleccionados donde la belleza natural se une al confort sostenible",
+    "allEyebrow": "Nuestras Ubicaciones",
+    "allTitle": "Todos los Lugares",
+    "allSubtitle": "Explora todas nuestras ubicaciones de acampada seleccionadas",
+    "perNight": "/noche",
+    "viewDetails": "Ver detalles",
+    "sort": {
+      "placeholder": "Ordenar por",
+      "priceLow": "Precio: menor a mayor",
+      "priceHigh": "Precio: mayor a menor",
+      "rating": "Mejor valorados"
+    },
+    "list": {
+      "forest": {
+        "name": "Refugio del Bosque",
+        "location": "Noroeste del Pacífico",
+        "description": "Sumérgete en la tranquilidad de bosques milenarios. Este rincón apartado ofrece el equilibrio perfecto entre privacidad y belleza natural, con altos pinos que crean un dosel catedralicio sobre tu campamento.",
+        "features": ["Campamento privado", "Fogata", "Ducha solar"],
+        "amenities": [
+          { "label": "Fogata", "description": "Fogata de leña con zona de asientos" },
+          { "label": "Ducha solar", "description": "Ducha exterior ecológica" },
+          { "label": "Sin WiFi", "description": "Experiencia total de desconexión digital" },
+          { "label": "Máx. 4 personas", "description": "Tamaño de grupo íntimo" }
+        ],
+        "details": [
+          "Plataforma para tienda con cubierta impermeable",
+          "Baños de compostaje",
+          "Acceso a agua de manantial",
+          "Oportunidades para observar fauna",
+          "Senderos a 5 minutos",
+          "Todo el equipo de acampada incluido"
+        ]
+      },
+      "lake": {
+        "name": "Retiro del Lago",
+        "location": "Valle de Montaña",
+        "description": "Despierta con vistas al lago cristalino y montañas reflejadas. Esta ubicación frente al agua es perfecta para amantes del agua, con natación, kayak y pesca rodeados de picos alpinos.",
+        "features": ["Frente al agua", "Kayak incluido", "Baño de compostaje"],
+        "amenities": [
+          { "label": "Acceso al lago", "description": "Frente al agua privado con embarcadero" },
+          { "label": "Fogata", "description": "Fogata junto al lago para veladas" },
+          { "label": "Fuera de red", "description": "Instalaciones solo con energía solar" },
+          { "label": "Máx. 5 personas", "description": "Espacio amplio junto al lago" }
+        ],
+        "details": [
+          "Tienda frente al agua con vistas al lago",
+          "Uso gratuito del kayak",
+          "Equipo de pesca disponible",
+          "Cocina exterior equipada",
+          "Acceso a natación todo el año",
+          "Rutas de mountain bike cercanas"
+        ]
+      },
+      "meadow": {
+        "name": "Vista del Prado",
+        "location": "Cordillera Alpina",
+        "description": "Disfruta de vistas de 360 grados desde este campamento elevado en un prado. Perfecto para observar estrellas, fotografiar flores silvestres y quienes buscan espacios abiertos y aire puro.",
+        "features": ["Vistas panorámicas", "Rutas de senderismo", "Observación de fauna"],
+        "amenities": [
+          { "label": "Fogata", "description": "Fogata de piedra con vistas a la montaña" },
+          { "label": "Estación de agua", "description": "Agua de manantial filtrada" },
+          { "label": "Remoto", "description": "Escape apacible definitivo" },
+          { "label": "Máx. 4 personas", "description": "Acampada acogedora en el prado" }
+        ],
+        "details": [
+          "Plataforma elevada para tienda",
+          "Vistas panorámicas de montaña",
+          "Zona de cielo oscuro certificada",
+          "Acceso al prado de flores silvestres",
+          "Senderos alpinos",
+          "Oportunidades de avistamiento de fauna"
+        ]
+      },
+      "canyon": {
+        "name": "Cresta del Cañón",
+        "location": "Suroeste Desértico",
+        "description": "Descubre la belleza dramática de los cañones rocosos. Este oasis único ofrece amaneceres impresionantes, formaciones rocosas antiguas y un entorno tranquilo lejos del bullicio.",
+        "features": ["Vistas al desierto", "Observación de estrellas", "Formaciones rocosas"],
+        "amenities": [
+          { "label": "Círculo de fuego", "description": "Círculo de fuego tradicional con asientos" },
+          { "label": "Depósito de agua", "description": "Estación de agua potable" },
+          { "label": "Fuera de red", "description": "Desconexión total" },
+          { "label": "Máx. 4 personas", "description": "Experiencia íntima en el desierto" }
+        ],
+        "details": [
+          "Plataforma para tienda con sombra",
+          "Terraza para ver el atardecer",
+          "Guías de fauna del desierto",
+          "Telescopio nocturno disponible",
+          "Senderos por el cañón",
+          "Equipo de acampada incluido"
+        ]
+      },
+      "river": {
+        "name": "Meandro del Río",
+        "location": "Cordillera Costera",
+        "description": "Ubicado junto a un río prístino, este refugio costero ofrece el sonido relajante del agua y fácil acceso a aventuras en el bosque y el río. Perfecto para un escape equilibrado.",
+        "features": ["Acceso al río", "Pesca", "Senderos por el bosque"],
+        "amenities": [
+          { "label": "Acceso al río", "description": "Ubicación privada frente al río" },
+          { "label": "Fogata", "description": "Fogata junto al río" },
+          { "label": "Remoto", "description": "Escape apacible junto al río" },
+          { "label": "Máx. 6 personas", "description": "Tamaño familiar" }
+        ],
+        "details": [
+          "Plataforma para tienda junto al río",
+          "Equipo de pesca incluido",
+          "Alquiler de canoa disponible",
+          "Paseos guiados por la naturaleza",
+          "Oportunidades para observar aves",
+          "Equipo de acampada premium"
+        ]
+      },
+      "summit": {
+        "name": "Pico de la Cumbre",
+        "location": "Montañas Rocosas",
+        "description": "Para los aventureros, este refugio de gran altura ofrece panorámicas montañosas impresionantes y aire alpino puro. Despierta sobre las nubes en una de nuestras ubicaciones más exclusivas y remotas.",
+        "features": ["Gran altitud", "Vistas a la montaña", "Rutas de aventura"],
+        "amenities": [
+          { "label": "Fogata alpina", "description": "Fogata elevada con vistas" },
+          { "label": "Agua de manantial", "description": "Acceso al manantial de montaña" },
+          { "label": "Remoto", "description": "Escape montañoso definitivo" },
+          { "label": "Máx. 4 personas", "description": "Experiencia exclusiva" }
+        ],
+        "details": [
+          "Plataforma para tienda con aislamiento",
+          "Vistas de montaña de 360 grados",
+          "Rutas de senderismo hasta la cumbre",
+          "Puntos para fotografía de fauna",
+          "Equipo premium incluido",
+          "Opciones guiadas disponibles"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "La Experiencia",
+    "title": "Simplicidad y Confort",
+    "subtitle": "Abraza la simplicidad sin renunciar al confort",
+    "features": [
+      { "title": "100% Fuera de Red", "description": "Vida completamente sostenible con energía solar y sistemas de compostaje" },
+      { "title": "Desintoxicación Digital", "description": "Sin WiFi, sin señal - solo conexión pura con la naturaleza y contigo" },
+      { "title": "Agua Natural", "description": "Agua fresca de manantial e instalaciones ecológicas para tu confort" },
+      { "title": "Vistas Escénicas", "description": "Despierta con amaneceres impresionantes en naturaleza intacta" }
+    ]
+  },
+  "footer": {
+    "tagline": "Creando conexiones significativas con la naturaleza a través de experiencias sostenibles fuera de la red.",
+    "pages": "Páginas",
+    "home": "Inicio",
+    "services": "SERVICIOS",
+    "about": "QUIENES SOMOS",
+    "contact": "Contacto",
+    "ctaLink": "Contactar",
+    "admin": "Panel de administración",
+    "contactUs": "Contáctanos",
+    "hours": "Lun - Vie: 9h - 17h",
+    "follow": "Síguenos",
+    "rights": "© 2026 Wild Haven. Todos los derechos reservados."
+  },
+  "about": {
+    "eyebrow": "Sobre Nosotros",
+    "title": "Nuestra Historia",
+    "story": [
+      "Wild Haven nació de una simple observación: en nuestro mundo hiperconectado, el descanso verdadero es cada vez más escaso. Vimos cómo las pantallas reemplazaban los atardeceres, las notificaciones ahogaban el canto de los pájaros y el zumbido constante de la vida digital dejaba a las personas más desconectadas que nunca.",
+      "Fundada en 2019, nos propusimos crear espacios donde las personas pudieran alejarse del ruido y redescubrir lo que significa estar verdaderamente presentes. Nuestros retiros no tratan de escapar de la vida, sino de volver a ella en su forma más esencial y bella.",
+      "Cada una de nuestras ubicaciones ha sido cuidadosamente seleccionada no solo por su belleza natural, sino por su capacidad de facilitar una restauración genuina. Desde bosques milenarios hasta orillas prístinas, cada retiro de Wild Haven es una puerta de regreso a los ritmos que sostuvieron a la humanidad durante milenios."
+    ],
+    "whyEyebrow": "El Porqué",
+    "whyTitle": "Por qué importan los retiros fuera de la red",
+    "why": [
+      "La persona promedio pasa hoy más de siete horas al día mirando pantallas. Nuestro sistema nervioso, evolucionado durante millones de años en entornos naturales, está bajo un asalto constante de estímulos artificiales. ¿El resultado? Niveles epidémicos de ansiedad, agotamiento y una sensación penetrante de desconexión.",
+      "Los retiros fuera de la red ofrecen algo profundo: la oportunidad de reiniciarse. Cuando nos alejamos de la matriz digital, ocurren cosas notables. Las hormonas del estrés bajan. Mejora el sueño. Vuelve la creatividad. Empezamos a oír nuestros propios pensamientos de nuevo.",
+      "Pero no se trata solo de lo que quitamos, sino de lo que redescubrimos. El crepitar del fuego. El peso del silencio. El desplegarse lento del tiempo cuando ya no se corta en notificaciones y plazos. No son lujos; son necesidades que la vida moderna nos ha convencido de que podemos vivir sin ellas.",
+      "En Wild Haven creemos que reconectar con la naturaleza no es un escape de la realidad, es un regreso a ella. Y en ese regreso encontramos no solo descanso, sino renovación."
+    ],
+    "valuesEyebrow": "En qué creemos",
+    "valuesTitle": "Nuestros Valores",
+    "values": [
+      { "title": "Sostenibilidad", "description": "Pisamos ligero la tierra, asegurándonos de que nuestros retiros mejoren en lugar de dañar el entorno natural." },
+      { "title": "Conexión", "description": "Fomentamos vínculos profundos entre las personas y el mundo natural mediante experiencias significativas en la naturaleza." },
+      { "title": "Simplicidad", "description": "Eliminamos la complejidad moderna para redescubrir la alegría de los elementos esenciales de la vida." },
+      { "title": "Autenticidad", "description": "Ofrecemos experiencias genuinas en la naturaleza, sin artificios ni imitaciones." },
+      { "title": "Comunidad", "description": "Construimos vínculos entre personas afines que comparten reverencia por la naturaleza." },
+      { "title": "Consciencia", "description": "Fomentamos la presencia y la atención plena a través de la influencia calmante del entorno natural." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Ponte en contacto",
+    "subtitle": "¿Tienes una pregunta o quieres reservar una estancia? Nos encantaría saber de ti.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "sent": "Mensaje enviado",
+    "sentDesc": "Te responderemos lo antes posible."
+  },
+  "locationDetail": {
+    "notFound": "Ubicación no encontrada",
+    "returnHome": "Volver al inicio",
+    "back": "Volver a ubicaciones",
+    "amenities": "Servicios",
+    "included": "Qué se incluye",
+    "reviews": "Reseñas de huéspedes",
+    "guests": "Huéspedes",
+    "guestOption": "{{n}} huésped",
+    "guestOptionPlural": "{{n}} huéspedes",
+    "guestOption5": "5+ huéspedes",
+    "dates": "Entrada y salida",
+    "reserve": "Reservar ahora",
+    "selectDates": "Selecciona fechas",
+    "nights": "{{n}} noches",
+    "perNight": "/ noche",
+    "selectPlaceholder": "Seleccionar huéspedes",
+    "toastMissing": "Selecciona entrada, salida y número de huéspedes",
+    "toastSuccess": "¡Solicitud de reserva para {{name}} enviada!"
+  },
+  "auth": {
+    "loginTitle": "Acceso administrador",
+    "signupTitle": "Crear cuenta",
+    "loginSub": "Inicia sesión para gestionar tus propiedades",
+    "signupSub": "Regístrate para acceso de administrador",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "wait": "Un momento...",
+    "signIn": "Iniciar sesión",
+    "createAccount": "Crear cuenta",
+    "needAccount": "¿No tienes cuenta? Regístrate",
+    "haveAccount": "¿Ya tienes cuenta? Inicia sesión",
+    "demo": "Probar modo demo",
+    "backSite": "Volver al sitio"
+  },
+  "admin": {
+    "backHome": "Volver al inicio",
+    "demoMode": "Modo demo",
+    "signOut": "Cerrar sesión",
+    "title": "Panel de administración",
+    "subtitle": "Gestiona las reservas y monitoriza el rendimiento",
+    "total": "Reservas totales",
+    "upcoming": "Próximas",
+    "pending": "Pendientes",
+    "revenue": "Ingresos est.",
+    "all": "Todas las ubicaciones",
+    "guest": "Huésped",
+    "location": "Ubicación",
+    "datesCol": "Fechas",
+    "guestsCol": "Huéspedes",
+    "statusCol": "Estado",
+    "contactCol": "Contacto",
+    "nights": "{{n}} noches",
+    "empty": "No hay reservas para esta ubicación",
+    "loading": "Cargando..."
+  },
+  "notFound": {
+    "title": "404",
+    "sub": "Vaya, página no encontrada",
+    "link": "Volver al inicio"
+  },
+  "meta": {
+    "title": "Wild Haven - Escapadas de acampada fuera de la red",
+    "description": "Retiros sostenibles fuera de la red en la naturaleza."
+  }
+}
