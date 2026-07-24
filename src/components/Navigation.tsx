@@ -27,11 +27,7 @@ const Navigation = ({
   const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
   const handleBookNow = () => {
-    if (isHomePage) {
-      navigate('/contact');
-    } else {
-      navigate('/contact');
-    }
+    navigate('/contact');
   };
   const navItems = [{
     label: t("nav.services"),
