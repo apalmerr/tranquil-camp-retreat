@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -23,15 +23,9 @@ const Navigation = ({
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const location = useLocation();
   const navigate = useNavigate();
-  const isHomePage = location.pathname === "/";
   const handleBookNow = () => {
-    if (isHomePage) {
-      navigate('/contact');
-    } else {
-      navigate('/contact');
-    }
+    navigate('/contact');
   };
   const navItems = [{
     label: t("nav.services"),
@@ -40,10 +34,6 @@ const Navigation = ({
   }, {
     label: t("nav.about"),
     href: "/about",
-    isRoute: true
-  }, {
-    label: t("nav.contact"),
-    href: "/contact",
     isRoute: true
   }];
   return <motion.nav initial={{
