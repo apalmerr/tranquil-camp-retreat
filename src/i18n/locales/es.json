@@ -2,6 +2,7 @@
   "nav": {
     "services": "SERVICIOS",
     "about": "QUIENES SOMOS",
+    "blog": "BLOG",
     "contact": "CONTACTO",
     "cta": "CONTACTO",
     "brand": "PALMER"
@@ -148,6 +149,7 @@
     "home": "Inicio",
     "services": "SERVICIOS",
     "about": "QUIENES SOMOS",
+    "blog": "Blog",
     "contact": "CONTACTO",
     "ctaLink": "Contactar",
     "contactUs": "Contáctanos",
@@ -194,6 +196,15 @@
     "sending": "Enviando...",
     "sent": "Mensaje enviado",
     "sentDesc": "Te responderemos lo antes posible."
+  },
+  "blog": {
+    "eyebrow": "BLOG",
+    "title": "Notas y proyectos",
+    "subtitle": "Ideas, casos y novedades sobre integración tecnológica en Baleares.",
+    "empty": "Aún no hay publicaciones. Vuelve pronto.",
+    "back": "Volver al blog",
+    "notFound": "Artículo no encontrado",
+    "by": "Por"
   },
   "locationDetail": {
     "notFound": "Servicio no encontrado",

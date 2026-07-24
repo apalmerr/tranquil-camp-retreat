@@ -35,6 +35,10 @@ const Navigation = ({
     label: t("nav.about"),
     href: "/about",
     isRoute: true
+  }, {
+    label: t("nav.blog"),
+    href: "/blog",
+    isRoute: true
   }];
   return <motion.nav initial={{
     y: -100
