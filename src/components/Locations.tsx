@@ -110,6 +110,15 @@ const Locations = () => {
             })}
           </div>
         )}
+
+        <div className="flex justify-center mt-16">
+          <Button asChild size="lg" variant="outline" className="rounded-full">
+            <Link to="/locations">
+              {t("locations.viewAllCta")}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
