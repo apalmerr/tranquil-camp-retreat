@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import bannerImage from "@/assets/detail-forest-1.jpg";
+import bannerImage from "@/assets/banner-services.jpg";
 import { locations } from "@/data/locations";
 import { useTranslation } from "react-i18next";
 
