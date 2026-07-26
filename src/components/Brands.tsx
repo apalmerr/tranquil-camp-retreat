@@ -21,6 +21,8 @@ type Brand = {
   slug: string;
   /** CDN URL for the brand logo image. If missing, falls back to a wordmark. */
   logo?: string;
+  /** Optional custom height class for logos that render visually larger */
+  heightClass?: string;
   /** Optional custom font-family class used only for the wordmark fallback */
   className?: string;
 };
@@ -37,7 +39,7 @@ const brands: Brand[] = [
   { name: "LG", slug: "lg", logo: lgLogo.url },
   { name: "UBIQUITI", slug: "ubiquiti", logo: ubiquitiLogo.url },
   { name: "MICROSOFT", slug: "microsoft", logo: microsoftLogo.url },
-  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url },
+  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url, heightClass: "max-h-7 md:max-h-8" },
 ];
 
 const Brands = () => {
@@ -83,7 +85,7 @@ const Brands = () => {
                     src={brand.logo}
                     alt={brand.name}
                     loading="lazy"
-                    className="max-h-10 md:max-h-12 w-auto object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    className={`${brand.heightClass ?? "max-h-10 md:max-h-12"} w-auto object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300`}
                   />
                 ) : (
                   <span
