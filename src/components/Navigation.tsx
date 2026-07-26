@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-import palmerLogo from "@/assets/palmer-logo.png.asset.json";
+import palmerLogo from "@/assets/palmer-logo.png";
 interface NavigationProps {
   variant?: "default" | "dark";
 }
@@ -54,7 +54,7 @@ const Navigation = ({
             scale: 1.02
           }} className="flex items-center gap-2 cursor-pointer">
               <img
-                src={palmerLogo.url}
+                src={palmerLogo}
                 alt={t("nav.brand") as string}
                 className={`h-6 md:h-7 w-auto object-contain transition-all duration-300 ${
                   isMobileMenuOpen || isDark || !isScrolled

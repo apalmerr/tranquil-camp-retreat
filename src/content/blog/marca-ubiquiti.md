@@ -2,7 +2,7 @@
 title: Ubiquiti UniFi UPS y DC Power — energía inteligente para tu red
 date: 2026-07-26
 excerpt: Descubre las baterías UniFi UPS y el cargador DC de Ubiquiti. Autonomía, gestión centralizada y protección 24/7 para tu red profesional en Baleares.
-cover: /__l5e/assets-v1/6d756c64-73ce-4441-b1d8-13d0721a52e6/ubiquiti-battery.jpg
+cover: /blog/ubiquiti-battery.jpg
 author: PALMER
 lang: es
 ---
@@ -22,7 +22,7 @@ Un router, un switch o un punto de acceso sin corriente es simplemente un objeto
 
 La solución tradicional (una SAI genérica bajo la mesa) es ruidosa, ocupa espacio y **no se integra** con el resto de la red. Ubiquiti resuelve exactamente ese problema.
 
-![Batería UniFi UPS montada en rack](/__l5e/assets-v1/6d756c64-73ce-4441-b1d8-13d0721a52e6/ubiquiti-battery.jpg)
+![Batería UniFi UPS montada en rack](/blog/ubiquiti-battery.jpg)
 
 ## UniFi UPS: baterías de litio pensadas para tu rack
 
@@ -40,7 +40,7 @@ Además, se **gestionan desde UniFi Network** o **UniFi Site Manager**, igual qu
 
 El **UniFi DC Power** es un distribuidor de corriente continua a **52 V** que alimenta directamente switches, gateways y puntos de acceso Ubiquiti sin necesidad de los típicos "ladrillos" de alimentación individuales.
 
-![Distribuidor UniFi DC Power con salidas PoE](/__l5e/assets-v1/fba06c80-0741-4809-846d-ea3b661cbfe1/ubiquiti-dc-charger.jpg)
+![Distribuidor UniFi DC Power con salidas PoE](/blog/ubiquiti-dc-charger.jpg)
 
 Sus ventajas frente al esquema tradicional:
 
@@ -66,7 +66,7 @@ En una villa reciente en la zona de Portals instalamos:
 
 Resultado: durante los cortes puntuales de red eléctrica de la zona, **la vivienda mantiene WiFi, cámaras y domótica funcionando más de 4 horas** sin que los propietarios lo noten. Toda la infraestructura cabe en un armario de 12U detrás de una puerta escondida en el pasillo.
 
-![Armario UniFi integrado en vivienda con paneles solares](/__l5e/assets-v1/7a847947-eaac-4c8c-9197-f8b8bde6fd7e/ubiquiti-home.jpg)
+![Armario UniFi integrado en vivienda con paneles solares](/blog/ubiquiti-home.jpg)
 
 ## Sinergia con fotovoltaica
 

@@ -1,7 +1,7 @@
 import { Instagram, Facebook, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import palmerLogo from "@/assets/palmer-logo.png.asset.json";
+import palmerLogo from "@/assets/palmer-logo.png";
 const Footer = () => {
   const { t } = useTranslation();
   return <footer className="bg-foreground text-background py-20 lg:py-24">
@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand Row */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={palmerLogo.url} alt={t("nav.brand") as string} className="h-6 w-auto object-contain" />
+              <img src={palmerLogo} alt={t("nav.brand") as string} className="h-6 w-auto object-contain" />
             </div>
             <p className="text-background/70 text-xs font-light leading-relaxed max-w-xs">
               {t("footer.tagline")}
