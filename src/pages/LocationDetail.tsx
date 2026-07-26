@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 import { getLocationById } from "@/data/locations";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 const LocationDetail = () => {
   const { t } = useTranslation();
@@ -41,11 +42,32 @@ const LocationDetail = () => {
   const amenities = amenityTexts.map((a, i) => ({ ...a, icon: service.amenityIcons[i] }));
   const Icon = service.icon;
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "PALMER",
+      areaServed: "Mallorca, Islas Baleares, España",
+    },
+    serviceType: tagline,
+  };
+
   const nextImage = () => setCurrentImageIndex((p) => (p + 1) % allImages.length);
   const prevImage = () => setCurrentImageIndex((p) => (p - 1 + allImages.length) % allImages.length);
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={`${name} — PALMER`}
+        description={description}
+        path={`/location/${service.id}`}
+        type="article"
+        image={service.image}
+        jsonLd={serviceJsonLd}
+      />
       <Navigation />
 
       <div className="relative w-full h-[50vh] overflow-hidden">

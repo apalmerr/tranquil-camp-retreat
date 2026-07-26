@@ -351,7 +351,10 @@
   "notFound": {
     "title": "404",
     "sub": "Oops! Page not found",
-    "link": "Return to Home"
+    "link": "Return to Home",
+    "seoTitle": "Page not found",
+    "hint": "The link may have changed or the page no longer exists.",
+    "contact": "Contact us"
   },
   "meta": {
     "title": "PALMER - Technology Integration in Mallorca",
@@ -378,5 +381,58 @@
       "title": "Blog",
       "description": "News, real projects and technical analysis on technology integration, brands and PALMER projects."
     }
+  },
+  "whatsapp": {
+    "aria": "Message us on WhatsApp",
+    "tooltip": "Chat with us"
+  },
+  "testimonials": {
+    "eyebrow": "SUCCESS STORIES",
+    "title": "What our clients say",
+    "subtitle": "Real projects in Mallorca, homes and businesses that trust PALMER.",
+    "items": [
+      {
+        "quote": "They did the entire network and home automation of the house. Impeccable, tidy work and great support when we need it.",
+        "author": "Carlos M.",
+        "role": "Private home · Palma"
+      },
+      {
+        "quote": "We installed their AV and intranet system. We gained productivity from day one.",
+        "author": "Ana G.",
+        "role": "Architecture studio · Manacor"
+      },
+      {
+        "quote": "The solar installation cut our bill by 70%. Very professional and close to the client.",
+        "author": "Miquel R.",
+        "role": "Restaurant · Sóller"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "We answer your questions",
+    "subtitle": "Everything you need to know before starting your project with PALMER.",
+    "items": [
+      {
+        "q": "Which areas do you cover?",
+        "a": "We work across Mallorca and the rest of the Balearic Islands (Menorca, Ibiza and Formentera) for larger projects."
+      },
+      {
+        "q": "Do you provide maintenance after installation?",
+        "a": "Yes. We offer maintenance contracts and remote monitoring to detect and solve issues before you notice them."
+      },
+      {
+        "q": "Can you integrate existing systems?",
+        "a": "In most cases, yes. We work with open standards (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365…) that integrate with previous installations."
+      },
+      {
+        "q": "How much does a project cost?",
+        "a": "Every project is unique. We do a free technical visit and deliver a clear, detailed quote with no commitment."
+      },
+      {
+        "q": "Do you handle solar subsidies?",
+        "a": "Yes. We manage all legal paperwork and grant applications available in the Balearic Islands."
+      }
+    ]
   }
 }

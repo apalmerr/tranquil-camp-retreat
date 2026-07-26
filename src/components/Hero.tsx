@@ -64,7 +64,7 @@ const Hero = () => {
             src={slides[currentSlide].image}
             alt={t(`hero.alts.${slides[currentSlide].altKey}`)}
             className="w-full h-full object-cover"
-          />
+          / loading="lazy" decoding="async">
           <div className="absolute inset-0 bg-black/30" />
         </motion.div>
       </AnimatePresence>
@@ -82,7 +82,7 @@ const Hero = () => {
             src={palmerLogoAsset.url}
             alt="PALMER"
             className="h-10 w-auto"
-          />
+          / loading="lazy" decoding="async">
         </motion.div>
 
         {/* Headline */}
