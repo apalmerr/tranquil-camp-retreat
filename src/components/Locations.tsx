@@ -32,7 +32,7 @@ const Locations = () => {
     return (
     <Link to={`/location/${location.id}`} className="block">
       <div className="relative h-48 overflow-hidden">
-        <img src={location.image} alt={name} className="w-full h-full object-cover" / loading="lazy" decoding="async">
+        <img src={location.image} alt={name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
         <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm p-2 rounded-md flex items-center gap-1">
           <Icon className="h-4 w-4 text-primary" />
         </div>

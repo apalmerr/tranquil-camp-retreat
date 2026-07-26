@@ -34,7 +34,7 @@ const Locations = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
           className="absolute inset-0 w-full h-[120%] object-cover"
-        / loading="lazy" decoding="async">
+        loading="lazy" decoding="async" />
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
@@ -77,7 +77,7 @@ const Locations = () => {
                         src={location.image}
                         alt={name}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      / loading="lazy" decoding="async">
+                      loading="lazy" decoding="async" />
                       <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm p-2 rounded-md flex items-center gap-1">
                         <Icon className="h-4 w-4 text-primary" />
                       </div>
