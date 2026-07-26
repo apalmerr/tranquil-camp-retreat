@@ -153,7 +153,20 @@ const Contact = () => {
           </div>
 
           <Card className="p-8 lg:p-10 shadow-soft border border-border bg-card">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="hidden">
+                <Label htmlFor="bot-field">No completar este campo</Label>
+                <Input id="bot-field" name="bot-field" />
+              </div>
+
               <div>
                 <Label htmlFor="name" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <User className="h-3 w-3" />
