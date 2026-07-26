@@ -85,7 +85,7 @@ const Brands = () => {
                     src={brand.logo}
                     alt={brand.name}
                     loading="lazy"
-                    className="max-h-10 md:max-h-12 w-auto object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                    className={`${brand.heightClass ?? "max-h-10 md:max-h-12"} w-auto object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300`}
                   />
                 ) : (
                   <span
