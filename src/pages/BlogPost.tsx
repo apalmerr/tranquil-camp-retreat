@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -69,8 +70,10 @@ const BlogPost = () => {
             </div>
           )}
 
-          <div className="prose prose-neutral max-w-none font-light prose-headings:font-light prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-md">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+          <div className="prose prose-neutral max-w-none font-light prose-headings:font-light prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-md prose-iframe:rounded-md">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+              {post.content}
+            </ReactMarkdown>
           </div>
         </motion.article>
       </main>
