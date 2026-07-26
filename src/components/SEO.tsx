@@ -11,9 +11,10 @@ interface SEOProps {
   type?: "website" | "article";
   image?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
 }
 
-const SEO = ({ title, description, path, type = "website", image, jsonLd }: SEOProps) => {
+const SEO = ({ title, description, path, type = "website", image, jsonLd, noindex }: SEOProps) => {
   const { i18n } = useTranslation();
   const canonical = `${SITE_URL}${path}`;
   const fullTitle = title.includes("PALMER") ? title : `${title} — PALMER`;
@@ -23,6 +24,7 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd }: SEOP
     <Helmet htmlAttributes={{ lang: i18n.language || "es" }}>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
       {LANGS.map((l) => (
         <link key={l} rel="alternate" hrefLang={l} href={`${canonical}?lang=${l}`} />
@@ -40,7 +42,7 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd }: SEOP
       <meta name="twitter:description" content={description} />
       {ogImage && <meta name="twitter:image" content={ogImage} />}
       {jsonLd && (
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(Array.isArray(jsonLd) ? jsonLd : [jsonLd])}</script>
       )}
     </Helmet>
   );
