@@ -351,7 +351,10 @@
   "notFound": {
     "title": "404",
     "sub": "Vaya, página no encontrada",
-    "link": "Volver al inicio"
+    "link": "Volver al inicio",
+    "seoTitle": "Página no encontrada",
+    "hint": "Puede que el enlace haya cambiado o que la página ya no exista.",
+    "contact": "Contactar"
   },
   "meta": {
     "title": "PALMER - Integración Tecnológica en Mallorca",
@@ -378,5 +381,58 @@
       "title": "Blog",
       "description": "Novedades, casos reales y análisis técnico sobre integración tecnológica, marcas y proyectos de PALMER."
     }
+  },
+  "whatsapp": {
+    "aria": "Escríbenos por WhatsApp",
+    "tooltip": "Chatea con nosotros"
+  },
+  "testimonials": {
+    "eyebrow": "CASOS DE ÉXITO",
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Proyectos reales en Mallorca, hogares y empresas que confían en PALMER.",
+    "items": [
+      {
+        "quote": "Nos hicieron toda la red y domótica de la casa. Trabajo impecable, ordenado y con soporte cuando lo necesitamos.",
+        "author": "Carlos M.",
+        "role": "Vivienda particular · Palma"
+      },
+      {
+        "quote": "Instalamos su sistema audiovisual y de intranets. Ganamos productividad desde el primer día.",
+        "author": "Ana G.",
+        "role": "Estudio de arquitectura · Manacor"
+      },
+      {
+        "quote": "La instalación fotovoltaica ha reducido nuestra factura un 70%. Muy profesionales y cercanos.",
+        "author": "Miquel R.",
+        "role": "Restaurante · Sóller"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "PREGUNTAS FRECUENTES",
+    "title": "Resolvemos tus dudas",
+    "subtitle": "Todo lo que necesitas saber antes de empezar tu proyecto con PALMER.",
+    "items": [
+      {
+        "q": "¿En qué zonas trabajáis?",
+        "a": "Damos servicio en toda Mallorca y el resto de Baleares (Menorca, Ibiza y Formentera) para proyectos de cierta envergadura."
+      },
+      {
+        "q": "¿Hacéis mantenimiento después de la instalación?",
+        "a": "Sí. Ofrecemos contratos de mantenimiento y monitorización remota para detectar y resolver incidencias antes de que las notes."
+      },
+      {
+        "q": "¿Podéis integrar sistemas ya existentes?",
+        "a": "En la mayoría de los casos sí. Trabajamos con estándares abiertos (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365…) que se integran con instalaciones previas."
+      },
+      {
+        "q": "¿Cuánto cuesta un proyecto?",
+        "a": "Cada proyecto es único. Hacemos una visita técnica sin compromiso y te entregamos un presupuesto detallado y claro."
+      },
+      {
+        "q": "¿Tramitáis subvenciones para fotovoltaica?",
+        "a": "Sí. Gestionamos toda la tramitación legal y la solicitud de ayudas disponibles en Baleares."
+      }
+    ]
   }
 }
