@@ -76,16 +76,16 @@ Es la mejor forma de aplicar el principio de **defensa en profundidad** también
 
 ## Ver el ecosistema en acción
 
-<video
-  class="w-full rounded-md my-8"
-  src="/__l5e/assets-v1/a8961165-a182-42ca-96c6-4a4e5aa8d864/ubiquiti-ups-video.mp4"
-  controls
-  autoplay
-  muted
-  loop
-  playsinline
-  poster="/__l5e/assets-v1/6d756c64-73ce-4441-b1d8-13d0721a52e6/ubiquiti-battery.jpg">
-</video>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:2rem 0;box-shadow:0 10px 30px rgba(0,0,0,.25)">
+  <iframe
+    src="https://www.youtube.com/embed/Y4L61NbDibM"
+    title="Introducing UniFi Uninterruptible Power: UPS 2U and Tower"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+  ></iframe>
+</div>
 
 > Vídeo demostrativo del ecosistema **UniFi UPS + DC Power** instalado en rack profesional.
 
