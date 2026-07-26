@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
-const SITE_URL = "https://tranquil-camp-retreat.lovable.app";
+const SITE_URL = "https://palmerit.es";
 const LANGS = ["es", "en", "de"];
 
 interface SEOProps {
