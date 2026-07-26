@@ -7,6 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { getPost } from "@/lib/blog";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -30,6 +31,21 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={post.title}
+        description={post.excerpt || post.title}
+        path={`/blog/${post.slug}`}
+        type="article"
+        image={post.cover}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          datePublished: post.date,
+          author: post.author ? { "@type": "Person", name: post.author } : undefined,
+          image: post.cover,
+        }}
+      />
       <Navigation variant="dark" />
 
       <main className="pt-32 pb-24 lg:pt-40 lg:pb-32 px-6 lg:px-12">

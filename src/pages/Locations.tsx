@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react";
 import bannerImage from "@/assets/banner-services.jpg";
 import { locations } from "@/data/locations";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 const Locations = () => {
   const { t } = useTranslation();
@@ -16,6 +17,11 @@ const Locations = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={t("seo.locations.title") as string}
+        description={t("seo.locations.description") as string}
+        path="/locations"
+      />
       <Navigation />
 
       {/* Hero Image with Parallax */}

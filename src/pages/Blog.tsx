@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { posts } from "@/lib/blog";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
@@ -11,6 +12,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={t("seo.blog.title") as string}
+        description={t("seo.blog.description") as string}
+        path="/blog"
+      />
       <Navigation variant="dark" />
 
       <main className="pt-32 pb-24 lg:pt-40 lg:pb-32 px-6 lg:px-12">

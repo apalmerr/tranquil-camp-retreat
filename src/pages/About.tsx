@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import bannerImage from "@/assets/banner-about.jpg";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 const valueIcons = [Leaf, Heart, Compass, Mountain, Users, TreePine];
 
@@ -18,6 +19,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={t("seo.about.title") as string}
+        description={t("seo.about.description") as string}
+        path="/about"
+      />
       <Navigation />
       
       {/* Hero Image with Parallax */}
