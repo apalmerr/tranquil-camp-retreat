@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText, Instagram, Linkedin, Phone, MessageCircle } from "lucide-react";
 import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 
 // Contact channels — edit these values to update all links across the site.
 const CONTACT_INFO = {
@@ -118,6 +119,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <SEO
+        title={t("seo.contact.title") as string}
+        description={t("seo.contact.description") as string}
+        path="/contact"
+      />
       <Navigation />
 
       {/* Hero with PALMER logo */}
