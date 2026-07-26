@@ -7,14 +7,16 @@ type Brand = {
   name: string;
   slug: string;
   logo: string;
+  /** Optional height class for logos that look visually smaller due to their shape. */
+  sizeClass?: string;
 };
 
 const brands: Brand[] = [
-  { name: "LINN", slug: "linn", logo: "/brands/linn.png" },
+  { name: "LINN", slug: "linn", logo: "/brands/linn.png", sizeClass: "h-9 md:h-11" },
   { name: "SONOS", slug: "sonos", logo: "/brands/sonos.png" },
   { name: "CISCO", slug: "cisco", logo: "/brands/cisco.svg" },
   { name: "KNX", slug: "knx", logo: "/brands/knx.svg" },
-  { name: "APPLE", slug: "apple", logo: "/brands/apple.png" },
+  { name: "APPLE", slug: "apple", logo: "/brands/apple.png", sizeClass: "h-9 md:h-11" },
   { name: "JVC", slug: "jvc", logo: "/brands/jvc.svg" },
   { name: "BOSE", slug: "bose", logo: "/brands/bose.png" },
   { name: "SAMSUNG", slug: "samsung", logo: "/brands/samsung.png" },
@@ -66,7 +68,7 @@ const Brands = () => {
                   src={brand.logo}
                   alt={brand.name}
                   loading="lazy"
-                  className="h-8 md:h-10 w-auto max-w-[140px] md:max-w-[170px] object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
+                  className={`${brand.sizeClass ?? "h-8 md:h-10"} w-auto max-w-[140px] md:max-w-[170px] object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300`}
                 />
               </Link>
             </motion.div>
