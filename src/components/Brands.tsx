@@ -14,14 +14,14 @@ type Brand = {
 const brands: Brand[] = [
   { name: "LINN", slug: "linn", logo: "/brands/linn.png", sizeClass: "h-12 md:h-14" },
   { name: "SONOS", slug: "sonos", logo: "/brands/sonos.png" },
-  { name: "CISCO", slug: "cisco", logo: "/brands/cisco.svg" },
-  { name: "KNX", slug: "knx", logo: "/brands/knx.svg" },
+  { name: "CISCO", slug: "cisco", logo: "/brands/cisco.svg", sizeClass: "h-10 md:h-12" },
+  { name: "KNX", slug: "knx", logo: "/brands/knx.svg", sizeClass: "h-10 md:h-12" },
   { name: "APPLE", slug: "apple", logo: "/brands/apple.png", sizeClass: "h-12 md:h-14" },
   { name: "JVC", slug: "jvc", logo: "/brands/jvc.svg" },
   { name: "BOSE", slug: "bose", logo: "/brands/bose.png" },
   { name: "SAMSUNG", slug: "samsung", logo: "/brands/samsung.png" },
   { name: "LG", slug: "lg", logo: "/brands/lg.png" },
-  { name: "UBIQUITI", slug: "ubiquiti", logo: "/brands/ubiquiti.png" },
+  { name: "UBIQUITI", slug: "ubiquiti", logo: "/brands/ubiquiti.png", sizeClass: "h-10 md:h-12" },
   { name: "MICROSOFT", slug: "microsoft", logo: "/brands/microsoft.png" },
   { name: "SIGENERGY", slug: "sigenergy", logo: "/brands/sigenergy.png" },
 ];
