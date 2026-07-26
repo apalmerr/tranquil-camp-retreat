@@ -195,7 +195,24 @@
     "send": "Enviar mensaje",
     "sending": "Enviando...",
     "sent": "Mensaje enviado",
-    "sentDesc": "Te responderemos lo antes posible."
+    "sentDesc": "Te responderemos lo antes posible.",
+    "errorTitle": "No se pudo enviar",
+    "errorDesc": "Inténtalo de nuevo o escríbenos directamente a info@palmerit.es.",
+    "socialEyebrow": "OTRAS VÍAS",
+    "socialTitle": "También puedes contactarnos por aquí",
+    "socialSubtitle": "Elige el canal que prefieras. Respondemos en horario laboral.",
+    "channels": {
+      "instagram": "Instagram",
+      "instagramDesc": "Mira nuestros últimos trabajos",
+      "linkedin": "LinkedIn",
+      "linkedinDesc": "Conecta con nosotros profesionalmente",
+      "phone": "Llámanos",
+      "phoneDesc": "Habla directamente con el equipo",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Escríbenos un mensaje rápido",
+      "email": "Correo",
+      "emailDesc": "Escríbenos a nuestro correo"
+    }
   },
   "blog": {
     "eyebrow": "BLOG",

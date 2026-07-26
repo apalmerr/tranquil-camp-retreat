@@ -195,7 +195,24 @@
     "send": "Nachricht senden",
     "sending": "Wird gesendet...",
     "sent": "Nachricht gesendet",
-    "sentDesc": "Wir melden uns baldmöglichst."
+    "sentDesc": "Wir melden uns baldmöglichst.",
+    "errorTitle": "Senden fehlgeschlagen",
+    "errorDesc": "Bitte erneut versuchen oder direkt an info@palmerit.es schreiben.",
+    "socialEyebrow": "WEITERE WEGE",
+    "socialTitle": "Sie erreichen uns auch hier",
+    "socialSubtitle": "Wählen Sie Ihren bevorzugten Kanal. Wir antworten während der Geschäftszeiten.",
+    "channels": {
+      "instagram": "Instagram",
+      "instagramDesc": "Unsere neuesten Projekte ansehen",
+      "linkedin": "LinkedIn",
+      "linkedinDesc": "Beruflich vernetzen",
+      "phone": "Anrufen",
+      "phoneDesc": "Direkt mit dem Team sprechen",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Schnelle Nachricht senden",
+      "email": "E-Mail",
+      "emailDesc": "Schreiben Sie uns eine E-Mail"
+    }
   },
   "blog": {
     "eyebrow": "BLOG",

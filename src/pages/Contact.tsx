@@ -8,9 +8,21 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { User, Mail, MessageSquare, FileText } from "lucide-react";
+import { User, Mail, MessageSquare, FileText, Instagram, Linkedin, Phone, MessageCircle } from "lucide-react";
 import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
 import { useTranslation } from "react-i18next";
+import { supabase } from "@/integrations/supabase/client";
+
+// Contact channels — edit these values to update all links across the site.
+const CONTACT_INFO = {
+  email: "info@palmerit.es",
+  phone: "+34711536425",
+  phoneDisplay: "+34 711 536 425",
+  whatsapp: "34711536425", // digits only, no '+'
+  instagram: "https://www.instagram.com/palmer.it",
+  // TODO: paste your LinkedIn URL here when ready
+  linkedin: "",
+};
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -37,17 +49,66 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+      if (error) throw error;
 
-    toast({
-      title: t("contact.sent") as string,
-      description: t("contact.sentDesc") as string,
-    });
-
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
+      toast({
+        title: t("contact.sent") as string,
+        description: t("contact.sentDesc") as string,
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (err) {
+      console.error("send-contact-email failed:", err);
+      toast({
+        title: t("contact.errorTitle") as string,
+        description: t("contact.errorDesc") as string,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
+  const whatsappUrl = `https://wa.me/${CONTACT_INFO.whatsapp}`;
+  const channels = [
+    {
+      key: "instagram",
+      href: CONTACT_INFO.instagram,
+      external: true,
+      Icon: Instagram,
+      value: "@palmer.it",
+    },
+    {
+      key: "linkedin",
+      href: CONTACT_INFO.linkedin || "#",
+      external: true,
+      Icon: Linkedin,
+      value: CONTACT_INFO.linkedin ? "LinkedIn" : "—",
+      disabled: !CONTACT_INFO.linkedin,
+    },
+    {
+      key: "phone",
+      href: `tel:${CONTACT_INFO.phone}`,
+      Icon: Phone,
+      value: CONTACT_INFO.phoneDisplay,
+    },
+    {
+      key: "whatsapp",
+      href: whatsappUrl,
+      external: true,
+      Icon: MessageCircle,
+      value: CONTACT_INFO.phoneDisplay,
+    },
+    {
+      key: "email",
+      href: `mailto:${CONTACT_INFO.email}`,
+      Icon: Mail,
+      value: CONTACT_INFO.email,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
@@ -162,6 +223,73 @@ const Contact = () => {
               </Button>
             </form>
           </Card>
+        </motion.div>
+
+        {/* Social / direct channels */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto mt-24 lg:mt-32"
+        >
+          <div className="text-center mb-12">
+            <span className="text-[11px] uppercase tracking-wider text-muted-foreground mb-4 block">
+              {t("contact.socialEyebrow")}
+            </span>
+            <h2 className="text-2xl md:text-3xl font-light tracking-tight text-foreground mb-4">
+              {t("contact.socialTitle")}
+            </h2>
+            <p className="text-sm text-muted-foreground font-light max-w-lg mx-auto">
+              {t("contact.socialSubtitle")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {channels.map(({ key, href, Icon, value, external, disabled }) => {
+              const content = (
+                <Card
+                  className={`p-6 h-full flex items-start gap-4 border border-border bg-card transition-all ${
+                    disabled
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:border-primary/50 hover:shadow-soft"
+                  }`}
+                >
+                  <div className="rounded-md bg-primary/10 text-primary p-2.5 flex-shrink-0">
+                    <Icon className="h-4 w-4" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-[11px] uppercase tracking-wider text-muted-foreground mb-1">
+                      {t(`contact.channels.${key}`)}
+                    </div>
+                    <div className="text-sm font-light text-card-foreground truncate">
+                      {value}
+                    </div>
+                    <div className="text-xs text-muted-foreground font-light mt-1">
+                      {t(`contact.channels.${key}Desc`)}
+                    </div>
+                  </div>
+                </Card>
+              );
+
+              if (disabled) {
+                return <div key={key}>{content}</div>;
+              }
+
+              return (
+                <a
+                  key={key}
+                  href={href}
+                  {...(external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                  className="block"
+                >
+                  {content}
+                </a>
+              );
+            })}
+          </div>
         </motion.div>
       </main>
 
