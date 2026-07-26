@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
-import { getFeaturedLocations } from "@/data/services";
+import { getFeaturedLocations } from "@/data/locations";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from "react-i18next";
 

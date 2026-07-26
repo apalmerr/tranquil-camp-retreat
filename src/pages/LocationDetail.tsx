@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-import { getLocationById } from "@/data/services";
+import { getLocationById } from "@/data/locations";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 
