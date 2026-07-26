@@ -12,11 +12,11 @@ type Brand = {
 };
 
 const brands: Brand[] = [
-  { name: "LINN", slug: "linn", logo: "/brands/linn.png", sizeClass: "h-9 md:h-11" },
+  { name: "LINN", slug: "linn", logo: "/brands/linn.png", sizeClass: "h-12 md:h-14" },
   { name: "SONOS", slug: "sonos", logo: "/brands/sonos.png" },
   { name: "CISCO", slug: "cisco", logo: "/brands/cisco.svg" },
   { name: "KNX", slug: "knx", logo: "/brands/knx.svg" },
-  { name: "APPLE", slug: "apple", logo: "/brands/apple.png", sizeClass: "h-9 md:h-11" },
+  { name: "APPLE", slug: "apple", logo: "/brands/apple.png", sizeClass: "h-12 md:h-14" },
   { name: "JVC", slug: "jvc", logo: "/brands/jvc.svg" },
   { name: "BOSE", slug: "bose", logo: "/brands/bose.png" },
   { name: "SAMSUNG", slug: "samsung", logo: "/brands/samsung.png" },
