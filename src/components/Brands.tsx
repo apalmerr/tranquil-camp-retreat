@@ -21,6 +21,8 @@ type Brand = {
   slug: string;
   /** CDN URL for the brand logo image. If missing, falls back to a wordmark. */
   logo?: string;
+  /** Optional custom height class for logos that render visually larger */
+  heightClass?: string;
   /** Optional custom font-family class used only for the wordmark fallback */
   className?: string;
 };
