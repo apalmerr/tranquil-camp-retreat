@@ -11,7 +11,6 @@ import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText, Instagram, Linkedin, Phone, MessageCircle } from "lucide-react";
 import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
 import { useTranslation } from "react-i18next";
-import { supabase } from "@/integrations/supabase/client";
 
 // Contact channels — edit these values to update all links across the site.
 const CONTACT_INFO = {
@@ -45,15 +44,22 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: formData,
+      const form = e.currentTarget;
+      const data = new FormData(form);
+      const body = new URLSearchParams(data as never).toString();
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
       });
-      if (error) throw error;
+
+      if (!response.ok) throw new Error(`Netlify returned ${response.status}`);
 
       toast({
         title: t("contact.sent") as string,
@@ -61,7 +67,7 @@ const Contact = () => {
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      console.error("send-contact-email failed:", err);
+      console.error("Netlify form submit failed:", err);
       toast({
         title: t("contact.errorTitle") as string,
         description: t("contact.errorDesc") as string,
@@ -147,7 +153,20 @@ const Contact = () => {
           </div>
 
           <Card className="p-8 lg:p-10 shadow-soft border border-border bg-card">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="hidden">
+                <Label htmlFor="bot-field">No completar este campo</Label>
+                <Input id="bot-field" name="bot-field" />
+              </div>
+
               <div>
                 <Label htmlFor="name" className="flex items-center gap-1.5 mb-3 text-card-foreground text-[11px] uppercase tracking-wider font-normal">
                   <User className="h-3 w-3" />
