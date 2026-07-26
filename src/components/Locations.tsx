@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
-import { getFeaturedLocations } from "@/data/locations";
+import { getFeaturedLocations } from "@/data/services";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from "react-i18next";
 
@@ -30,7 +30,7 @@ const Locations = () => {
     const features = t(`locations.list.${location.id}.features`, { returnObjects: true }) as string[];
     const Icon = location.icon;
     return (
-    <Link to={`/location/${location.id}`} className="block">
+    <Link to={`/service/${location.id}`} className="block">
       <div className="relative h-48 overflow-hidden">
         <img src={location.image} alt={name} className="w-full h-full object-cover" loading="lazy" decoding="async" />
         <div className="absolute top-3 right-3 bg-card/95 backdrop-blur-sm p-2 rounded-md flex items-center gap-1">
@@ -113,7 +113,7 @@ const Locations = () => {
 
         <div className="flex justify-center mt-16">
           <Button asChild size="lg" variant="outline" className="rounded-full">
-            <Link to="/locations">
+            <Link to="/services">
               {t("locations.viewAllCta")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

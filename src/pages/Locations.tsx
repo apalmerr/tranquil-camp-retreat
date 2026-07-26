@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import bannerImage from "@/assets/banner-services.jpg";
-import { locations } from "@/data/locations";
+import { locations } from "@/data/services";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 
@@ -20,7 +20,7 @@ const Locations = () => {
       <SEO
         title={t("seo.locations.title") as string}
         description={t("seo.locations.description") as string}
-        path="/locations"
+        path="/services"
       />
       <Navigation />
 
@@ -71,7 +71,7 @@ const Locations = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Card className="overflow-hidden border border-border bg-card shadow-soft hover:shadow-lg transition-shadow duration-300">
-                  <Link to={`/location/${location.id}`} className="block">
+                  <Link to={`/service/${location.id}`} className="block">
                     <div className="relative h-48 overflow-hidden">
                       <img
                         src={location.image}

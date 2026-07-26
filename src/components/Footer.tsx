@@ -27,7 +27,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/locations" className="text-background/70 hover:text-background smooth-hover text-xs font-light">
+                <Link to="/services" className="text-background/70 hover:text-background smooth-hover text-xs font-light">
                   {t("footer.services")}
                 </Link>
               </li>

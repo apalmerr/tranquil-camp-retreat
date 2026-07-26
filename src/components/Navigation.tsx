@@ -29,7 +29,7 @@ const Navigation = ({
   };
   const navItems = [{
     label: t("nav.services"),
-    href: "/locations",
+    href: "/services",
     isRoute: true
   }, {
     label: t("nav.about"),
