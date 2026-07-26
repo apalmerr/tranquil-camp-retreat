@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const SITE_URL = "https://palmerit.es";
+const DEFAULT_OG_IMAGE = "/og-image.png";
 const LANGS = ["es", "en", "de"];
 
 interface SEOProps {
@@ -18,7 +19,7 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd, noinde
   const { i18n } = useTranslation();
   const canonical = `${SITE_URL}${path}`;
   const fullTitle = title.includes("PALMER") ? title : `${title} — PALMER`;
-  const ogImage = image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : undefined;
+  const ogImage = image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`;
 
   return (
     <Helmet htmlAttributes={{ lang: i18n.language || "es" }}>
@@ -36,7 +37,13 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd, noinde
       <meta property="og:url" content={canonical} />
       <meta property="og:site_name" content="PALMER" />
       <meta property="og:locale" content={i18n.language === "en" ? "en_US" : i18n.language === "de" ? "de_DE" : "es_ES"} />
-      {ogImage && <meta property="og:image" content={ogImage} />}
+      {ogImage && (
+        <>
+          <meta property="og:image" content={ogImage} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+        </>
+      )}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
