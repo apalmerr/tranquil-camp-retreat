@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-import { getLocationById } from "@/data/locations";
+import { getLocationById } from "@/data/services";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 
@@ -63,7 +63,7 @@ const LocationDetail = () => {
       <SEO
         title={`${name} — PALMER`}
         description={description}
-        path={`/location/${service.id}`}
+        path={`/service/${service.id}`}
         type="article"
         image={service.image}
         jsonLd={serviceJsonLd}
@@ -88,7 +88,7 @@ const LocationDetail = () => {
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => navigate("/locations")}
+            onClick={() => navigate("/services")}
             className="mb-8 text-[11px] uppercase tracking-wider font-normal"
           >
             <ArrowLeft className="mr-2 h-3 w-3" />
