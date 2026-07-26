@@ -39,7 +39,7 @@ const brands: Brand[] = [
   { name: "LG", slug: "lg", logo: lgLogo.url },
   { name: "UBIQUITI", slug: "ubiquiti", logo: ubiquitiLogo.url },
   { name: "MICROSOFT", slug: "microsoft", logo: microsoftLogo.url },
-  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url },
+  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url, heightClass: "max-h-7 md:max-h-8" },
 ];
 
 const Brands = () => {
