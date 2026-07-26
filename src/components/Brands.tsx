@@ -3,41 +3,27 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-import appleLogo from "@/assets/brands/apple-new.png.asset.json";
-import boseLogo from "@/assets/brands/bose-new.png.asset.json";
-import ciscoLogo from "@/assets/brands/cisco-new.svg.asset.json";
-import jvcLogo from "@/assets/brands/jvc-new.svg.asset.json";
-import knxLogo from "@/assets/brands/knx-new.svg.asset.json";
-import linnLogo from "@/assets/brands/linn.png.asset.json";
-import microsoftLogo from "@/assets/brands/microsoft.webp.asset.json";
-import samsungLogo from "@/assets/brands/samsung.png.asset.json";
-import sonosLogo from "@/assets/brands/sonos.png.asset.json";
-import ubiquitiLogo from "@/assets/brands/ubiquiti.png.asset.json";
-import lgLogo from "@/assets/brands/lg.png.asset.json";
-import sigenergyLogo from "@/assets/brands/sigenergy.png.asset.json";
-
 type Brand = {
   name: string;
   slug: string;
-  /** CDN URL for the brand logo image. If missing, falls back to a wordmark. */
-  logo?: string;
-  /** Optional custom font-family class used only for the wordmark fallback */
-  className?: string;
+  logo: string;
+  /** Optional height class for logos that look visually smaller due to their shape. */
+  sizeClass?: string;
 };
 
 const brands: Brand[] = [
-  { name: "LINN", slug: "linn", logo: linnLogo.url },
-  { name: "SONOS", slug: "sonos", logo: sonosLogo.url },
-  { name: "CISCO", slug: "cisco", logo: ciscoLogo.url },
-  { name: "KNX", slug: "knx", logo: knxLogo.url },
-  { name: "APPLE", slug: "apple", logo: appleLogo.url },
-  { name: "JVC", slug: "jvc", logo: jvcLogo.url },
-  { name: "BOSE", slug: "bose", logo: boseLogo.url },
-  { name: "SAMSUNG", slug: "samsung", logo: samsungLogo.url },
-  { name: "LG", slug: "lg", logo: lgLogo.url },
-  { name: "UBIQUITI", slug: "ubiquiti", logo: ubiquitiLogo.url },
-  { name: "MICROSOFT", slug: "microsoft", logo: microsoftLogo.url },
-  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url },
+  { name: "LINN", slug: "linn", logo: "/brands/linn.png", sizeClass: "h-12 md:h-14" },
+  { name: "SONOS", slug: "sonos", logo: "/brands/sonos.png" },
+  { name: "CISCO", slug: "cisco", logo: "/brands/cisco.svg" },
+  { name: "KNX", slug: "knx", logo: "/brands/knx.svg" },
+  { name: "APPLE", slug: "apple", logo: "/brands/apple.png", sizeClass: "h-12 md:h-14" },
+  { name: "JVC", slug: "jvc", logo: "/brands/jvc.svg" },
+  { name: "BOSE", slug: "bose", logo: "/brands/bose.png" },
+  { name: "SAMSUNG", slug: "samsung", logo: "/brands/samsung.png" },
+  { name: "LG", slug: "lg", logo: "/brands/lg.png" },
+  { name: "UBIQUITI", slug: "ubiquiti", logo: "/brands/ubiquiti.png" },
+  { name: "MICROSOFT", slug: "microsoft", logo: "/brands/microsoft.png" },
+  { name: "SIGENERGY", slug: "sigenergy", logo: "/brands/sigenergy.png" },
 ];
 
 const Brands = () => {
@@ -78,20 +64,12 @@ const Brands = () => {
                 aria-label={t("brands.readAbout", { name: brand.name }) as string}
                 className="group flex items-center justify-center h-28 lg:h-32 bg-background hover:bg-accent/40 transition-colors"
               >
-                {brand.logo ? (
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    loading="lazy"
-                    className="h-8 md:h-10 w-auto max-w-[140px] md:max-w-[170px] object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
-                  />
-                ) : (
-                  <span
-                    className={`text-lg md:text-xl text-muted-foreground/80 group-hover:text-primary transition-colors ${brand.className ?? ""}`}
-                  >
-                    {brand.name}
-                  </span>
-                )}
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  loading="lazy"
+                  className={`${brand.sizeClass ?? "h-8 md:h-10"} w-auto max-w-[140px] md:max-w-[170px] object-contain opacity-70 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300`}
+                />
               </Link>
             </motion.div>
           ))}
