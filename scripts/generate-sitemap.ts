@@ -1,7 +1,7 @@
 import { writeFileSync, readdirSync } from "fs";
 import { resolve } from "path";
 
-const BASE_URL = "https://tranquil-camp-retreat.lovable.app";
+const BASE_URL = "https://palmerit.es";
 const LANGS = ["es", "en", "de"];
 
 const services = ["redes", "domotica", "audiovisuales", "gestion-documental", "fotovoltaicas"];

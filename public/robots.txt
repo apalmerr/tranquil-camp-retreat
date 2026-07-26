@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://tranquil-camp-retreat.lovable.app/sitemap.xml
+Sitemap: https://palmerit.es/sitemap.xml
