@@ -18,7 +18,7 @@ const WhatsAppFloat = () => {
       transition={{ delay: 1.4, type: "spring", stiffness: 200 }}
       className="fixed bottom-5 right-5 z-50 group"
     >
-      <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" aria-hidden />
+      <span className="pointer-events-none absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" aria-hidden />
       <span className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 hover:scale-110 transition-transform">
         <MessageCircle className="h-6 w-6" strokeWidth={2} />
       </span>
