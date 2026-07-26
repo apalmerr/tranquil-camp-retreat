@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const SITE_URL = "https://palmerit.es";
+const DEFAULT_OG_IMAGE = "/og-image.png";
 const LANGS = ["es", "en", "de"];
 
 interface SEOProps {
@@ -18,7 +19,7 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd, noinde
   const { i18n } = useTranslation();
   const canonical = `${SITE_URL}${path}`;
   const fullTitle = title.includes("PALMER") ? title : `${title} — PALMER`;
-  const ogImage = image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : undefined;
+  const ogImage = `${SITE_URL}${image ? (image.startsWith("http") ? image.replace(SITE_URL, "") : image) : DEFAULT_OG_IMAGE}`;
 
   return (
     <Helmet htmlAttributes={{ lang: i18n.language || "es" }}>
