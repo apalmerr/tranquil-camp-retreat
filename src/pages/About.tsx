@@ -36,7 +36,7 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
           className="absolute inset-0 w-full h-[120%] object-cover"
-        / loading="lazy" decoding="async">
+        loading="lazy" decoding="async" />
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
