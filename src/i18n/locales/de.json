@@ -9,7 +9,7 @@
   },
   "hero": {
     "line1": "Technologische",
-    "line2": "Integration\u00a0\nBalearen",
+    "line2": "Integration \nBalearen",
     "cta": "Kontakt aufnehmen",
     "slideAria": "Zu Folie {{n}}",
     "alts": {
@@ -34,12 +34,28 @@
         "name": "Netzwerke",
         "location": "Infrastruktur & Konnektivität",
         "description": "Wir planen und installieren leistungsstarke kabelgebundene und drahtlose Netzwerke für Unternehmen, Wohnhäuser und professionelle Räume. Stabile, sichere Netzwerke, die mit Ihnen wachsen.",
-        "features": ["Strukturierte Verkabelung", "Profi-WLAN", "Cybersicherheit"],
+        "features": [
+          "Strukturierte Verkabelung",
+          "Profi-WLAN",
+          "Cybersicherheit"
+        ],
         "amenities": [
-          { "label": "Profi-WLAN", "description": "Vollständige Abdeckung mit gemanagten Access Points" },
-          { "label": "Fortgeschrittenes Routing", "description": "Managed Router und Switches mit VLAN und QoS" },
-          { "label": "Perimeter-Sicherheit", "description": "Firewalls, VPN und Netzwerksegmentierung" },
-          { "label": "Server & NAS", "description": "Zentralisierte Speicher und Dienste" }
+          {
+            "label": "Profi-WLAN",
+            "description": "Vollständige Abdeckung mit gemanagten Access Points"
+          },
+          {
+            "label": "Fortgeschrittenes Routing",
+            "description": "Managed Router und Switches mit VLAN und QoS"
+          },
+          {
+            "label": "Perimeter-Sicherheit",
+            "description": "Firewalls, VPN und Netzwerksegmentierung"
+          },
+          {
+            "label": "Server & NAS",
+            "description": "Zentralisierte Speicher und Dienste"
+          }
         ],
         "details": [
           "Bedarfs- und Traffic-Analyse",
@@ -54,12 +70,28 @@
         "name": "Smart Home",
         "location": "Intelligente Häuser & Gebäude",
         "description": "Machen Sie Ihr Zuhause oder Unternehmen zum intelligenten Raum. Wir steuern Licht, Klima, Jalousien, Bewässerung, Sicherheit und Medien über eine einzige Oberfläche – für mehr Komfort und Energieeffizienz.",
-        "features": ["Beleuchtung", "Klima", "Sprachsteuerung"],
+        "features": [
+          "Beleuchtung",
+          "Klima",
+          "Sprachsteuerung"
+        ],
         "amenities": [
-          { "label": "Szenen & Automatik", "description": "Ambiente mit einem Fingertipp" },
-          { "label": "Zentrale Steuerung", "description": "App, Tablet oder Stimme" },
-          { "label": "Smartes Licht", "description": "Dimmen, Farbe und Zeitpläne" },
-          { "label": "Volle Integration", "description": "KNX, Loxone, Control4, Google, Alexa" }
+          {
+            "label": "Szenen & Automatik",
+            "description": "Ambiente mit einem Fingertipp"
+          },
+          {
+            "label": "Zentrale Steuerung",
+            "description": "App, Tablet oder Stimme"
+          },
+          {
+            "label": "Smartes Licht",
+            "description": "Dimmen, Farbe und Zeitpläne"
+          },
+          {
+            "label": "Volle Integration",
+            "description": "KNX, Loxone, Control4, Google, Alexa"
+          }
         ],
         "details": [
           "Individuelle Bedarfsanalyse",
@@ -74,12 +106,28 @@
         "name": "Audiovisuelles",
         "location": "TV, Sound und Heimkino",
         "description": "Heimkinos, Multiroom-Audio, Videowände und Digital Signage. Wir gestalten immersive AV-Erlebnisse für Wohnhäuser, Restaurants, Hotels und Unternehmen.",
-        "features": ["Heimkino", "Multiroom-Audio", "Videowand"],
+        "features": [
+          "Heimkino",
+          "Multiroom-Audio",
+          "Videowand"
+        ],
         "amenities": [
-          { "label": "4K/8K-TVs", "description": "Profi-Installation und Kalibrierung" },
-          { "label": "Einbaulautsprecher", "description": "High-Fidelity-Sound im Bau integriert" },
-          { "label": "Projektion & Leinwände", "description": "Heimkino mit Referenzqualität" },
-          { "label": "Multiroom-Audio", "description": "Synchronisierte Musik in allen Räumen" }
+          {
+            "label": "4K/8K-TVs",
+            "description": "Profi-Installation und Kalibrierung"
+          },
+          {
+            "label": "Einbaulautsprecher",
+            "description": "High-Fidelity-Sound im Bau integriert"
+          },
+          {
+            "label": "Projektion & Leinwände",
+            "description": "Heimkino mit Referenzqualität"
+          },
+          {
+            "label": "Multiroom-Audio",
+            "description": "Synchronisierte Musik in allen Räumen"
+          }
         ],
         "details": [
           "Akustische Raumplanung",
@@ -94,12 +142,28 @@
         "name": "Dokumenten­management",
         "location": "Intranets & Workflows",
         "description": "Wir digitalisieren Ihr Unternehmen mit maßgeschneiderten Intranets, Dokumentenmanagement und automatisierten Freigabe-Workflows. Alle Informationen Ihres Teams: zugänglich, durchsuchbar und sicher.",
-        "features": ["Intranets", "Digitale Signatur", "Automatisierung"],
+        "features": [
+          "Intranets",
+          "Digitale Signatur",
+          "Automatisierung"
+        ],
         "amenities": [
-          { "label": "Unternehmens-Intranet", "description": "Zentrale Plattform für Ihr Team" },
-          { "label": "Dokumenten-Repository", "description": "Erweiterte Suche und Versionierung" },
-          { "label": "Sichere Cloud", "description": "Automatische Backups und Verschlüsselung" },
-          { "label": "Benutzerverwaltung", "description": "Rechte nach Abteilung und Rolle" }
+          {
+            "label": "Unternehmens-Intranet",
+            "description": "Zentrale Plattform für Ihr Team"
+          },
+          {
+            "label": "Dokumenten-Repository",
+            "description": "Erweiterte Suche und Versionierung"
+          },
+          {
+            "label": "Sichere Cloud",
+            "description": "Automatische Backups und Verschlüsselung"
+          },
+          {
+            "label": "Benutzerverwaltung",
+            "description": "Rechte nach Abteilung und Rolle"
+          }
         ],
         "details": [
           "Analyse der aktuellen Prozesse",
@@ -114,12 +178,28 @@
         "name": "Photovoltaik",
         "location": "Solarenergie & Eigenverbrauch",
         "description": "Photovoltaik-Anlagen für Wohnhäuser und Unternehmen auf den Balearen. Senken Sie Ihre Stromrechnung, gewinnen Sie Unabhängigkeit und tragen Sie zu einer nachhaltigeren Zukunft bei.",
-        "features": ["Eigenverbrauch", "Batterien", "Monitoring"],
+        "features": [
+          "Eigenverbrauch",
+          "Batterien",
+          "Monitoring"
+        ],
         "amenities": [
-          { "label": "Solarmodule", "description": "Hocheffiziente Module mit Garantie" },
-          { "label": "Hybrid-Wechselrichter", "description": "Kompatibel mit Batterie und Netz" },
-          { "label": "Lithium-Batterien", "description": "Energie speichern und später nutzen" },
-          { "label": "Nachhaltigkeit", "description": "Reduzieren Sie Ihren CO₂-Fußabdruck" }
+          {
+            "label": "Solarmodule",
+            "description": "Hocheffiziente Module mit Garantie"
+          },
+          {
+            "label": "Hybrid-Wechselrichter",
+            "description": "Kompatibel mit Batterie und Netz"
+          },
+          {
+            "label": "Lithium-Batterien",
+            "description": "Energie speichern und später nutzen"
+          },
+          {
+            "label": "Nachhaltigkeit",
+            "description": "Reduzieren Sie Ihren CO₂-Fußabdruck"
+          }
         ],
         "details": [
           "Verbrauchs- und Machbarkeitsanalyse",
@@ -137,10 +217,22 @@
     "title": "Technologie mit Sinn",
     "subtitle": "Ihr lokaler Partner auf Mallorca, um Ihre Technologieprojekte auf das nächste Level zu heben.",
     "features": [
-      { "title": "Lokal auf Mallorca", "description": "Lokales Team mit schneller Reaktion auf der gesamten Insel und den Balearen" },
-      { "title": "Rundum-Service", "description": "Von Planung über Installation bis Wartung – ein Ansprechpartner" },
-      { "title": "Qualität garantiert", "description": "Führende Marken, zertifizierte Techniker und Garantie auf alle Arbeiten" },
-      { "title": "Ständige Innovation", "description": "Wir bilden uns täglich in den fortschrittlichsten Technologien fort" }
+      {
+        "title": "Lokal auf Mallorca",
+        "description": "Lokales Team mit schneller Reaktion auf der gesamten Insel und den Balearen"
+      },
+      {
+        "title": "Rundum-Service",
+        "description": "Von Planung über Installation bis Wartung – ein Ansprechpartner"
+      },
+      {
+        "title": "Qualität garantiert",
+        "description": "Führende Marken, zertifizierte Techniker und Garantie auf alle Arbeiten"
+      },
+      {
+        "title": "Ständige Innovation",
+        "description": "Wir bilden uns täglich in den fortschrittlichsten Technologien fort"
+      }
     ]
   },
   "footer": {
@@ -176,12 +268,30 @@
     "valuesEyebrow": "UNSERE WERTE",
     "valuesTitle": "Woran wir glauben",
     "values": [
-      { "title": "Nähe", "description": "Ihr vertrautes Technik-Team auf Mallorca, immer erreichbar, wenn Sie uns brauchen." },
-      { "title": "Engagement", "description": "Wir behandeln jede Installation wie unsere eigene: mit Hingabe und Verantwortung." },
-      { "title": "Präzision", "description": "Sorgfältige Technik, saubere Verkabelung und klare Dokumentation in jedem Projekt." },
-      { "title": "Innovation", "description": "Wir prüfen und übernehmen die besten Technologien für aktuelle Lösungen." },
-      { "title": "Nachhaltigkeit", "description": "Wir setzen auf Energieeffizienz und erneuerbare Energien." },
-      { "title": "Transparenz", "description": "Klare Angebote, realistische Termine und ehrliche Kommunikation zu jeder Zeit." }
+      {
+        "title": "Nähe",
+        "description": "Ihr vertrautes Technik-Team auf Mallorca, immer erreichbar, wenn Sie uns brauchen."
+      },
+      {
+        "title": "Engagement",
+        "description": "Wir behandeln jede Installation wie unsere eigene: mit Hingabe und Verantwortung."
+      },
+      {
+        "title": "Präzision",
+        "description": "Sorgfältige Technik, saubere Verkabelung und klare Dokumentation in jedem Projekt."
+      },
+      {
+        "title": "Innovation",
+        "description": "Wir prüfen und übernehmen die besten Technologien für aktuelle Lösungen."
+      },
+      {
+        "title": "Nachhaltigkeit",
+        "description": "Wir setzen auf Energieeffizienz und erneuerbare Energien."
+      },
+      {
+        "title": "Transparenz",
+        "description": "Klare Angebote, realistische Termine und ehrliche Kommunikation zu jeder Zeit."
+      }
     ]
   },
   "contact": {
@@ -246,5 +356,27 @@
   "meta": {
     "title": "PALMER - Technologische Integration auf Mallorca",
     "description": "Netzwerke, Smart Home, AV, Dokumentenmanagement und Photovoltaik auf den Balearen."
+  },
+  "seo": {
+    "home": {
+      "title": "PALMER — Technologieintegration auf Mallorca",
+      "description": "PALMER: Technologieintegration auf Mallorca. Netzwerke, Smart Home, AV, Dokumentenmanagement und Photovoltaik für Wohn- und Geschäftsräume."
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Lernen Sie PALMER kennen, Unternehmen für Technologieintegration auf den Balearen. Engineering, Design und Support für anspruchsvolle technische Projekte."
+    },
+    "locations": {
+      "title": "Unsere Leistungen",
+      "description": "Netzwerke, KNX Smart Home, Audiovisuelles, Dokumentenmanagement und Photovoltaik. Schlüsselfertige Lösungen auf Mallorca."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Sprechen Sie mit PALMER: Formular, WhatsApp, Telefon oder E-Mail. Individuelle Angebote auf den Balearen."
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "News, Praxisprojekte und technische Analysen zu Technologieintegration, Marken und PALMER-Projekten."
+    }
   }
 }
