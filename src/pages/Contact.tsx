@@ -44,15 +44,22 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
-        body: formData,
+      const form = e.currentTarget;
+      const data = new FormData(form);
+      const body = new URLSearchParams(data as never).toString();
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
       });
-      if (error) throw error;
+
+      if (!response.ok) throw new Error(`Netlify returned ${response.status}`);
 
       toast({
         title: t("contact.sent") as string,
@@ -60,7 +67,7 @@ const Contact = () => {
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      console.error("send-contact-email failed:", err);
+      console.error("Netlify form submit failed:", err);
       toast({
         title: t("contact.errorTitle") as string,
         description: t("contact.errorDesc") as string,
