@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText } from "lucide-react";
-import bannerImage from "@/assets/detail-meadow-1.jpg";
+import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -53,18 +53,17 @@ const Contact = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
 
-      {/* Hero Image with Parallax */}
-      <div className="relative w-full h-[50vh] overflow-hidden">
+      {/* Hero with PALMER logo */}
+      <div className="relative w-full h-[50vh] overflow-hidden bg-foreground flex items-center justify-center">
         <motion.img
-          src={bannerImage}
-          alt="Contact banner"
+          src={palmerMark.url}
+          alt="PALMER"
           style={{ y }}
-          initial={{ opacity: 0, scale: 1.1 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
-          className="absolute inset-0 w-full h-[120%] object-cover"
+          className="relative w-40 md:w-56 lg:w-64 h-auto"
         />
-        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       <main className="py-24 lg:py-32 px-6 lg:px-12">
