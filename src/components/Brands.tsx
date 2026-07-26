@@ -9,7 +9,7 @@ import ciscoLogo from "@/assets/brands/cisco-new.svg.asset.json";
 import jvcLogo from "@/assets/brands/jvc-new.svg.asset.json";
 import knxLogo from "@/assets/brands/knx-new.svg.asset.json";
 import linnLogo from "@/assets/brands/linn.png.asset.json";
-import microsoftLogo from "@/assets/brands/microsoft-new.jpg.asset.json";
+import microsoftLogo from "@/assets/brands/microsoft.webp.asset.json";
 import samsungLogo from "@/assets/brands/samsung.png.asset.json";
 import sonosLogo from "@/assets/brands/sonos.png.asset.json";
 import ubiquitiLogo from "@/assets/brands/ubiquiti.png.asset.json";
