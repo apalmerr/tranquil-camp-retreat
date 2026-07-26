@@ -3,11 +3,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-import appleLogo from "@/assets/brands/apple.png.asset.json";
-import boseLogo from "@/assets/brands/bose.png.asset.json";
-import ciscoLogo from "@/assets/brands/cisco.png.asset.json";
-import jvcLogo from "@/assets/brands/jvc.png.asset.json";
-import knxLogo from "@/assets/brands/knx.png.asset.json";
+import appleLogo from "@/assets/brands/apple-new.png.asset.json";
+import boseLogo from "@/assets/brands/bose-new.png.asset.json";
+import ciscoLogo from "@/assets/brands/cisco-new.svg.asset.json";
+import jvcLogo from "@/assets/brands/jvc-new.svg.asset.json";
+import knxLogo from "@/assets/brands/knx-new.svg.asset.json";
 import linnLogo from "@/assets/brands/linn.png.asset.json";
 import microsoftLogo from "@/assets/brands/microsoft-new.jpg.asset.json";
 import samsungLogo from "@/assets/brands/samsung.png.asset.json";
