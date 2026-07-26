@@ -76,9 +76,20 @@ Es la mejor forma de aplicar el principio de **defensa en profundidad** también
 
 ## Ver el ecosistema en acción
 
-Ubiquiti publica en su canal oficial de YouTube demos, tutoriales y presentaciones de producto de toda la gama **UniFi**, incluidas las nuevas líneas **UniFi UPS** y **UniFi DC Power**.
+<video
+  class="w-full rounded-md my-8"
+  src="/__l5e/assets-v1/a8961165-a182-42ca-96c6-4a4e5aa8d864/ubiquiti-ups-video.mp4"
+  controls
+  autoplay
+  muted
+  loop
+  playsinline
+  poster="/__l5e/assets-v1/6d756c64-73ce-4441-b1d8-13d0721a52e6/ubiquiti-battery.jpg">
+</video>
 
-👉 [Ver el canal oficial de Ubiquiti en YouTube](https://www.youtube.com/@Ubiquiti)
+> Vídeo demostrativo del ecosistema **UniFi UPS + DC Power** instalado en rack profesional.
+
+Para más contenido oficial de producto, puedes visitar el [canal de Ubiquiti en YouTube](https://www.youtube.com/@Ubiquiti).
 
 ## ¿Por qué instalarlo con PALMER?
 
