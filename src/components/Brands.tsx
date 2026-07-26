@@ -9,10 +9,12 @@ import ciscoLogo from "@/assets/brands/cisco.png.asset.json";
 import jvcLogo from "@/assets/brands/jvc.png.asset.json";
 import knxLogo from "@/assets/brands/knx.png.asset.json";
 import linnLogo from "@/assets/brands/linn.png.asset.json";
-import microsoftLogo from "@/assets/brands/microsoft.png.asset.json";
+import microsoftLogo from "@/assets/brands/microsoft-new.jpg.asset.json";
 import samsungLogo from "@/assets/brands/samsung.png.asset.json";
 import sonosLogo from "@/assets/brands/sonos.png.asset.json";
 import ubiquitiLogo from "@/assets/brands/ubiquiti.png.asset.json";
+import lgLogo from "@/assets/brands/lg.png.asset.json";
+import sigenergyLogo from "@/assets/brands/sigenergy.png.asset.json";
 
 type Brand = {
   name: string;
@@ -32,10 +34,10 @@ const brands: Brand[] = [
   { name: "JVC", slug: "jvc", logo: jvcLogo.url },
   { name: "BOSE", slug: "bose", logo: boseLogo.url },
   { name: "SAMSUNG", slug: "samsung", logo: samsungLogo.url },
-  { name: "LG", slug: "lg", className: "font-serif tracking-[0.3em]" },
+  { name: "LG", slug: "lg", logo: lgLogo.url },
   { name: "UBIQUITI", slug: "ubiquiti", logo: ubiquitiLogo.url },
   { name: "MICROSOFT", slug: "microsoft", logo: microsoftLogo.url },
-  { name: "SIGENERGY", slug: "sigenergy", className: "font-semibold tracking-[0.2em]" },
+  { name: "SIGENERGY", slug: "sigenergy", logo: sigenergyLogo.url },
 ];
 
 const Brands = () => {
