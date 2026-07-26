@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText, Instagram, Linkedin, Phone, MessageCircle } from "lucide-react";
-import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
+import palmerMark from "@/assets/palmer-mark-color.png";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 
@@ -129,7 +129,7 @@ const Contact = () => {
       {/* Hero with PALMER logo */}
       <div className="relative w-full h-[50vh] overflow-hidden bg-foreground flex items-center justify-center">
         <motion.img
-          src={palmerMark.url}
+          src={palmerMark}
           alt="PALMER"
           style={{ y }}
           initial={{ opacity: 0, scale: 0.9 }}
