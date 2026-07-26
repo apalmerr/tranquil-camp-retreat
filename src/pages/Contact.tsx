@@ -11,7 +11,6 @@ import { useToast } from "@/hooks/use-toast";
 import { User, Mail, MessageSquare, FileText, Instagram, Linkedin, Phone, MessageCircle } from "lucide-react";
 import palmerMark from "@/assets/palmer-mark-color.png.asset.json";
 import { useTranslation } from "react-i18next";
-import { supabase } from "@/integrations/supabase/client";
 
 // Contact channels — edit these values to update all links across the site.
 const CONTACT_INFO = {
