@@ -74,18 +74,11 @@ Si además tienes una instalación **fotovoltaica con baterías** (otra de nuest
 
 Es la mejor forma de aplicar el principio de **defensa en profundidad** también a la energía.
 
-## Ver el ecosistema en vídeo
+## Ver el ecosistema en acción
 
-<div class="aspect-video my-8">
-  <iframe
-    class="w-full h-full rounded-md"
-    src="https://www.youtube.com/embed/videoseries?list=PLibDtusetGV1CJZS2Q1DP5DP-EZgLLDW5"
-    title="Ubiquiti UniFi — vídeos oficiales"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
+Ubiquiti publica en su canal oficial de YouTube demos, tutoriales y presentaciones de producto de toda la gama **UniFi**, incluidas las nuevas líneas **UniFi UPS** y **UniFi DC Power**.
+
+👉 [Ver el canal oficial de Ubiquiti en YouTube](https://www.youtube.com/@Ubiquiti)
 
 ## ¿Por qué instalarlo con PALMER?
 
