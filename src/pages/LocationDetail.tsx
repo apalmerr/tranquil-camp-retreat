@@ -49,7 +49,7 @@ const LocationDetail = () => {
     description,
     provider: {
       "@type": "LocalBusiness",
-      name: "PALMER",
+      name: "ARNAU PALMER",
       areaServed: "Mallorca, Islas Baleares, España",
     },
     serviceType: tagline,
@@ -61,7 +61,7 @@ const LocationDetail = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO
-        title={`${name} — PALMER`}
+        title={`${name} — ARNAU PALMER`}
         description={description}
         path={`/service/${service.id}`}
         type="article"

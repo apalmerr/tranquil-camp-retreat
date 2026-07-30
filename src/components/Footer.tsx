@@ -53,9 +53,9 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-medium mb-4">{t("footer.contactUs")}</h4>
             <div className="flex flex-col gap-2 mb-8">
-              <a href="mailto:info@palmer.es" className="text-background/70 hover:text-background smooth-hover text-xs font-light flex items-center gap-2">
+              <a href="mailto:arnau@palmerit.es" className="text-background/70 hover:text-background smooth-hover text-xs font-light flex items-center gap-2">
                 <Mail className="h-3 w-3" />
-                info@palmer.es
+                arnau@palmerit.es
               </a>
               <p className="text-background/70 text-xs font-light">
                 {t("footer.hours")}
@@ -65,13 +65,13 @@ const Footer = () => {
 
             <h4 className="text-sm font-medium mb-4">{t("footer.follow")}</h4>
             <div className="flex items-center gap-4">
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="https://www.instagram.com/arnaupalmer_it" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Linkedin className="h-4 w-4" />
               </a>
             </div>

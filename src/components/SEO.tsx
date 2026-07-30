@@ -18,7 +18,7 @@ interface SEOProps {
 const SEO = ({ title, description, path, type = "website", image, jsonLd, noindex }: SEOProps) => {
   const { i18n } = useTranslation();
   const canonical = `${SITE_URL}${path}`;
-  const fullTitle = title.includes("PALMER") ? title : `${title} — PALMER`;
+  const fullTitle = title.includes("ARNAU PALMER") ? title : `${title} — ARNAU PALMER`;
   const ogImage = image ? (image.startsWith("http") ? image : `${SITE_URL}${image}`) : `${SITE_URL}${DEFAULT_OG_IMAGE}`;
 
   return (
@@ -35,7 +35,7 @@ const SEO = ({ title, description, path, type = "website", image, jsonLd, noinde
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonical} />
-      <meta property="og:site_name" content="PALMER" />
+      <meta property="og:site_name" content="ARNAU PALMER" />
       <meta property="og:locale" content={i18n.language === "en" ? "en_US" : i18n.language === "de" ? "de_DE" : "es_ES"} />
       {ogImage && (
         <>

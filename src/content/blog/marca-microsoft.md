@@ -1,14 +1,14 @@
 ---
 title: Por qué trabajamos con Microsoft
 date: 2026-07-24
-excerpt: Productividad y gestión documental. Descubre por qué en PALMER hemos elegido Microsoft como uno de nuestros partners de referencia.
-author: PALMER
+excerpt: Productividad y gestión documental. Descubre por qué en Arnau Palmer hemos elegido Microsoft como uno de nuestros partners de referencia.
+author: Arnau Palmer
 lang: es
 ---
 
 # Por qué trabajamos con Microsoft
 
-En PALMER seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
 Microsoft es uno de nuestros partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con Microsoft

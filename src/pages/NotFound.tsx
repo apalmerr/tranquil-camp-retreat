@@ -26,7 +26,7 @@ const NotFound = () => {
       <Navigation />
       <main className="flex-1 flex items-center justify-center px-6 py-24">
         <div className="text-center max-w-md">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-6">PALMER</p>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-6">ARNAU PALMER</p>
           <h1 className="text-7xl md:text-9xl font-light tracking-tight text-foreground mb-6">404</h1>
           <p className="text-lg text-muted-foreground font-light mb-2">{t("notFound.sub")}</p>
           <p className="text-sm text-muted-foreground/70 font-light mb-10">{t("notFound.hint")}</p>

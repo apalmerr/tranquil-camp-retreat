@@ -3,13 +3,13 @@ title: Ubiquiti UniFi UPS y DC Power — energía inteligente para tu red
 date: 2026-07-26
 excerpt: Descubre las baterías UniFi UPS y el cargador DC de Ubiquiti. Autonomía, gestión centralizada y protección 24/7 para tu red profesional en Baleares.
 cover: /blog/ubiquiti-battery.jpg
-author: PALMER
+author: Arnau Palmer
 lang: es
 ---
 
 # Ubiquiti UniFi UPS y DC Power: energía continua para redes profesionales
 
-En PALMER llevamos años desplegando infraestructura Ubiquiti en hogares, hoteles, oficinas y villas de toda Mallorca. Su ecosistema **UniFi** nos ha permitido ofrecer redes fiables, escalables y gestionadas desde una única interfaz. Ahora, con la nueva línea **UniFi UPS** y **UniFi DC Power**, Ubiquiti da un paso más: garantizar que tu red **nunca se caiga**, incluso durante un corte de luz.
+En Arnau Palmer llevamos años desplegando infraestructura Ubiquiti en hogares, hoteles, oficinas y villas de toda Mallorca. Su ecosistema **UniFi** nos ha permitido ofrecer redes fiables, escalables y gestionadas desde una única interfaz. Ahora, con la nueva línea **UniFi UPS** y **UniFi DC Power**, Ubiquiti da un paso más: garantizar que tu red **nunca se caiga**, incluso durante un corte de luz.
 
 ## Por qué la energía importa tanto como la red
 
@@ -70,7 +70,7 @@ Resultado: durante los cortes puntuales de red eléctrica de la zona, **la vivie
 
 ## Sinergia con fotovoltaica
 
-Si además tienes una instalación **fotovoltaica con baterías** (otra de nuestras especialidades en PALMER), la combinación es todavía más potente: la red se alimenta primero desde tus paneles solares, luego desde las baterías de la vivienda, y solo en última instancia desde las **UniFi UPS**, que actúan como último bastión ante cualquier fallo.
+Si además tienes una instalación **fotovoltaica con baterías** (otra de nuestras especialidades en Arnau Palmer), la combinación es todavía más potente: la red se alimenta primero desde tus paneles solares, luego desde las baterías de la vivienda, y solo en última instancia desde las **UniFi UPS**, que actúan como último bastión ante cualquier fallo.
 
 Es la mejor forma de aplicar el principio de **defensa en profundidad** también a la energía.
 
@@ -91,7 +91,7 @@ Es la mejor forma de aplicar el principio de **defensa en profundidad** también
 
 Para más contenido oficial de producto, puedes visitar el [canal de Ubiquiti en YouTube](https://www.youtube.com/@Ubiquiti).
 
-## ¿Por qué instalarlo con PALMER?
+## ¿Por qué instalarlo con Arnau Palmer?
 
 Somos **integradores certificados Ubiquiti** en Baleares. Nos encargamos de:
 
