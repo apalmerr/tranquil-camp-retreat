@@ -5,7 +5,7 @@
     "blog": "BLOG",
     "contact": "CONTACT",
     "cta": "CONTACT",
-    "brand": "PALMER"
+    "brand": "ARNAU PALMER"
   },
   "hero": {
     "line1": "Technology",
@@ -213,7 +213,7 @@
     }
   },
   "experience": {
-    "eyebrow": "WHY PALMER",
+    "eyebrow": "WHY ARNAU Arnau Palmer",
     "title": "Technology that makes sense",
     "subtitle": "A local partner in Mallorca to take your technology projects to the next level.",
     "features": [
@@ -236,7 +236,7 @@
     ]
   },
   "footer": {
-    "tagline": "PALMER · Technology integration in Mallorca. We design, install and maintain the systems that make your life simpler.",
+    "tagline": "ARNAU PALMER · Technology integrator in Mallorca. I design, install and maintain the systems that make your life simpler.",
     "pages": "Pages",
     "home": "Home",
     "services": "SERVICES",
@@ -247,18 +247,18 @@
     "contactUs": "Contact Us",
     "hours": "Mon - Fri: 8am - 5pm",
     "follow": "Follow Us",
-    "rights": "© 2026 PALMER. All rights reserved."
+    "rights": "© 2026 ARNAU PALMER. All rights reserved."
   },
   "about": {
     "eyebrow": "ABOUT US",
     "title": "Our Story",
     "story": [
-      "PALMER was born in Mallorca with a clear idea: bring the most advanced technology to homes and businesses in the Balearic Islands with a close, professional, hassle-free service.",
+      "Arnau Palmer was born in Mallorca with a clear idea: bring the most advanced technology to homes and businesses in the Balearic Islands with a close, professional, hassle-free service.",
       "We are a local team of technicians and integrators passionate about technology. We combine networks, home automation, audiovisual, document management and photovoltaic energy to design integrated solutions tailored to each client.",
       "We work with the best brands in the industry and care for every detail, from the first visit to ongoing maintenance. Our goal: technology at the service of people, not the other way around."
     ],
     "whyEyebrow": "OUR APPROACH",
-    "whyTitle": "Why choose PALMER",
+    "whyTitle": "Why choose Arnau Palmer",
     "why": [
       "Every project starts by listening. We analyse your real needs and how you live and work to propose truly tailored solutions.",
       "We coordinate every technical discipline under a single project: networks, home automation, AV, document management and PV. One point of contact, zero friction between trades.",
@@ -297,7 +297,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's talk about your project",
-    "subtitle": "Tell us what you need and we'll propose the best tech solution for your home or business.",
+    "subtitle": "Tell me what you need and I will propose the best technology solution for your home or business.",
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
@@ -309,19 +309,19 @@
     "errorTitle": "Could not send",
     "errorDesc": "Please try again or email us directly at arnau@palmerit.es.",
     "socialEyebrow": "OTHER WAYS",
-    "socialTitle": "You can also reach us here",
-    "socialSubtitle": "Pick your preferred channel. We reply during business hours.",
+    "socialTitle": "You can also reach me here",
+    "socialSubtitle": "Pick your preferred channel. I reply during business hours.",
     "channels": {
       "instagram": "Instagram",
-      "instagramDesc": "See our latest projects",
+      "instagramDesc": "See my latest projects",
       "linkedin": "LinkedIn",
-      "linkedinDesc": "Connect with us professionally",
+      "linkedinDesc": "Connect with me professionally",
       "phone": "Call us",
-      "phoneDesc": "Talk directly to the team",
+      "phoneDesc": "Talk directly to me",
       "whatsapp": "WhatsApp",
-      "whatsappDesc": "Send us a quick message",
+      "whatsappDesc": "Send me a quick message",
       "email": "Email",
-      "emailDesc": "Write us an email"
+      "emailDesc": "Write me an email"
     }
   },
   "blog": {
@@ -357,29 +357,29 @@
     "contact": "Contact us"
   },
   "meta": {
-    "title": "PALMER - Technology Integration in Mallorca",
+    "title": "ARNAU PALMER - Technology Integrator in Mallorca",
     "description": "Networks, home automation, AV, document management and solar PV in the Balearic Islands."
   },
   "seo": {
     "home": {
-      "title": "PALMER — Technology Integration in Mallorca",
-      "description": "PALMER: technology integration in Mallorca. Networking, smart home, AV, document management and solar systems for homes and businesses."
+      "title": "ARNAU PALMER — Technology Integrator in Mallorca",
+      "description": "Arnau Palmer: technology integrator in Mallorca. Networking, smart home, AV, document management and solar systems for homes and businesses."
     },
     "about": {
-      "title": "About Us",
-      "description": "Meet PALMER, technology integration company in the Balearics. Engineering, design and support for demanding technical projects."
+      "title": "About Me",
+      "description": "Meet Arnau Palmer, technology integrator in the Balearics. Engineering, design and support for demanding technical projects."
     },
     "locations": {
-      "title": "Our Services",
+      "title": "My Services",
       "description": "Networking, KNX smart home, audio-visual, document management and photovoltaic systems. Turn-key solutions in Mallorca."
     },
     "contact": {
       "title": "Contact",
-      "description": "Talk to PALMER: reach us by form, WhatsApp, phone or email. Custom quotes across the Balearic Islands."
+      "description": "Talk to Arnau Palmer: reach me by form, WhatsApp, phone or email. Custom quotes across the Balearic Islands."
     },
     "blog": {
       "title": "Blog",
-      "description": "News, real projects and technical analysis on technology integration, brands and PALMER projects."
+      "description": "News, real projects and technical analysis on technology integration, brands and Arnau Palmer projects."
     }
   },
   "whatsapp": {
@@ -389,7 +389,7 @@
   "testimonials": {
     "eyebrow": "SUCCESS STORIES",
     "title": "What our clients say",
-    "subtitle": "Real projects in Mallorca, homes and businesses that trust PALMER.",
+    "subtitle": "Real projects in Mallorca, homes and businesses that trust Arnau Palmer.",
     "items": [
       {
         "quote": "They did the entire network and home automation of the house. Impeccable, tidy work and great support when we need it.",
@@ -411,7 +411,7 @@
   "faq": {
     "eyebrow": "FAQ",
     "title": "We answer your questions",
-    "subtitle": "Everything you need to know before starting your project with PALMER.",
+    "subtitle": "Everything you need to know before starting your project with Arnau Palmer.",
     "items": [
       {
         "q": "Which areas do you cover?",
