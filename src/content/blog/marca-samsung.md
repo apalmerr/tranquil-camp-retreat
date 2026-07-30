@@ -2,13 +2,13 @@
 title: Por qué trabajamos con Samsung
 date: 2026-07-24
 excerpt: Pantallas y señalización digital. Descubre por qué en PALMER hemos elegido Samsung como uno de nuestros partners de referencia.
-author: PALMER
+author: Arnau Palmer
 lang: es
 ---
 
 # Por qué trabajamos con Samsung
 
-En PALMER seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
 Samsung es uno de nuestros partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con Samsung

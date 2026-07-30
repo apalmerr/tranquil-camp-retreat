@@ -12,7 +12,7 @@ title: Título del post
 date: 2026-07-24
 excerpt: Una frase corta que aparece en la lista del blog.
 cover: https://url-de-la-imagen.jpg
-author: PALMER
+author: Arnau Palmer
 lang: es
 ---
 

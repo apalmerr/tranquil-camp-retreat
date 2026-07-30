@@ -2,13 +2,13 @@
 title: Por qué trabajamos con SigEnergy
 date: 2026-07-24
 excerpt: Almacenamiento energético inteligente. Descubre por qué en PALMER hemos elegido SigEnergy como uno de nuestros partners de referencia.
-author: PALMER
+author: Arnau Palmer
 lang: es
 ---
 
 # Por qué trabajamos con SigEnergy
 
-En PALMER seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
 SigEnergy es uno de nuestros partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con SigEnergy

@@ -2,13 +2,13 @@
 title: Por qué trabajamos con JVC
 date: 2026-07-24
 excerpt: Proyección y vídeo profesional. Descubre por qué en PALMER hemos elegido JVC como uno de nuestros partners de referencia.
-author: PALMER
+author: Arnau Palmer
 lang: es
 ---
 
 # Por qué trabajamos con JVC
 
-En PALMER seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
 JVC es uno de nuestros partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con JVC
