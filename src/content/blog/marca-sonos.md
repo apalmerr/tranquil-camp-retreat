@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con Sonos
 date: 2026-07-24
-excerpt: Sonido multiroom inalámbrico. Descubre por qué en PALMER hemos elegido Sonos como uno de nuestros partners de referencia.
+excerpt: Sonido multiroom inalámbrico. Descubre por qué en Arnau Palmer hemos elegido Sonos como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

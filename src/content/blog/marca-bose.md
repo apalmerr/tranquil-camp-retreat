@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con Bose
 date: 2026-07-24
-excerpt: Sonido premium para hogar y negocio. Descubre por qué en PALMER hemos elegido Bose como uno de nuestros partners de referencia.
+excerpt: Sonido premium para hogar y negocio. Descubre por qué en Arnau Palmer hemos elegido Bose como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

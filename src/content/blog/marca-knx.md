@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con KNX
 date: 2026-07-24
-excerpt: El estándar mundial de domótica. Descubre por qué en PALMER hemos elegido KNX como uno de nuestros partners de referencia.
+excerpt: El estándar mundial de domótica. Descubre por qué en Arnau Palmer hemos elegido KNX como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

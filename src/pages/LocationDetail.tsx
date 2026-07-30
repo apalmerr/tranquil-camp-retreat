@@ -61,7 +61,7 @@ const LocationDetail = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <SEO
-        title={`${name} — PALMER`}
+        title={`${name} — ARNAU PALMER`}
         description={description}
         path={`/service/${service.id}`}
         type="article"

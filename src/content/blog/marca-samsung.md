@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con Samsung
 date: 2026-07-24
-excerpt: Pantallas y señalización digital. Descubre por qué en PALMER hemos elegido Samsung como uno de nuestros partners de referencia.
+excerpt: Pantallas y señalización digital. Descubre por qué en Arnau Palmer hemos elegido Samsung como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

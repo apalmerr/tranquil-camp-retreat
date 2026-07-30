@@ -126,11 +126,11 @@ const Contact = () => {
       />
       <Navigation />
 
-      {/* Hero with PALMER logo */}
+      {/* Hero with ARNAU PALMER logo */}
       <div className="relative w-full h-[50vh] overflow-hidden bg-foreground flex items-center justify-center">
         <motion.img
           src={palmerMark}
-          alt="PALMER"
+          alt="ARNAU PALMER"
           style={{ y }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

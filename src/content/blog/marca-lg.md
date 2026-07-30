@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con LG
 date: 2026-07-24
-excerpt: Displays OLED y soluciones profesionales. Descubre por qué en PALMER hemos elegido LG como uno de nuestros partners de referencia.
+excerpt: Displays OLED y soluciones profesionales. Descubre por qué en Arnau Palmer hemos elegido LG como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con Apple
 date: 2026-07-24
-excerpt: Ecosistema integrado y experiencia de usuario. Descubre por qué en PALMER hemos elegido Apple como uno de nuestros partners de referencia.
+excerpt: Ecosistema integrado y experiencia de usuario. Descubre por qué en Arnau Palmer hemos elegido Apple como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

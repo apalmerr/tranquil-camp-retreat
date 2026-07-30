@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con SigEnergy
 date: 2026-07-24
-excerpt: Almacenamiento energético inteligente. Descubre por qué en PALMER hemos elegido SigEnergy como uno de nuestros partners de referencia.
+excerpt: Almacenamiento energético inteligente. Descubre por qué en Arnau Palmer hemos elegido SigEnergy como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

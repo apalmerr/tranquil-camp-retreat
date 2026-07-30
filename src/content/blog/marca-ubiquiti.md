@@ -70,7 +70,7 @@ Resultado: durante los cortes puntuales de red eléctrica de la zona, **la vivie
 
 ## Sinergia con fotovoltaica
 
-Si además tienes una instalación **fotovoltaica con baterías** (otra de nuestras especialidades en PALMER), la combinación es todavía más potente: la red se alimenta primero desde tus paneles solares, luego desde las baterías de la vivienda, y solo en última instancia desde las **UniFi UPS**, que actúan como último bastión ante cualquier fallo.
+Si además tienes una instalación **fotovoltaica con baterías** (otra de nuestras especialidades en Arnau Palmer), la combinación es todavía más potente: la red se alimenta primero desde tus paneles solares, luego desde las baterías de la vivienda, y solo en última instancia desde las **UniFi UPS**, que actúan como último bastión ante cualquier fallo.
 
 Es la mejor forma de aplicar el principio de **defensa en profundidad** también a la energía.
 

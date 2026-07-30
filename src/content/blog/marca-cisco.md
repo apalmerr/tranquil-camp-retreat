@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con Cisco
 date: 2026-07-24
-excerpt: Redes empresariales y ciberseguridad. Descubre por qué en PALMER hemos elegido Cisco como uno de nuestros partners de referencia.
+excerpt: Redes empresariales y ciberseguridad. Descubre por qué en Arnau Palmer hemos elegido Cisco como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---

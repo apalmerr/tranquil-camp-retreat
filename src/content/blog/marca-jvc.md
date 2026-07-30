@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con JVC
 date: 2026-07-24
-excerpt: Proyección y vídeo profesional. Descubre por qué en PALMER hemos elegido JVC como uno de nuestros partners de referencia.
+excerpt: Proyección y vídeo profesional. Descubre por qué en Arnau Palmer hemos elegido JVC como uno de nuestros partners de referencia.
 author: Arnau Palmer
 lang: es
 ---
