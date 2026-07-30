@@ -80,7 +80,7 @@ const Hero = () => {
         >
           <img
             src={palmerLogoAsset}
-            alt="PALMER"
+            alt="ARNAU PALMER"
             className="h-10 w-auto"
           loading="lazy" decoding="async" />
         </motion.div>
