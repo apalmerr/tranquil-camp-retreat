@@ -49,7 +49,7 @@ const LocationDetail = () => {
     description,
     provider: {
       "@type": "LocalBusiness",
-      name: "PALMER",
+      name: "ARNAU PALMER",
       areaServed: "Mallorca, Islas Baleares, España",
     },
     serviceType: tagline,

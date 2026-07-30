@@ -3,7 +3,7 @@ import LegalLayout from "./legal/LegalLayout";
 const Privacy = () => (
   <LegalLayout eyebrow="Legal" title="Política de Privacidad" updatedAt="24/07/2026">
     <p>
-      En PALMER nos tomamos la protección de tus datos personales muy en serio. Esta política
+      En Arnau Palmer nos tomamos la protección de tus datos personales muy en serio. Esta política
       explica qué datos recogemos, con qué finalidad, con qué base legal y qué derechos tienes
       sobre ellos, conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 de
       Protección de Datos y garantía de derechos digitales (LOPDGDD).
@@ -11,7 +11,7 @@ const Privacy = () => (
 
     <h2>Responsable del tratamiento</h2>
     <ul>
-      <li>Titular: PALMER [razón social completa]</li>
+      <li>Titular: ARNAU PALMER</li>
       <li>NIF/CIF: [pendiente]</li>
       <li>Domicilio: Mallorca, Illes Balears [dirección completa pendiente]</li>
       <li>Email: <a href="mailto:arnau@palmerit.es">arnau@palmerit.es</a></li>
@@ -83,7 +83,7 @@ const Privacy = () => (
     </p>
 
     <p className="text-xs text-muted-foreground pt-6 border-t border-border">
-      Página mantenida por PALMER. Los datos fiscales entre corchetes deben completarse por el
+      Página mantenida por ARNAU PALMER. Los datos fiscales entre corchetes deben completarse por el
       titular antes de la publicación definitiva.
     </p>
   </LegalLayout>
