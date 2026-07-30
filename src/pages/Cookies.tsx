@@ -3,7 +3,7 @@ import LegalLayout from "./legal/LegalLayout";
 const Cookies = () => (
   <LegalLayout eyebrow="Legal" title="Política de Cookies" updatedAt="24/07/2026">
     <p>
-      Esta Política de Cookies explica qué son las cookies, cómo las utiliza PALMER en este sitio web
+      Esta Política de Cookies explica qué son las cookies, cómo las utiliza Arnau Palmer en este sitio web
       y qué opciones tienes para gestionarlas. Al continuar navegando aceptas el uso de cookies
       técnicas necesarias; el resto solo se activarán si otorgas tu consentimiento a través del
       banner de cookies.
@@ -59,7 +59,7 @@ const Cookies = () => (
     </p>
 
     <p className="text-xs text-muted-foreground pt-6 border-t border-border">
-      Esta página es mantenida por PALMER para responder preguntas comunes sobre privacidad y uso de
+      Esta página es mantenida por ARNAU PALMER para responder preguntas comunes sobre privacidad y uso de
       cookies en este sitio. No constituye una certificación por parte de terceros.
     </p>
   </LegalLayout>

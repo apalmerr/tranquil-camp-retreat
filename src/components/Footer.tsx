@@ -65,13 +65,13 @@ const Footer = () => {
 
             <h4 className="text-sm font-medium mb-4">{t("footer.follow")}</h4>
             <div className="flex items-center gap-4">
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="https://www.instagram.com/arnaupalmer_it" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background smooth-hover">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background smooth-hover">
                 <Linkedin className="h-4 w-4" />
               </a>
             </div>
