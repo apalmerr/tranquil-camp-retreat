@@ -14,7 +14,7 @@ const Privacy = () => (
       <li>Titular: PALMER [razón social completa]</li>
       <li>NIF/CIF: [pendiente]</li>
       <li>Domicilio: Mallorca, Illes Balears [dirección completa pendiente]</li>
-      <li>Email: <a href="mailto:info@palmer.es">info@palmer.es</a></li>
+      <li>Email: <a href="mailto:arnau@palmerit.es">arnau@palmerit.es</a></li>
     </ul>
 
     <h2>Datos que tratamos y finalidad</h2>
@@ -69,7 +69,7 @@ const Privacy = () => (
       <li>Retirar el consentimiento en cualquier momento, sin efectos retroactivos.</li>
     </ul>
     <p>
-      Para ejercerlos, escríbenos a <a href="mailto:info@palmer.es">info@palmer.es</a> indicando el
+      Para ejercerlos, escríbenos a <a href="mailto:arnau@palmerit.es">arnau@palmerit.es</a> indicando el
       derecho que deseas ejercer y adjuntando copia de un documento identificativo. También puedes
       presentar una reclamación ante la Agencia Española de Protección de Datos (
       <a href="https://www.aepd.es" target="_blank" rel="noreferrer">www.aepd.es</a>) si consideras

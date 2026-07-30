@@ -55,7 +55,7 @@ const Cookies = () => (
     <h2>Contacto</h2>
     <p>
       Para cualquier duda sobre esta política puedes escribirnos a{" "}
-      <a href="mailto:info@palmer.es">info@palmer.es</a>.
+      <a href="mailto:arnau@palmerit.es">arnau@palmerit.es</a>.
     </p>
 
     <p className="text-xs text-muted-foreground pt-6 border-t border-border">

@@ -15,11 +15,11 @@ import SEO from "@/components/SEO";
 
 // Contact channels — edit these values to update all links across the site.
 const CONTACT_INFO = {
-  email: "info@palmerit.es",
+  email: "arnau@palmerit.es",
   phone: "+34711536425",
   phoneDisplay: "+34 711 536 425",
   whatsapp: "34711536425", // digits only, no '+'
-  instagram: "https://www.instagram.com/palmer.it",
+  instagram: "https://www.instagram.com/arnaupalmer_it",
   // TODO: paste your LinkedIn URL here when ready
   linkedin: "",
 };
@@ -86,7 +86,7 @@ const Contact = () => {
       href: CONTACT_INFO.instagram,
       external: true,
       Icon: Instagram,
-      value: "@palmer.it",
+      value: "@arnaupalmer_it",
     },
     {
       key: "linkedin",

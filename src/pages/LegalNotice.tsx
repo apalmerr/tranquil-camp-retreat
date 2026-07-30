@@ -13,7 +13,7 @@ const LegalNotice = () => (
       <li>Denominación: PALMER [razón social completa]</li>
       <li>NIF/CIF: [pendiente]</li>
       <li>Domicilio: Mallorca, Illes Balears [dirección completa pendiente]</li>
-      <li>Email: <a href="mailto:info@palmer.es">info@palmer.es</a></li>
+      <li>Email: <a href="mailto:arnau@palmerit.es">arnau@palmerit.es</a></li>
       <li>Actividad: Integración tecnológica (redes, domótica, audiovisuales, gestión documental y fotovoltaicas).</li>
     </ul>
 
