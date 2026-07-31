@@ -83,9 +83,9 @@ const Locations = () => {
                       </div>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-base font-normal mb-1 text-card-foreground tracking-tight">
+                      <h2 className="text-base font-normal mb-1 text-card-foreground tracking-tight">
                         {name}
-                      </h3>
+                      </h2>
                       <p className="text-muted-foreground mb-4 text-xs font-light">{tagline}</p>
                       <div className="flex flex-wrap gap-1.5 mb-5">
                         {features.map((feature) => (
