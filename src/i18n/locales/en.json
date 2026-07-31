@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "SERVICES",
-    "about": "ABOUT",
+    "about": "ABOUT ME",
     "blog": "BLOG",
     "contact": "CONTACT",
     "cta": "CONTACT",
@@ -240,7 +240,7 @@
     "pages": "Pages",
     "home": "Home",
     "services": "SERVICES",
-    "about": "ABOUT",
+    "about": "ABOUT ME",
     "blog": "Blog",
     "contact": "CONTACT",
     "ctaLink": "Contact",
@@ -250,7 +250,7 @@
     "rights": "© 2026 ARNAU PALMER. All rights reserved."
   },
   "about": {
-    "eyebrow": "WHO I AM",
+    "eyebrow": "ABOUT ME",
     "title": "My story",
     "story": [
       "My name is Arnau Palmer and I'm a technology integrator in Mallorca. I work on my own, close and direct: the person who answers you, designs the project and installs it is me.",

@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "SERVICIOS",
-    "about": "QUIENES SOMOS",
+    "about": "SOBRE MÍ",
     "blog": "BLOG",
     "contact": "CONTACTO",
     "cta": "CONTACTO",
@@ -10,7 +10,7 @@
   "hero": {
     "line1": "Integración",
     "line2": "Tecnológica \nBaleares",
-    "cta": "Contactar con nosotros",
+    "cta": "Contactar conmigo",
     "slideAria": "Ir a la diapositiva {{n}}",
     "alts": {
       "hero": "Integración tecnológica en Mallorca",
@@ -240,7 +240,7 @@
     "pages": "Páginas",
     "home": "Inicio",
     "services": "SERVICIOS",
-    "about": "QUIENES SOMOS",
+    "about": "SOBRE MÍ",
     "blog": "Blog",
     "contact": "CONTACTO",
     "ctaLink": "Contactar",
@@ -250,7 +250,7 @@
     "rights": "© 2026 ARNAU PALMER. Todos los derechos reservados."
   },
   "about": {
-    "eyebrow": "QUIÉN SOY",
+    "eyebrow": "SOBRE MÍ",
     "title": "Mi historia",
     "story": [
       "Me llamo Arnau Palmer y soy integrador tecnológico en Mallorca. Trabajo solo, de forma cercana y directa: quien te atiende, quien diseña el proyecto y quien lo instala soy yo.",
