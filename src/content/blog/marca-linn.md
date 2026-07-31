@@ -1,7 +1,7 @@
 ---
 title: Por qué trabajamos con LINN
 date: 2026-07-24
-excerpt: Audio de alta fidelidad británico. Descubre por qué en Arnau Palmer hemos elegido LINN como uno de nuestros partners de referencia.
+excerpt: Audio de alta fidelidad británico. Descubre por qué he elegido LINN como uno de mis partners de referencia.
 author: Arnau Palmer
 lang: es
 ---
@@ -9,7 +9,7 @@ lang: es
 # Por qué trabajamos con LINN
 
 En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
-LINN es uno de nuestros partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
+LINN es uno de mis partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con LINN
 
