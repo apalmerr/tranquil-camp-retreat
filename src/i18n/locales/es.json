@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "SERVICIOS",
-    "about": "QUIENES SOMOS",
+    "about": "SOBRE MÍ",
     "blog": "BLOG",
     "contact": "CONTACTO",
     "cta": "CONTACTO",
@@ -10,7 +10,7 @@
   "hero": {
     "line1": "Integración",
     "line2": "Tecnológica \nBaleares",
-    "cta": "Contactar con nosotros",
+    "cta": "Contactar conmigo",
     "slideAria": "Ir a la diapositiva {{n}}",
     "alts": {
       "hero": "Integración tecnológica en Mallorca",
@@ -20,12 +20,12 @@
     }
   },
   "locations": {
-    "eyebrow": "NUESTROS SERVICIOS",
-    "title": "SERVICIOS DESTACADOS",
-    "subtitle": "Soluciones avanzadas diseñadas para conectar, automatizar y optimizar tus espacios con la máxima fiabilidad.",
-    "allEyebrow": "Nuestros Servicios",
-    "allTitle": "Todos los Servicios",
-    "allSubtitle": "Descubre toda la gama de servicios de integración tecnológica que ofrecemos en Mallorca.",
+    "eyebrow": "MIS SERVICIOS",
+    "title": "EN QUÉ TE PUEDO AYUDAR",
+    "subtitle": "Redes, domótica, audiovisuales e intranets: conecto y automatizo tus espacios con criterio, orden y seguimiento personal.",
+    "allEyebrow": "Mis servicios",
+    "allTitle": "Todos los servicios",
+    "allSubtitle": "Estos son los servicios en los que trabajo hoy en Mallorca. En intranets y gestión documental ya tengo experiencia real; en el resto estoy en pleno proceso de formación y documento cada avance en el blog.",
     "perNight": "",
     "viewDetails": "Ver servicio",
     "viewAllCta": "Descubrir todos los servicios",
@@ -33,7 +33,7 @@
       "redes": {
         "name": "Redes",
         "location": "Infraestructura y conectividad",
-        "description": "Diseñamos e implantamos infraestructuras de red cableadas e inalámbricas de alto rendimiento para empresas, hogares y espacios profesionales. Redes estables, seguras y preparadas para crecer contigo.",
+        "description": "Diseño e instalo redes cableadas e inalámbricas estables y seguras para casas, oficinas y espacios profesionales. Es una de las áreas en las que me estoy formando a fondo, y comparto cada montaje y cada aprendizaje en el blog.",
         "features": [
           "Cableado estructurado",
           "WiFi profesional",
@@ -69,7 +69,7 @@
       "domotica": {
         "name": "Domótica",
         "location": "Hogar y edificios inteligentes",
-        "description": "Convierte tu vivienda o negocio en un espacio inteligente. Controlamos iluminación, clima, persianas, riego, seguridad y multimedia desde una única interfaz, aumentando confort y eficiencia energética.",
+        "description": "Convierto tu casa o negocio en un espacio inteligente: iluminación, clima, persianas, riego y multimedia desde una sola interfaz. Me estoy especializando en KNX y sistemas abiertos, y lo cuento paso a paso mientras aprendo.",
         "features": [
           "Iluminación",
           "Climatización",
@@ -105,7 +105,7 @@
       "audiovisuales": {
         "name": "Audiovisuales",
         "location": "TV, sonido y home cinema",
-        "description": "Salas de cine en casa, sistemas de sonido multiroom, videowalls y señalización digital. Diseñamos experiencias audiovisuales inmersivas para hogares, restaurantes, hoteles y empresas.",
+        "description": "Home cinema, sonido multiroom, televisores y señalización digital. Trabajo con equipos de referencia y voy documentando cada instalación y cada prueba que hago para dominar el sonido y la imagen bien hechos.",
         "features": [
           "Home cinema",
           "Sonido multiroom",
@@ -139,9 +139,9 @@
         ]
       },
       "gestion-documental": {
-        "name": "Gestión Documental",
-        "location": "Intranets y flujos de trabajo",
-        "description": "Digitalizamos tu empresa con intranets a medida, gestores documentales y flujos de aprobación automatizados. Toda la información de tu equipo, accesible, buscable y segura.",
+        "name": "Intranets",
+        "location": "Intranets, documentos y flujos de trabajo",
+        "description": "Este es mi terreno. Llevo tiempo montando intranets a medida, gestores documentales y flujos de aprobación: toda la información de tu equipo accesible, buscable y segura. Si necesitas ordenar la documentación de tu empresa, aquí puedo ayudarte desde el primer día.",
         "features": [
           "Intranets",
           "Firma digital",
@@ -177,7 +177,7 @@
       "fotovoltaicas": {
         "name": "Fotovoltaicas",
         "location": "Energía solar y autoconsumo",
-        "description": "Instalaciones solares fotovoltaicas para hogares y empresas en Baleares. Reduce tu factura eléctrica, gana independencia energética y contribuye a un futuro más sostenible.",
+        "description": "También hago instalaciones solares de autoconsumo para reducir tu factura. Es el área en la que menos me centro: si tu proyecto es principalmente fotovoltaico, te lo diré con claridad y, si hace falta, te derivaré a un especialista.",
         "features": [
           "Autoconsumo",
           "Baterías",
@@ -213,91 +213,91 @@
     }
   },
   "experience": {
-    "eyebrow": "POR QUÉ ARNAU Arnau Palmer",
-    "title": "Tecnología con sentido",
-    "subtitle": "Un socio local en Mallorca para llevar tus proyectos tecnológicos al siguiente nivel.",
+    "eyebrow": "POR QUÉ TRABAJAR CONMIGO",
+    "title": "Tecnología con sentido, sin humo",
+    "subtitle": "Soy Arnau Palmer. Trato cada proyecto como si fuera mío y te digo siempre lo que sé y lo que estoy aprendiendo.",
     "features": [
       {
         "title": "Cercanía en Mallorca",
-        "description": "Equipo local con respuesta rápida en toda la isla y Baleares"
+        "description": "Estoy en la isla: respondo rápido y me tienes a una llamada o un WhatsApp"
       },
       {
-        "title": "Servicio integral",
-        "description": "Del diseño a la instalación y el mantenimiento, un único interlocutor"
+        "title": "Un único interlocutor",
+        "description": "Del diseño a la instalación y el mantenimiento, hablas siempre conmigo"
       },
       {
-        "title": "Calidad garantizada",
-        "description": "Marcas líderes, instaladores certificados y garantía en todos los trabajos"
+        "title": "Honestidad ante todo",
+        "description": "Experiencia real en intranets; en el resto me formo a fondo y te lo digo de frente"
       },
       {
-        "title": "Innovación constante",
-        "description": "Nos formamos cada día en las tecnologías más avanzadas del sector"
+        "title": "Aprendizaje en público",
+        "description": "Documento cada proyecto y cada avance técnico en el blog y en redes"
       }
     ]
   },
   "footer": {
-    "tagline": "ARNAU PALMER · Integrador tecnológico en Mallorca. Diseño, instalo y mantengo los sistemas que hacen tu vida más simple.",
+    "tagline": "ARNAU PALMER · Integrador tecnológico en Mallorca. Diseño, instalo y mantengo los sistemas que te hacen la vida más simple.",
     "pages": "Páginas",
     "home": "Inicio",
     "services": "SERVICIOS",
-    "about": "QUIENES SOMOS",
+    "about": "SOBRE MÍ",
     "blog": "Blog",
     "contact": "CONTACTO",
     "ctaLink": "Contactar",
-    "contactUs": "Contáctanos",
+    "contactUs": "Contacta conmigo",
     "hours": "Lun - Vie: 8h - 17h",
-    "follow": "Síguenos",
+    "follow": "Sígueme",
     "rights": "© 2026 ARNAU PALMER. Todos los derechos reservados."
   },
   "about": {
-    "eyebrow": "QUIENES SOMOS",
-    "title": "Nuestra Historia",
+    "eyebrow": "SOBRE MÍ",
+    "title": "Mi historia",
     "story": [
-      "Arnau Palmer nació en Mallorca con una idea clara: acercar la tecnología más avanzada a hogares y empresas de las Islas Baleares, con un servicio cercano, profesional y sin complicaciones.",
-      "Somos un equipo local de técnicos e integradores apasionados por la tecnología. Combinamos redes, domótica, audiovisuales, gestión documental y energía fotovoltaica para diseñar soluciones integrales adaptadas a cada cliente.",
-      "Trabajamos con las mejores marcas del sector y cuidamos cada detalle, desde la primera visita hasta el mantenimiento posterior. Nuestro objetivo: que la tecnología esté al servicio de las personas y no al revés."
+      "Me llamo Arnau Palmer y soy integrador tecnológico en Mallorca. Trabajo solo, de forma cercana y directa: quien te atiende, quien diseña el proyecto y quien lo instala soy yo.",
+      "Empecé con la gestión documental y las intranets, y ahí es donde tengo experiencia real: he montado portales internos, repositorios y flujos de trabajo para equipos que necesitaban dejar de perder documentos por el camino.",
+      "Desde ahí estoy ampliando hacia redes, domótica y audiovisuales. No voy a decirte que llevo veinte años haciéndolo, porque no es verdad: estoy formándome a fondo en cada una de esas áreas y documento el proceso en el blog y en redes sociales, con sus aciertos y sus errores."
     ],
-    "whyEyebrow": "NUESTRO ENFOQUE",
-    "whyTitle": "Por qué elegir Arnau Palmer",
+    "whyEyebrow": "MI ENFOQUE",
+    "whyTitle": "Por qué contar conmigo",
     "why": [
-      "Cada proyecto empieza escuchando. Analizamos tus necesidades reales, tu forma de trabajar y de vivir para proponer soluciones a la medida.",
-      "Coordinamos todas las disciplinas técnicas bajo un único proyecto: redes, domótica, audiovisuales, gestión documental y fotovoltaica. Un único interlocutor, cero desajustes entre gremios.",
-      "Utilizamos plataformas abiertas y estándares consolidados (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365, Huawei, Victron…) para garantizar que tu instalación sea escalable y duradera.",
-      "Ofrecemos mantenimiento continuo y monitorización remota, así detectamos y resolvemos incidencias antes de que las notes."
+      "Cada proyecto empieza escuchando. Analizo lo que necesitas de verdad, cómo trabajas y cómo vives, y a partir de ahí propongo una solución a medida.",
+      "En intranets y gestión documental puedo ofrecerte experiencia contrastada. En redes, domótica y audiovisuales trabajo con estándares abiertos y consolidados (KNX, Ubiquiti, Sonos, Microsoft 365) mientras me especializo, y ajusto el presupuesto a esa realidad.",
+      "Trabajo con transparencia total: te digo qué domino, qué estoy aprendiendo y cuándo un proyecto se me queda grande. Prefiero perder un trabajo antes que hacerlo a medias.",
+      "Después de la instalación sigo ahí: mantenimiento, monitorización y soporte para que no te quedes solo con el sistema montado."
     ],
-    "valuesEyebrow": "NUESTROS VALORES",
-    "valuesTitle": "En qué creemos",
+    "valuesEyebrow": "MIS VALORES",
+    "valuesTitle": "En qué creo",
     "values": [
       {
         "title": "Cercanía",
-        "description": "Somos tu equipo técnico de confianza en Mallorca, siempre disponibles cuando nos necesitas."
+        "description": "Soy tu técnico de confianza en Mallorca, disponible cuando me necesitas."
       },
       {
         "title": "Compromiso",
-        "description": "Trabajamos como si cada instalación fuera nuestra: con dedicación y responsabilidad."
+        "description": "Trabajo cada instalación como si fuera para mi propia casa."
       },
       {
         "title": "Precisión",
-        "description": "Ingeniería cuidada, cableado ordenado y documentación clara en cada proyecto."
+        "description": "Cableado ordenado, documentación clara y trabajo bien rematado."
       },
       {
-        "title": "Innovación",
-        "description": "Investigamos y adoptamos las mejores tecnologías para ofrecer soluciones actuales."
+        "title": "Aprendizaje",
+        "description": "Me formo cada día y comparto públicamente lo que voy aprendiendo."
       },
       {
-        "title": "Sostenibilidad",
-        "description": "Apostamos por la eficiencia energética y las energías renovables."
+        "title": "Honestidad",
+        "description": "Te digo lo que domino y lo que no. Sin promesas vacías."
       },
       {
         "title": "Transparencia",
-        "description": "Presupuestos claros, plazos realistas y comunicación honesta en todo momento."
+        "description": "Presupuestos claros, plazos realistas y comunicación honesta."
       }
     ]
   },
   "contact": {
     "eyebrow": "Contacto",
     "title": "Hablemos de tu proyecto",
-    "subtitle": "Cuéntame qué necesitas y te propondré la mejor solución tecnológica para tu hogar o empresa.",
+    "subtitle": "Cuéntame qué necesitas y te propongo la mejor solución para tu casa o tu empresa. Te respondo yo personalmente.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "subject": "Asunto",
@@ -305,18 +305,18 @@
     "send": "Enviar mensaje",
     "sending": "Enviando...",
     "sent": "Mensaje enviado",
-    "sentDesc": "Te responderemos lo antes posible.",
+    "sentDesc": "Te responderé lo antes posible.",
     "errorTitle": "No se pudo enviar",
-    "errorDesc": "Inténtalo de nuevo o escríbenos directamente a arnau@palmerit.es.",
+    "errorDesc": "Inténtalo de nuevo o escríbeme directamente a arnau@palmerit.es.",
     "socialEyebrow": "OTRAS VÍAS",
     "socialTitle": "También puedes contactarme por aquí",
     "socialSubtitle": "Elige el canal que prefieras. Respondo en horario laboral.",
     "channels": {
       "instagram": "Instagram",
-      "instagramDesc": "Mira mis últimos trabajos",
+      "instagramDesc": "Sigo mi aprendizaje y mis proyectos",
       "linkedin": "LinkedIn",
       "linkedinDesc": "Conecta conmigo profesionalmente",
-      "phone": "Llámanos",
+      "phone": "Llámame",
       "phoneDesc": "Habla directamente conmigo",
       "whatsapp": "WhatsApp",
       "whatsappDesc": "Escríbeme un mensaje rápido",
@@ -326,8 +326,8 @@
   },
   "blog": {
     "eyebrow": "BLOG",
-    "title": "Notas y proyectos",
-    "subtitle": "Ideas, casos y novedades sobre integración tecnológica en Baleares.",
+    "title": "Aprendiendo en público",
+    "subtitle": "Documento aquí mis proyectos, mis pruebas y todo lo que voy aprendiendo sobre redes, domótica, audiovisuales e intranets en Baleares.",
     "empty": "Aún no hay publicaciones. Vuelve pronto.",
     "back": "Volver al blog",
     "notFound": "Artículo no encontrado",
@@ -346,7 +346,7 @@
     "amenities": "Qué incluye",
     "included": "Cómo trabajamos",
     "ctaCopy": "¿Interesado en este servicio? Escríbenos y estudiaremos tu caso sin compromiso.",
-    "contactCta": "Contactar con nosotros"
+    "contactCta": "Contactar conmigo"
   },
   "notFound": {
     "title": "404",
@@ -363,75 +363,79 @@
   "seo": {
     "home": {
       "title": "ARNAU PALMER — Integrador Tecnológico en Mallorca",
-      "description": "Arnau Palmer: integrador tecnológico en Mallorca. Redes, domótica, audiovisuales, gestión documental y fotovoltaicas para hogares y empresas."
+      "description": "Soy Arnau Palmer, integrador tecnológico en Mallorca: intranets y gestión documental, redes, domótica y audiovisuales para hogares y empresas de Baleares."
     },
     "about": {
-      "title": "Quién Soy",
-      "description": "Conoce a Arnau Palmer, integrador tecnológico en Baleares. Ingeniería, diseño y soporte para proyectos técnicos exigentes."
+      "title": "Quién soy",
+      "description": "Conoce a Arnau Palmer, integrador tecnológico autónomo en Mallorca. Experiencia en intranets y aprendizaje documentado en redes, domótica y audiovisuales."
     },
     "locations": {
-      "title": "Mis Servicios",
-      "description": "Redes, domótica KNX, audiovisuales, gestión documental y sistemas fotovoltaicos. Soluciones llave en mano en Mallorca."
+      "title": "Servicios",
+      "description": "Intranets y gestión documental, redes profesionales, domótica KNX y sistemas audiovisuales en Mallorca. Un único interlocutor para tu proyecto."
     },
     "contact": {
       "title": "Contacto",
-      "description": "Habla con Arnau Palmer: escríbeme por formulario, WhatsApp, teléfono o email. Presupuestos personalizados en Baleares."
+      "description": "Habla directamente con Arnau Palmer: formulario, WhatsApp, teléfono o email. Presupuestos personalizados en Mallorca y Baleares."
     },
     "blog": {
-      "title": "Blog",
-      "description": "Novedades, casos reales y análisis técnico sobre integración tecnológica, marcas y proyectos de Arnau Palmer."
+      "title": "Blog · Aprendiendo en público",
+      "description": "Proyectos, pruebas y aprendizajes sobre intranets, redes, domótica y audiovisuales, contados por Arnau Palmer desde Mallorca."
     }
   },
   "whatsapp": {
     "aria": "Escríbenos por WhatsApp",
-    "tooltip": "Chatea con nosotros"
+    "tooltip": "Chatea conmigo"
   },
   "testimonials": {
-    "eyebrow": "CASOS DE ÉXITO",
-    "title": "Lo que dicen nuestros clientes",
-    "subtitle": "Proyectos reales en Mallorca, hogares y empresas que confían en Arnau Palmer.",
+    "eyebrow": "EN QUÉ ESTOY TRABAJANDO",
+    "title": "Mi camino, contado sin filtros",
+    "subtitle": "En lugar de inventar testimonios, prefiero enseñarte dónde estoy en cada área.",
     "items": [
       {
-        "quote": "Nos hicieron toda la red y domótica de la casa. Trabajo impecable, ordenado y con soporte cuando lo necesitamos.",
-        "author": "Carlos M.",
-        "role": "Vivienda particular · Palma"
+        "quote": "Es mi área con experiencia real: intranets, repositorios documentales y flujos de aprobación para equipos que necesitan orden.",
+        "author": "Intranets y gestión documental",
+        "role": "Servicio consolidado"
       },
       {
-        "quote": "Instalamos su sistema audiovisual y de intranets. Ganamos productividad desde el primer día.",
-        "author": "Ana G.",
-        "role": "Estudio de arquitectura · Manacor"
+        "quote": "Estoy formándome a fondo en redes profesionales y domótica KNX. Cada montaje y cada prueba acaban documentados en el blog.",
+        "author": "Redes y domótica",
+        "role": "En formación · proyectos reales"
       },
       {
-        "quote": "La instalación fotovoltaica ha reducido nuestra factura un 70%. Muy profesionales y cercanos.",
-        "author": "Miquel R.",
-        "role": "Restaurante · Sóller"
+        "quote": "Sonido multiroom, home cinema y calibración: aprendo probando en instalaciones propias antes de llevarlo a un cliente.",
+        "author": "Audiovisuales",
+        "role": "En formación · proyectos reales"
       }
     ]
   },
   "faq": {
     "eyebrow": "PREGUNTAS FRECUENTES",
-    "title": "Resolvemos tus dudas",
-    "subtitle": "Todo lo que necesitas saber antes de empezar tu proyecto con Arnau Palmer.",
+    "title": "Resuelvo tus dudas",
+    "subtitle": "Lo que necesitas saber antes de empezar tu proyecto conmigo.",
     "items": [
       {
-        "q": "¿En qué zonas trabajáis?",
-        "a": "Damos servicio en toda Mallorca y el resto de Baleares (Menorca, Ibiza y Formentera) para proyectos de cierta envergadura."
+        "q": "¿En qué zonas trabajas?",
+        "a": "Doy servicio en toda Mallorca y, para proyectos de cierta envergadura, en el resto de Baleares (Menorca, Ibiza y Formentera)."
       },
       {
-        "q": "¿Hacéis mantenimiento después de la instalación?",
-        "a": "Sí. Ofrecemos contratos de mantenimiento y monitorización remota para detectar y resolver incidencias antes de que las notes."
+        "q": "¿En qué servicios tienes más experiencia?",
+        "a": "En intranets y gestión documental tengo experiencia real y consolidada. En redes, domótica y audiovisuales estoy en pleno proceso de formación: trabajo en proyectos reales y documento cada avance en el blog y en redes sociales."
       },
       {
-        "q": "¿Podéis integrar sistemas ya existentes?",
-        "a": "En la mayoría de los casos sí. Trabajamos con estándares abiertos (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365…) que se integran con instalaciones previas."
+        "q": "¿Haces mantenimiento después de la instalación?",
+        "a": "Sí. Ofrezco mantenimiento y monitorización remota para detectar y resolver incidencias antes de que las notes."
+      },
+      {
+        "q": "¿Puedes integrar sistemas ya existentes?",
+        "a": "En la mayoría de casos sí. Trabajo con estándares abiertos (KNX, Ubiquiti, Sonos, Microsoft 365…) que se integran bien con instalaciones previas."
       },
       {
         "q": "¿Cuánto cuesta un proyecto?",
-        "a": "Cada proyecto es único. Hacemos una visita técnica sin compromiso y te entregamos un presupuesto detallado y claro."
+        "a": "Cada proyecto es único. Hago una visita técnica sin compromiso y te entrego un presupuesto detallado y claro."
       },
       {
-        "q": "¿Tramitáis subvenciones para fotovoltaica?",
-        "a": "Sí. Gestionamos toda la tramitación legal y la solicitud de ayudas disponibles en Baleares."
+        "q": "¿También haces fotovoltaica?",
+        "a": "Sí, pero es el área en la que menos me centro. Si tu proyecto es principalmente fotovoltaico te lo diré con claridad y, si hace falta, te pondré en contacto con un especialista."
       }
     ]
   }

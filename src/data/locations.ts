@@ -23,6 +23,14 @@ export interface Service {
 
 export const locations: Service[] = [
   {
+    id: "gestion-documental",
+    image: gestionImg,
+    images: [gestionImg, redesImg, domoticaImg],
+    featured: true,
+    icon: FileText,
+    amenityIcons: [FileText, Database, Cloud, Users],
+  },
+  {
     id: "redes",
     image: redesImg,
     images: [redesImg, gestionImg, domoticaImg],
@@ -42,23 +50,15 @@ export const locations: Service[] = [
     id: "audiovisuales",
     image: audiovisualesImg,
     images: [audiovisualesImg, domoticaImg, redesImg],
-    featured: false,
+    featured: true,
     icon: Tv,
     amenityIcons: [Tv, Speaker, Video, Volume2],
-  },
-  {
-    id: "gestion-documental",
-    image: gestionImg,
-    images: [gestionImg, redesImg, domoticaImg],
-    featured: false,
-    icon: FileText,
-    amenityIcons: [FileText, Database, Cloud, Users],
   },
   {
     id: "fotovoltaicas",
     image: fotovoltaicaImg,
     images: [fotovoltaicaImg, domoticaImg, redesImg],
-    featured: true,
+    featured: false,
     icon: Sun,
     amenityIcons: [Sun, Zap, BatteryCharging, Leaf],
   },

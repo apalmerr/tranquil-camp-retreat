@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "SERVICES",
-    "about": "ABOUT",
+    "about": "ABOUT ME",
     "blog": "BLOG",
     "contact": "CONTACT",
     "cta": "CONTACT",
@@ -20,12 +20,12 @@
     }
   },
   "locations": {
-    "eyebrow": "OUR SERVICES",
-    "title": "FEATURED SERVICES",
-    "subtitle": "Advanced solutions designed to connect, automate and optimise your spaces with maximum reliability.",
-    "allEyebrow": "Our Services",
-    "allTitle": "All Services",
-    "allSubtitle": "Explore the full range of technology integration services we offer in Mallorca.",
+    "eyebrow": "MY SERVICES",
+    "title": "HOW I CAN HELP YOU",
+    "subtitle": "Networks, smart homes, AV and intranets: I connect and automate your spaces with care, order and personal follow-up.",
+    "allEyebrow": "My services",
+    "allTitle": "All services",
+    "allSubtitle": "These are the services I work on today in Mallorca. In intranets and document management I already have real experience; in the rest I'm actively training and I document every step on the blog.",
     "perNight": "",
     "viewDetails": "View service",
     "viewAllCta": "Discover all services",
@@ -33,7 +33,7 @@
       "redes": {
         "name": "Networks",
         "location": "Infrastructure & connectivity",
-        "description": "We design and deploy high-performance wired and wireless networks for businesses, homes and professional spaces. Stable, secure networks ready to grow with you.",
+        "description": "I design and install stable, secure wired and wireless networks for homes, offices and professional spaces. It's one of the areas I'm training in deeply, and I share every build and lesson on the blog.",
         "features": [
           "Structured cabling",
           "Professional WiFi",
@@ -69,7 +69,7 @@
       "domotica": {
         "name": "Home Automation",
         "location": "Smart homes & buildings",
-        "description": "Turn your home or business into a smart space. We control lighting, climate, blinds, irrigation, security and media from a single interface for greater comfort and energy efficiency.",
+        "description": "I turn your home or business into a smart space: lighting, climate, blinds, irrigation and multimedia from a single interface. I'm specialising in KNX and open systems, and I document the process as I learn.",
         "features": [
           "Lighting",
           "Climate",
@@ -105,7 +105,7 @@
       "audiovisuales": {
         "name": "Audio & Video",
         "location": "TV, sound and home cinema",
-        "description": "Home cinema rooms, multi-room audio systems, video walls and digital signage. We craft immersive AV experiences for homes, restaurants, hotels and businesses.",
+        "description": "Home cinema, multiroom sound, TVs and digital signage. I work with reference gear and document every install and test as I master proper picture and sound.",
         "features": [
           "Home cinema",
           "Multi-room audio",
@@ -139,9 +139,9 @@
         ]
       },
       "gestion-documental": {
-        "name": "Document Management",
-        "location": "Intranets & workflows",
-        "description": "We digitise your company with custom intranets, document managers and automated approval workflows. All your team's information: accessible, searchable and secure.",
+        "name": "Intranets",
+        "location": "Intranets, documents and workflows",
+        "description": "This is my home turf. I've been building custom intranets, document managers and approval workflows for years: all your team's information accessible, searchable and secure. If you need to organise your company's documentation, I can help from day one.",
         "features": [
           "Intranets",
           "Digital signature",
@@ -177,7 +177,7 @@
       "fotovoltaicas": {
         "name": "Solar PV",
         "location": "Solar energy & self-consumption",
-        "description": "Photovoltaic installations for homes and businesses in the Balearic Islands. Cut your energy bill, gain independence and contribute to a more sustainable future.",
+        "description": "I also do solar self-consumption installations to cut your bill. It's the area I focus on least: if your project is mainly photovoltaic I'll tell you straight and, if needed, refer you to a specialist.",
         "features": [
           "Self-consumption",
           "Batteries",
@@ -213,25 +213,25 @@
     }
   },
   "experience": {
-    "eyebrow": "WHY ARNAU Arnau Palmer",
-    "title": "Technology that makes sense",
-    "subtitle": "A local partner in Mallorca to take your technology projects to the next level.",
+    "eyebrow": "WHY WORK WITH ME",
+    "title": "Technology that makes sense, no hype",
+    "subtitle": "I'm Arnau Palmer. I treat every project as my own and I'm always clear about what I know and what I'm still learning.",
     "features": [
       {
         "title": "Local in Mallorca",
-        "description": "A local team with fast response across the whole island and Balearics"
+        "description": "I'm on the island: fast replies, one call or WhatsApp away"
       },
       {
-        "title": "End-to-end service",
-        "description": "From design to install and maintenance, one single point of contact"
+        "title": "One single contact",
+        "description": "From design to install and maintenance, you always talk to me"
       },
       {
-        "title": "Guaranteed quality",
-        "description": "Leading brands, certified installers and warranty on every job"
+        "title": "Honesty first",
+        "description": "Real experience in intranets; in the rest I'm training hard and I say so"
       },
       {
-        "title": "Constant innovation",
-        "description": "We keep learning the most advanced technologies in the sector"
+        "title": "Learning in public",
+        "description": "I document every project and technical step on the blog and social media"
       }
     ]
   },
@@ -240,64 +240,64 @@
     "pages": "Pages",
     "home": "Home",
     "services": "SERVICES",
-    "about": "ABOUT",
+    "about": "ABOUT ME",
     "blog": "Blog",
     "contact": "CONTACT",
     "ctaLink": "Contact",
-    "contactUs": "Contact Us",
+    "contactUs": "Contact me",
     "hours": "Mon - Fri: 8am - 5pm",
-    "follow": "Follow Us",
+    "follow": "Follow me",
     "rights": "© 2026 ARNAU PALMER. All rights reserved."
   },
   "about": {
-    "eyebrow": "ABOUT US",
-    "title": "Our Story",
+    "eyebrow": "ABOUT ME",
+    "title": "My story",
     "story": [
-      "Arnau Palmer was born in Mallorca with a clear idea: bring the most advanced technology to homes and businesses in the Balearic Islands with a close, professional, hassle-free service.",
-      "We are a local team of technicians and integrators passionate about technology. We combine networks, home automation, audiovisual, document management and photovoltaic energy to design integrated solutions tailored to each client.",
-      "We work with the best brands in the industry and care for every detail, from the first visit to ongoing maintenance. Our goal: technology at the service of people, not the other way around."
+      "My name is Arnau Palmer and I'm a technology integrator in Mallorca. I work on my own, close and direct: the person who answers you, designs the project and installs it is me.",
+      "I started with document management and intranets, and that's where I have real experience: internal portals, repositories and workflows for teams that were tired of losing documents along the way.",
+      "From there I'm expanding into networks, smart homes and AV. I won't tell you I've done it for twenty years, because it wouldn't be true: I'm training hard in each of those areas and I document the process on the blog and on social media, wins and mistakes included."
     ],
-    "whyEyebrow": "OUR APPROACH",
-    "whyTitle": "Why choose Arnau Palmer",
+    "whyEyebrow": "MY APPROACH",
+    "whyTitle": "Why count on me",
     "why": [
-      "Every project starts by listening. We analyse your real needs and how you live and work to propose truly tailored solutions.",
-      "We coordinate every technical discipline under a single project: networks, home automation, AV, document management and PV. One point of contact, zero friction between trades.",
-      "We use open platforms and consolidated standards (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365, Huawei, Victron…) so your installation is scalable and long-lasting.",
-      "We offer ongoing maintenance and remote monitoring, so we detect and solve incidents before you notice them."
+      "Every project starts by listening. I look at what you really need, how you work and how you live, and design a solution around that.",
+      "In intranets and document management I bring proven experience. In networks, smart homes and AV I work with open, consolidated standards (KNX, Ubiquiti, Sonos, Microsoft 365) while I specialise, and I price accordingly.",
+      "I work with total transparency: I tell you what I master, what I'm learning and when a project is beyond me. I'd rather lose a job than do it halfway.",
+      "After the install I'm still there: maintenance, monitoring and support so you're not left alone with the system."
     ],
-    "valuesEyebrow": "OUR VALUES",
-    "valuesTitle": "What we believe in",
+    "valuesEyebrow": "MY VALUES",
+    "valuesTitle": "What I believe in",
     "values": [
       {
-        "title": "Proximity",
-        "description": "Your trusted tech team in Mallorca, always available when you need us."
+        "title": "Closeness",
+        "description": "I'm your trusted technician in Mallorca, available when you need me."
       },
       {
         "title": "Commitment",
-        "description": "We treat every installation as our own: with dedication and responsibility."
+        "description": "I work on every install as if it were my own home."
       },
       {
         "title": "Precision",
-        "description": "Careful engineering, tidy cabling and clear documentation on every project."
+        "description": "Tidy cabling, clear documentation and properly finished work."
       },
       {
-        "title": "Innovation",
-        "description": "We research and adopt the best technologies to deliver up-to-date solutions."
+        "title": "Learning",
+        "description": "I train every day and share publicly what I learn."
       },
       {
-        "title": "Sustainability",
-        "description": "We back energy efficiency and renewable energies."
+        "title": "Honesty",
+        "description": "I tell you what I master and what I don't. No empty promises."
       },
       {
         "title": "Transparency",
-        "description": "Clear quotes, realistic timelines and honest communication at all times."
+        "description": "Clear quotes, realistic timelines and honest communication."
       }
     ]
   },
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's talk about your project",
-    "subtitle": "Tell me what you need and I will propose the best technology solution for your home or business.",
+    "subtitle": "Tell me what you need and I'll propose the best solution for your home or business. I reply personally.",
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
@@ -305,18 +305,18 @@
     "send": "Send message",
     "sending": "Sending...",
     "sent": "Message sent",
-    "sentDesc": "We'll get back to you as soon as possible.",
+    "sentDesc": "I'll get back to you as soon as possible.",
     "errorTitle": "Could not send",
-    "errorDesc": "Please try again or email us directly at arnau@palmerit.es.",
+    "errorDesc": "Please try again or email me directly at arnau@palmerit.es.",
     "socialEyebrow": "OTHER WAYS",
     "socialTitle": "You can also reach me here",
     "socialSubtitle": "Pick your preferred channel. I reply during business hours.",
     "channels": {
       "instagram": "Instagram",
-      "instagramDesc": "See my latest projects",
+      "instagramDesc": "Follow my learning and my projects",
       "linkedin": "LinkedIn",
       "linkedinDesc": "Connect with me professionally",
-      "phone": "Call us",
+      "phone": "Call me",
       "phoneDesc": "Talk directly to me",
       "whatsapp": "WhatsApp",
       "whatsappDesc": "Send me a quick message",
@@ -326,8 +326,8 @@
   },
   "blog": {
     "eyebrow": "BLOG",
-    "title": "Notes & projects",
-    "subtitle": "Ideas, cases and updates on technology integration in the Balearic Islands.",
+    "title": "Learning in public",
+    "subtitle": "Here I document my projects, my tests and everything I learn about networks, smart homes, AV and intranets in the Balearics.",
     "empty": "No posts yet. Check back soon.",
     "back": "Back to blog",
     "notFound": "Article not found",
@@ -346,7 +346,7 @@
     "amenities": "What's included",
     "included": "How we work",
     "ctaCopy": "Interested in this service? Get in touch and we'll study your case with no commitment.",
-    "contactCta": "Contact us"
+    "contactCta": "Contact me"
   },
   "notFound": {
     "title": "404",
@@ -363,75 +363,79 @@
   "seo": {
     "home": {
       "title": "ARNAU PALMER — Technology Integrator in Mallorca",
-      "description": "Arnau Palmer: technology integrator in Mallorca. Networking, smart home, AV, document management and solar systems for homes and businesses."
+      "description": "I'm Arnau Palmer, technology integrator in Mallorca: intranets and document management, networks, smart homes and AV for homes and businesses in the Balearics."
     },
     "about": {
-      "title": "About Me",
-      "description": "Meet Arnau Palmer, technology integrator in the Balearics. Engineering, design and support for demanding technical projects."
+      "title": "Who I am",
+      "description": "Meet Arnau Palmer, freelance technology integrator in Mallorca. Experience in intranets and documented learning in networks, smart homes and AV."
     },
     "locations": {
-      "title": "My Services",
-      "description": "Networking, KNX smart home, audio-visual, document management and photovoltaic systems. Turn-key solutions in Mallorca."
+      "title": "Services",
+      "description": "Intranets and document management, professional networks, KNX home automation and AV systems in Mallorca. One single contact for your project."
     },
     "contact": {
       "title": "Contact",
-      "description": "Talk to Arnau Palmer: reach me by form, WhatsApp, phone or email. Custom quotes across the Balearic Islands."
+      "description": "Talk directly to Arnau Palmer: form, WhatsApp, phone or email. Personalised quotes in Mallorca and the Balearics."
     },
     "blog": {
-      "title": "Blog",
-      "description": "News, real projects and technical analysis on technology integration, brands and Arnau Palmer projects."
+      "title": "Blog · Learning in public",
+      "description": "Projects, tests and lessons on intranets, networks, smart homes and AV, told by Arnau Palmer from Mallorca."
     }
   },
   "whatsapp": {
     "aria": "Message us on WhatsApp",
-    "tooltip": "Chat with us"
+    "tooltip": "Chat with me"
   },
   "testimonials": {
-    "eyebrow": "SUCCESS STORIES",
-    "title": "What our clients say",
-    "subtitle": "Real projects in Mallorca, homes and businesses that trust Arnau Palmer.",
+    "eyebrow": "WHAT I'M WORKING ON",
+    "title": "My path, told straight",
+    "subtitle": "Instead of inventing testimonials, I'd rather show you where I stand in each area.",
     "items": [
       {
-        "quote": "They did the entire network and home automation of the house. Impeccable, tidy work and great support when we need it.",
-        "author": "Carlos M.",
-        "role": "Private home · Palma"
+        "quote": "My area with real experience: intranets, document repositories and approval workflows for teams that need order.",
+        "author": "Intranets & document management",
+        "role": "Established service"
       },
       {
-        "quote": "We installed their AV and intranet system. We gained productivity from day one.",
-        "author": "Ana G.",
-        "role": "Architecture studio · Manacor"
+        "quote": "I'm training hard in professional networking and KNX home automation. Every build and test ends up documented on the blog.",
+        "author": "Networks & smart homes",
+        "role": "Training · real projects"
       },
       {
-        "quote": "The solar installation cut our bill by 70%. Very professional and close to the client.",
-        "author": "Miquel R.",
-        "role": "Restaurant · Sóller"
+        "quote": "Multiroom sound, home cinema and calibration: I learn by testing on my own installs before taking it to a client.",
+        "author": "Audiovisual",
+        "role": "Training · real projects"
       }
     ]
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "We answer your questions",
-    "subtitle": "Everything you need to know before starting your project with Arnau Palmer.",
+    "title": "Your questions, answered",
+    "subtitle": "What you need to know before starting your project with me.",
     "items": [
       {
         "q": "Which areas do you cover?",
-        "a": "We work across Mallorca and the rest of the Balearic Islands (Menorca, Ibiza and Formentera) for larger projects."
+        "a": "I work across Mallorca and, for larger projects, the rest of the Balearics (Menorca, Ibiza and Formentera)."
       },
       {
-        "q": "Do you provide maintenance after installation?",
-        "a": "Yes. We offer maintenance contracts and remote monitoring to detect and solve issues before you notice them."
+        "q": "Which services do you have most experience in?",
+        "a": "In intranets and document management I have real, established experience. In networks, smart homes and AV I'm actively training: I work on real projects and document every step on the blog and social media."
+      },
+      {
+        "q": "Do you offer maintenance after installation?",
+        "a": "Yes. I offer maintenance and remote monitoring to catch and fix issues before you notice them."
       },
       {
         "q": "Can you integrate existing systems?",
-        "a": "In most cases, yes. We work with open standards (KNX, Loxone, Ubiquiti, Sonos, Microsoft 365…) that integrate with previous installations."
+        "a": "In most cases yes. I work with open standards (KNX, Ubiquiti, Sonos, Microsoft 365…) that integrate well with previous installations."
       },
       {
         "q": "How much does a project cost?",
-        "a": "Every project is unique. We do a free technical visit and deliver a clear, detailed quote with no commitment."
+        "a": "Every project is unique. I do a no-obligation technical visit and give you a detailed, clear quote."
       },
       {
-        "q": "Do you handle solar subsidies?",
-        "a": "Yes. We manage all legal paperwork and grant applications available in the Balearic Islands."
+        "q": "Do you also do solar?",
+        "a": "Yes, but it's the area I focus on least. If your project is mainly photovoltaic I'll say so clearly and, if needed, put you in touch with a specialist."
       }
     ]
   }
