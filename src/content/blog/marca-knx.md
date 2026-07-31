@@ -8,7 +8,7 @@ lang: es
 
 # Por qué trabajamos con KNX
 
-En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+Selecciono con mucho cuidado las marcas con las que trabajo en mis proyectos.
 KNX es uno de mis partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con KNX

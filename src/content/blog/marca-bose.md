@@ -8,7 +8,7 @@ lang: es
 
 # Por qué trabajamos con Bose
 
-En Arnau Palmer seleccionamos con mucho cuidado las marcas con las que integramos nuestros proyectos.
+Selecciono con mucho cuidado las marcas con las que trabajo en mis proyectos.
 Bose es uno de mis partners de confianza por su calidad, fiabilidad y compromiso a largo plazo.
 
 ## Nuestra experiencia con Bose
