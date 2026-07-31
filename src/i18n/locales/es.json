@@ -346,7 +346,7 @@
     "amenities": "Qué incluye",
     "included": "Cómo trabajamos",
     "ctaCopy": "¿Interesado en este servicio? Escríbenos y estudiaremos tu caso sin compromiso.",
-    "contactCta": "Contactar con nosotros"
+    "contactCta": "Contactar conmigo"
   },
   "notFound": {
     "title": "404",
@@ -384,7 +384,7 @@
   },
   "whatsapp": {
     "aria": "Escríbenos por WhatsApp",
-    "tooltip": "Chatea con nosotros"
+    "tooltip": "Chatea conmigo"
   },
   "testimonials": {
     "eyebrow": "EN QUÉ ESTOY TRABAJANDO",

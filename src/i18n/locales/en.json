@@ -346,7 +346,7 @@
     "amenities": "What's included",
     "included": "How we work",
     "ctaCopy": "Interested in this service? Get in touch and we'll study your case with no commitment.",
-    "contactCta": "Contact us"
+    "contactCta": "Contact me"
   },
   "notFound": {
     "title": "404",
@@ -384,7 +384,7 @@
   },
   "whatsapp": {
     "aria": "Message us on WhatsApp",
-    "tooltip": "Chat with us"
+    "tooltip": "Chat with me"
   },
   "testimonials": {
     "eyebrow": "WHAT I'M WORKING ON",
